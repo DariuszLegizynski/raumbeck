@@ -1,9 +1,11 @@
+import talkPatient from "../../assets/images/Homepage3.jpg"
+
 import "./Home.css"
 
 const Home = () => {
   return (
     <section className='home'>
-      <h1>Video</h1>
+      <img src={talkPatient} />
       <h1>Logo</h1>
       <h1>NavBar</h1>
     </section>

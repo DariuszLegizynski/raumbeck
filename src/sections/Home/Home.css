@@ -2,4 +2,10 @@
   position: relative;
   min-height: 200vh;
   overflow: hidden;
+}
+.home > img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Home.css.map */

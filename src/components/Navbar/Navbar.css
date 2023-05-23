@@ -4,6 +4,8 @@
   width: 100vw;
   height: auto;
   padding: 1rem;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 .navbar > * {
   display: flex;

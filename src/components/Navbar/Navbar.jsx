@@ -13,9 +13,6 @@ const Navbar = () => {
   const navbarHeight = useRef()
   const [ headerHeight, setHeaderHeight ] = useState(0)
 
-	console.log({ liHeight })
-  console.log({ openBurger })
-
 	useEffect(() => {
 		if (!listHeight?.current?.clientHeight || !navbarHeight?.current?.clientHeight) return
 

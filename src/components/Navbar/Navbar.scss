@@ -1,3 +1,5 @@
+@import "../../styles/main.scss";
+
 .navbar {
 	position: fixed;
 	top: 0;
@@ -14,18 +16,6 @@
 	-webkit-backdrop-filter: blur(3px);
 	backdrop-filter: blur(3px);
 
-  background-color: yellow;
-
-	// &__show {
-	// 	top: 2.8rem;
-  //   left: 0;
-	// }
-
-	// &__hide {
-	// 	top: -2.8rem;
-  //   left: 0;
-	// }
-
 	& > li {
     position: fixed;
     left: 0;
@@ -36,12 +26,13 @@
     justify-content: center;
 
     width: 100%;
+    padding: .8rem 0;
 
-    background-color: orangered;
+    background-color: $color-white;
     transition: top 0.4s ease-out;
 
     & > ul {
-      padding: .4rem 0;
+      padding: .8rem 0;
     }
 	}
 

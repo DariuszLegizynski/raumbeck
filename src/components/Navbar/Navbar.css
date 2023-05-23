@@ -9,7 +9,6 @@
   padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  background-color: yellow;
 }
 .navbar > li {
   position: fixed;
@@ -19,11 +18,12 @@
   justify-items: center;
   justify-content: center;
   width: 100%;
-  background-color: orangered;
+  padding: 0.8rem 0;
+  background-color: #fafafa;
   transition: top 0.4s ease-out;
 }
 .navbar > li > ul {
-  padding: 0.4rem 0;
+  padding: 0.8rem 0;
 }
 .navbar > img {
   width: auto;

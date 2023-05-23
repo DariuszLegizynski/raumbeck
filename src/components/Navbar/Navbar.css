@@ -1,17 +1,31 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: auto;
-  padding: 1rem;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-}
-.navbar > * {
+  left: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 0.4rem;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: yellow;
 }
-.navbar > li > img {
-  width: 8rem;
+.navbar > li {
+  position: fixed;
+  left: 0;
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: orangered;
+  transition: top 0.4s ease-out;
+}
+.navbar > li > ul {
+  padding: 0.4rem 0;
+}
+.navbar > img {
+  width: auto;
+  height: 2rem;
 }/*# sourceMappingURL=Navbar.css.map */

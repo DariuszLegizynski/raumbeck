@@ -1,23 +1,52 @@
 .navbar {
-  position: fixed;
-  top: 0;
+	position: fixed;
+	top: 0;
+  left: 0;
 
-  width: 100vw;
-  height: auto;
+	display: flex;
+  justify-content: space-between;
 
-  padding: 1rem;
+	width: 100vw;
+	height: auto;
 
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  
-  & > * {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+	padding: .4rem;
 
-  & > li > img {
-    width: 8rem;
-  }
-  
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+
+  background-color: yellow;
+
+	// &__show {
+	// 	top: 2.8rem;
+  //   left: 0;
+	// }
+
+	// &__hide {
+	// 	top: -2.8rem;
+  //   left: 0;
+	// }
+
+	& > li {
+    position: fixed;
+    left: 0;
+
+    display: grid;
+    grid-auto-rows: auto;
+    justify-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: orangered;
+    transition: top 0.4s ease-out;
+
+    & > ul {
+      padding: .4rem 0;
+    }
+	}
+
+	& > img {
+		width: auto;
+    height: 2rem;
+	}
 }

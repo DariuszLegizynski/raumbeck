@@ -5,10 +5,22 @@
      object-fit: contain;
 }
 .hero__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-auto-rows: auto;
   padding: 0 1rem;
   width: 100%;
   height: 100%;
+}
+.hero__text > p {
+  position: absolute;
+  left: 1rem;
+  top: 38.5%;
+}
+.hero__title {
+  position: absolute;
+  left: 1rem;
+  top: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }/*# sourceMappingURL=Hero.css.map */

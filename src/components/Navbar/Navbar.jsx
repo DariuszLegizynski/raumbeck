@@ -28,7 +28,7 @@ const Navbar = () => {
 		<motion.nav
     initial={{ y: `-100%` }}
     animate={{ y: 0 }}
-    transition={{ duration: 2, delay: 5 /* 2 */ }} ref={navbarHeight} className="navbar">
+    transition={{ duration: 2}} ref={navbarHeight} className="navbar">
 			<Link to ="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}

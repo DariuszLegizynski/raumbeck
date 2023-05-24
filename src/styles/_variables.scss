@@ -1,12 +1,9 @@
-$color-first: #00a4e8;
-$color-first-dark: #033587;
-$color-first-light: #c2d1ff;
-$color-second: #efaa54;
-$color-second-dark: #db954b;
-$color-third: #f16373;
-$color-demo: red;
+$color-primary: hsl(85, 55%, 51%);
+$color-secondary: rgb(132, 144, 168);
 
-$color-white: #fafafa;
+
+$color-white: hsl(0, 0%, 98%);
 $color-black: #1f1f1f;
 
-$color-background: #eaeded;
+$color-white-opacity: hsla(0, 0%, 98%, 0.4);
+$color-white-opacity-dark: hsla(0, 0%, 98%, 0.8);

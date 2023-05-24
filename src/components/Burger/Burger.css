@@ -9,23 +9,23 @@
 }
 .burger__stick {
   width: 2rem;
-  height: 0.16rem;
-  background-color: orangered;
+  height: 0.12rem;
+  background-color: hsl(85, 55%, 51%);
   transition: all 0.5s ease-in-out;
 }
 .burger__stick::before, .burger__stick::after {
   content: "";
   position: absolute;
   width: 2rem;
-  height: 0.16rem;
-  background-color: orangered;
+  height: 0.12rem;
+  background-color: hsl(85, 55%, 51%);
   transition: all 0.5s ease-in-out;
 }
 .burger__stick::before {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 .burger__stick::after {
-  transform: translateY(10px);
+  transform: translateY(8px);
 }
 .burger--open .burger__stick {
   transform: translateX(-50px);

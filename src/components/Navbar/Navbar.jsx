@@ -3,6 +3,8 @@ import logo from "../../assets/logo/Logo-remove-bg-small.png"
 
 import "./Navbar.css"
 import Burger from "../Burger/Burger"
+import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
 
 const Navbar = () => {
 	const [ openBurger, setOpenBurger ] = useState(false)
@@ -20,20 +22,30 @@ const Navbar = () => {
     setHeaderHeight(navbarHeight?.current?.clientHeight)
 	}, [listHeight?.current?.clientHeight, navbarHeight?.current?.clientHeight])
 
+{/* <motion.article className="hero" initial={{height:0}} animate={{height: "60vh"}} transition={{type:"spring", duration: 2, delay: 1}}> */}
+
 	return (
-		<nav ref={navbarHeight} className="navbar">
-			<img src={logo} />
+		<motion.nav
+    initial={{ y: `-100%` }}
+    animate={{ y: 0 }}
+    transition={{ duration: 2, delay: 5 /* 2 */ }} ref={navbarHeight} className="navbar">
+			<Link to ="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
-				<ul>Home</ul>
-				<ul>Kontakt</ul>
-				<ul>Leistungsumfang</ul>
-				<ul>Preise</ul>
-				<ul>Über mich</ul>
+				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9, y: 0 }}>Home</motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9, y: 0 }} >Kontakt</motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9, y: 0 }} >Leistungsumfang</motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9, y: 0 }} >Preise</motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9, y: 0 }} >Über mich</motion.ul>
 			</li>
 			<div className="navbar__burger" onClick={() => setOpenBurger(!openBurger)}>
 				<Burger isOpen={openBurger ? "--open" : ""} />
 			</div>
-		</nav>
+		</motion.nav>
 	)
 }
 

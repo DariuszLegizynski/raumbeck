@@ -1,3 +1,5 @@
+@import "../../styles/main.scss";
+
 .burger {
 	width: 2rem;
 	height: 2rem;
@@ -9,8 +11,8 @@
 
 	&__stick {
 		width: 2rem;
-		height: 0.16rem;
-		background-color: orangered;
+		height: 0.12rem;
+		background-color: $color-primary;
 		transition: all 0.5s ease-in-out;
 
 		&::before,
@@ -18,17 +20,17 @@
 			content: "";
 			position: absolute;
 			width: 2rem;
-			height: 0.16rem;
-			background-color: orangered;
+			height: 0.12rem;
+			background-color: $color-primary;
 			transition: all 0.5s ease-in-out;
 		}
 
 		&::before {
-			transform: translateY(-10px);
+			transform: translateY(-8px);
 		}
 
 		&::after {
-			transform: translateY(10px);
+			transform: translateY(8px);
 		}
 	}
 

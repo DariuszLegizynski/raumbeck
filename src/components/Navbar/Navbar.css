@@ -9,6 +9,7 @@
   padding: 0.4rem;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+  background-color: hsla(0, 0%, 98%, 0.8);
 }
 .navbar > li {
   position: fixed;
@@ -19,13 +20,13 @@
   justify-content: center;
   width: 100%;
   padding: 0.8rem 0;
-  background-color: #fafafa;
+  background-color: hsla(0, 0%, 98%, 0.8);
   transition: top 0.4s ease-out;
 }
 .navbar > li > ul {
   padding: 0.8rem 0;
 }
-.navbar > img {
+.navbar img {
   width: auto;
   height: 2rem;
 }/*# sourceMappingURL=Navbar.css.map */

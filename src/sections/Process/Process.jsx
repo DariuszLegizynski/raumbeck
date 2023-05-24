@@ -1,4 +1,4 @@
-import "./process.css";
+import "./Process.css"
 
 const Process = () => {
   return (

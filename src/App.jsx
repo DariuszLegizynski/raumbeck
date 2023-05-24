@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home"
 
 import "locomotive-scroll/dist/locomotive-scroll.css"
 
+
 const App = () => {
 	const containerRef = useRef(null)
 

@@ -23,8 +23,8 @@ const Hero = () => {
 	return (
 		<article className="hero">
 			<img src={talkPatient} />
-			<section className="hero__text">
-				<motion.div className="hero__title" variants={container} initial="hidden" animate="show">
+			<motion.section className="hero__text" variants={container} initial="hidden" animate="show">
+				<div className="hero__title">
 					<motion.h1 className="green" variants={item} data-scroll data-scroll-delay="0.18" data-scroll-speed="4">
 						A
 					</motion.h1>
@@ -50,7 +50,7 @@ const Hero = () => {
 					<motion.h1 className="grey" variants={item} data-scroll data-scroll-delay="0.04" data-scroll-speed="4">
 						r
 					</motion.h1>
-				</motion.div>
+				</div>
 				<motion.p
 					className="grey"
 					variants={item}
@@ -63,7 +63,7 @@ const Hero = () => {
 				>
 					--- Physiotherapeutin
 				</motion.p>
-			</section>
+			</motion.section>
 			<section className="hero__greeting">
 				<p>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>
 				<p>Mein Kerngebiet ist die physiotherapeutische Behandlung im gynäkologischen, urologischen und proktologischen Bereich.</p>

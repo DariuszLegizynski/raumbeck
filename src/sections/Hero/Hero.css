@@ -24,9 +24,9 @@ p {
 }
 
 .hero {
-  overflow: scroll;
+  width: 100%;
+  height: 150vh;
   position: relative;
-  height: 100vh;
 }
 .hero > img {
   width: 100%;
@@ -35,26 +35,19 @@ p {
      object-fit: contain;
 }
 .hero__text {
-  display: grid;
-  grid-auto-rows: auto;
-  margin-top: 10rem;
-  padding: 0 1rem;
-  height: auto;
-}
-.hero__text > p {
   position: absolute;
-  left: 1rem;
-  bottom: 5rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 .hero__title {
-  position: absolute;
-  left: 1rem;
-  bottom: 8rem;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
 }
 .hero__greeting {
+  margin-top: 10rem;
   padding: 0 1rem;
 }
 .hero__greeting > p {

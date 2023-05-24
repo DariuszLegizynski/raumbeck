@@ -25,33 +25,33 @@ const Hero = () => {
 			<img src={talkPatient} />
 			<section className="hero__text">
 				<motion.div className="hero__title" variants={container} initial="hidden" animate="show">
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.18" data-scroll-speed="4">
+					<motion.h1 className="green" variants={item} data-scroll data-scroll-delay="0.18" data-scroll-speed="4">
 						A
 					</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.16" data-scroll-speed="4">
+					<motion.h1 className="green" variants={item} data-scroll data-scroll-delay="0.16" data-scroll-speed="4">
 						n
 					</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.14" data-scroll-speed="4">
+					<motion.h1 className="green" variants={item} data-scroll data-scroll-delay="0.14" data-scroll-speed="4">
 						n
 					</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.12" data-scroll-speed="4">
+					<motion.h1 className="green" variants={item} data-scroll data-scroll-delay="0.12" data-scroll-speed="4">
 						a
 					</motion.h1>
 					<motion.h1 variants={item}>&nbsp;</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.1" data-scroll-speed="4">
+					<motion.h1 className="grey" variants={item} data-scroll data-scroll-delay="0.1" data-scroll-speed="4">
 						M
 					</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.08" data-scroll-speed="4">
+					<motion.h1 className="grey" variants={item} data-scroll data-scroll-delay="0.08" data-scroll-speed="4">
 						e
 					</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.06" data-scroll-speed="4">
+					<motion.h1 className="grey" variants={item} data-scroll data-scroll-delay="0.06" data-scroll-speed="4">
 						h
 					</motion.h1>
-					<motion.h1 variants={item} data-scroll data-scroll-delay="0.04" data-scroll-speed="4">
+					<motion.h1 className="grey" variants={item} data-scroll data-scroll-delay="0.04" data-scroll-speed="4">
 						r
 					</motion.h1>
 				</motion.div>
-				<motion.p variants={item} initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 1.2, delay: 3.75}} data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
+				<motion.p className="grey" variants={item} initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 1.2, delay: 3.75}} data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
 					--- Physiotherapeutin
 				</motion.p>
 				<span>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</span>

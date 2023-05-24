@@ -1,1 +1,11 @@
+@import "./fonts";
+@import "./components";
 @import "./variables";
+
+.green {
+  color: $color-primary;
+}
+
+.grey {
+  color: $color-secondary;
+}

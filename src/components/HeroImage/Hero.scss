@@ -1,5 +1,6 @@
-.hero {
+@import "../../styles/main.scss";
 
+.hero {
 	& > img {
 		width: 100%;
 		height: auto;
@@ -10,7 +11,7 @@
 		display: grid;
     grid-auto-rows: auto;
 
-
+    margin-top: 10rem;
 		padding: 0 1rem;
 
 		width: 100%;
@@ -20,7 +21,7 @@
       position: absolute;
   
       left: 1rem;
-      top: 38.5%;
+      top: 42%;
     }
 	}
 

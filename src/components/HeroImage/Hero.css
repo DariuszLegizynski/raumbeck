@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "FuturaLT-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
+}
+h1 {
+  font-family: "FuturaLT-Light";
+  font-size: 3rem;
+}
+
+.green {
+  color: hsl(85, 55%, 51%);
+}
+
+.grey {
+  color: rgb(132, 144, 168);
+}
+
 .hero > img {
   width: 100%;
   height: auto;
@@ -7,6 +27,7 @@
 .hero__text {
   display: grid;
   grid-auto-rows: auto;
+  margin-top: 10rem;
   padding: 0 1rem;
   width: 100%;
   height: 100%;
@@ -14,7 +35,7 @@
 .hero__text > p {
   position: absolute;
   left: 1rem;
-  top: 38.5%;
+  top: 42%;
 }
 .hero__title {
   position: absolute;

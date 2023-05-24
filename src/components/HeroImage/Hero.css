@@ -10,6 +10,11 @@ h1 {
   font-size: 3rem;
 }
 
+p {
+  font-family: "FuturaLT-Light";
+  font-size: 1.2rem;
+}
+
 .green {
   color: hsl(85, 55%, 51%);
 }
@@ -38,13 +43,19 @@ h1 {
 .hero__text > p {
   position: absolute;
   left: 1rem;
-  top: 85%;
+  top: 53%;
 }
 .hero__title {
   position: absolute;
   left: 1rem;
-  top: 70%;
+  top: 45%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.hero__greeting {
+  padding: 0 1rem;
+}
+.hero__greeting > p {
+  margin: 1rem 0;
 }/*# sourceMappingURL=Hero.css.map */

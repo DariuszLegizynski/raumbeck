@@ -51,9 +51,23 @@ const Hero = () => {
 						r
 					</motion.h1>
 				</motion.div>
-				<motion.p className="grey" variants={item} initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 1.2, delay: 3.75}} data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
+				<motion.p
+					className="grey"
+					variants={item}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1.2, delay: 3.75 }}
+					data-scroll
+					data-scroll-delay="0.04"
+					data-scroll-speed="2"
+				>
 					--- Physiotherapeutin
 				</motion.p>
+			</section>
+			<section className="hero__greeting">
+				<p>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>
+				<p>Mein Kerngebiet ist die physiotherapeutische Behandlung im gynäkologischen, urologischen und proktologischen Bereich.</p>
+				<p>Mir liegen dabei eine fachkompetente Betreuung sowie großes Einfühlungsvermögen am Herzen.</p>
 			</section>
 		</article>
 	)

@@ -23,7 +23,7 @@
       position: absolute;
   
       left: 1rem;
-      top: 85%;
+      top: 53%;
     }
 	}
 
@@ -31,12 +31,18 @@
     position: absolute;
 
     left: 1rem;
-    top: 70%;
+    top: 45%;
 
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
 
+  &__greeting {
+    padding: 0 1rem;
 
+    & > p {
+      margin: 1rem 0;
+    }
+  }
 }

@@ -1,7 +1,9 @@
 @import "../../styles/main.scss";
 
 .hero {
-  overflow:hidden;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
 
 	& > img {
 		width: 100%;
@@ -23,7 +25,7 @@
       position: absolute;
   
       left: 1rem;
-      top: 55%;
+      bottom: 5rem;
     }
 	}
 
@@ -31,7 +33,7 @@
     position: absolute;
 
     left: 1rem;
-    top: 46%;
+    bottom: 8rem;
 
 		display: flex;
 		justify-content: flex-start;

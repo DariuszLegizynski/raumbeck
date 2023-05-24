@@ -22,13 +22,12 @@ const Navbar = () => {
     setHeaderHeight(navbarHeight?.current?.clientHeight)
 	}, [listHeight?.current?.clientHeight, navbarHeight?.current?.clientHeight])
 
-{/* <motion.article className="hero" initial={{height:0}} animate={{height: "60vh"}} transition={{type:"spring", duration: 2, delay: 1}}> */}
-
 	return (
 		<motion.nav
+		className="navbar"
     initial={{ y: `-100%` }}
     animate={{ y: 0 }}
-    transition={{ duration: 2}} ref={navbarHeight} className="navbar">
+    transition={{ duration: 2}} ref={navbarHeight}>
 			<Link to ="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}

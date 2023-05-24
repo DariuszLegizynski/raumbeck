@@ -25,6 +25,8 @@ p {
 
 .hero {
   overflow: hidden;
+  position: relative;
+  height: 100vh;
 }
 .hero > img {
   width: 100%;
@@ -43,12 +45,12 @@ p {
 .hero__text > p {
   position: absolute;
   left: 1rem;
-  top: 55%;
+  bottom: 5rem;
 }
 .hero__title {
   position: absolute;
   left: 1rem;
-  top: 46%;
+  bottom: 8rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;

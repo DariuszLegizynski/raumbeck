@@ -43,12 +43,12 @@ p {
 .hero__text > p {
   position: absolute;
   left: 1rem;
-  top: 53%;
+  top: 55%;
 }
 .hero__title {
   position: absolute;
   left: 1rem;
-  top: 45%;
+  top: 46%;
   display: flex;
   justify-content: flex-start;
   align-items: center;

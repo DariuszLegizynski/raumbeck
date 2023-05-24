@@ -3,37 +3,35 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-body {
-    overflow: hidden;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
-html.has-scroll-smooth {
+/* html.has-scroll-smooth {
     overflow: hidden;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;  
-}
+} */
 
 img {
-    display: block;
+	display: block;
 }
 
 *::selection {
-    background: red;
+	background: red;
 }
 
-li, ul, ol {
-    text-decoration: none;
+li,
+ul,
+ol {
+	text-decoration: none;
 }

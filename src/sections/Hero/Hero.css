@@ -24,7 +24,7 @@ p {
 }
 
 .hero {
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
   height: 100vh;
 }
@@ -39,8 +39,7 @@ p {
   grid-auto-rows: auto;
   margin-top: 10rem;
   padding: 0 1rem;
-  width: 100%;
-  height: 100%;
+  height: auto;
 }
 .hero__text > p {
   position: absolute;

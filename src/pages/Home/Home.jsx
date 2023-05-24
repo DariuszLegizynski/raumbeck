@@ -1,4 +1,4 @@
-import Hero from '../../components/HeroImage/Hero'
+import Hero from '../../sections/Hero/Hero'
 import Navbar from '../../components/Navbar/Navbar'
 import "./Home.css"
 

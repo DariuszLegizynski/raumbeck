@@ -4,6 +4,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import Home from "./sections/Home/Home"
 
 import "locomotive-scroll/dist/locomotive-scroll.css"
+import About from './sections/About/About'
 
 const App = () => {
 	const containerRef = useRef(null)
@@ -31,6 +32,7 @@ const App = () => {
 		>
 			<main data-scroll-container ref={containerRef}>
 				<Home />
+				<About />
 			</main>
 		</LocomotiveScrollProvider>
 	)

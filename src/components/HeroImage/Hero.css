@@ -18,6 +18,9 @@ h1 {
   color: rgb(132, 144, 168);
 }
 
+.hero {
+  overflow: hidden;
+}
 .hero > img {
   width: 100%;
   height: auto;
@@ -35,12 +38,12 @@ h1 {
 .hero__text > p {
   position: absolute;
   left: 1rem;
-  top: 42%;
+  top: 85%;
 }
 .hero__title {
   position: absolute;
   left: 1rem;
-  top: 35%;
+  top: 70%;
   display: flex;
   justify-content: flex-start;
   align-items: center;

@@ -1,4 +1,4 @@
-import talkPatient from "../../assets/images/AboutMe.jpg"
+import hero from "../../assets/images/AboutMe.jpg"
 import { motion } from "framer-motion"
 
 import "./Hero.css"
@@ -22,7 +22,7 @@ const Hero = () => {
 
 	return (
 		<article className="hero">
-			<img src={talkPatient} />
+			<img src={hero} />
 			<motion.section className="hero__text" variants={container} initial="hidden" animate="show">
 				<div className="hero__title">
 					<motion.h1 className="green" variants={item} data-scroll data-scroll-delay="0.18" data-scroll-speed="4">

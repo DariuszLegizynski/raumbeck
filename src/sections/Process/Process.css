@@ -2,6 +2,13 @@
   background-color: aquamarine;
   height: 300vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.process__show {
+  height: 20rem;
+  width: 20rem;
 }
 
 .progress-bar {

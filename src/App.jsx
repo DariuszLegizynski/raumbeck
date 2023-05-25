@@ -31,7 +31,6 @@ const App = () => {
 			containerRef={containerRef}
 		>
 			<main data-scroll-container ref={containerRef}>
-			{/* <main> */}
 				<Home />
 			</main>
 		</LocomotiveScrollProvider>

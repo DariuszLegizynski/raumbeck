@@ -20,7 +20,7 @@ p {
 }
 
 .grey {
-  color: rgb(132, 144, 168);
+  color: hsl(220, 17%, 59%);
 }
 
 .hero {

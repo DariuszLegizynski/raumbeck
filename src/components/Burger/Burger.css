@@ -20,7 +20,7 @@ p {
 }
 
 .grey {
-  color: rgb(132, 144, 168);
+  color: hsl(220, 17%, 59%);
 }
 
 .burger {
@@ -35,7 +35,7 @@ p {
 .burger__stick {
   width: 2rem;
   height: 0.12rem;
-  background-color: rgb(132, 144, 168);
+  background-color: hsl(220, 17%, 59%);
   transition: all 0.5s ease-in-out;
 }
 .burger__stick::before, .burger__stick::after {

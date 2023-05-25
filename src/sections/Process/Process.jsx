@@ -1,9 +1,21 @@
 import { motion } from "framer-motion"
 
+import IconItem from '../../assets/icons/icons'
+
 import "./Process.css"
 
 const Process = () => {
-  // const { scrollYProgress } = useScroll()
+
+  window.onload = () => {
+    let path = document.querySelector("line")
+    console.log(path)
+    let pathLength = document.querySelector("line").getTotalLength()
+  
+    console.log(path, pathLength)
+  
+    path.style.strokeDasharray = pathLength + " " + pathLength
+  }
+
 
   const container = {
 		hidden: {
@@ -18,10 +30,9 @@ const Process = () => {
 
 	return (
 		<article className="process">
-			{/* <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      /> */}
+			<section className="process__line-container">
+      <IconItem type="straight-line" classType="process__svg" />
+      </section>
       <motion.p
       className='process__show'
       variants={container}

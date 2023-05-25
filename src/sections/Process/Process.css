@@ -6,17 +6,21 @@
   flex-direction: column;
   align-items: center;
 }
-.process__show {
-  height: 20rem;
-  width: 20rem;
-}
-
-.progress-bar {
+.process__line-container {
   position: sticky;
   top: 0;
   left: 0;
-  right: 0;
-  height: 20px;
-  background-color: red;
-  transform-origin: 0%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+}
+.process__svg {
+  display: inline-block;
+  height: 100%;
+}
+.process__show {
+  height: 20rem;
+  width: 20rem;
 }/*# sourceMappingURL=Process.css.map */

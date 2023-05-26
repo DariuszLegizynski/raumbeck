@@ -2,7 +2,6 @@ import Hero from '../../sections/Hero/Hero'
 import Navbar from '../../components/Navbar/Navbar'
 import Process from "../../sections/Process/Process"
 import "./Home.css"
-// import Process from '../../sections/Process/Process'
 
 const Home = () => {
   return (

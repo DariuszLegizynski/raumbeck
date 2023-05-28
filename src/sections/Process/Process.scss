@@ -1,9 +1,24 @@
 .process {
-	height: 300vh;
+	height: 260vh;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	&__container {
+		width: 70%;
+		height: 260vh;
+		display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative
+	}
+
+	&__svg-container {
+		display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
 
 	&__show {
 		display: grid;

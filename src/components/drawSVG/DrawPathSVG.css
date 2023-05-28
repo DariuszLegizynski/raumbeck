@@ -1,14 +1,14 @@
 .vector {
   position: absolute;
-  top: .5rem;
+  top: 0.5rem;
   left: 50%;
   transform: translate(-50%);
   width: 100%;
   height: 100%;
-  // overflow:hidden;
+  overflow: hidden;
 }
 
 svg {
   width: 100%;
   height: 100%;
-}
+}/*# sourceMappingURL=DrawPathSVG.css.map */

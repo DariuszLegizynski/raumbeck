@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-import DrawSVG from "../../components/drawSVG/drawSVG"
+import DrawPathSVG from "../../components/drawSVG/DrawPathSVG"
 
 import welcomeImage from "../../assets/illustrations/001_undraw_welcome_re_h3d9.svg"
 import examImage from "../../assets/illustrations/002_undraw_medicine_b-1-ol.svg"
@@ -25,7 +25,7 @@ const Process = () => {
 		<article className="process">
 			<section className="process__container">
 				<div className="process__svg-container">
-					<DrawSVG />
+					<DrawPathSVG />
 				</div>
 			</section>
 			<section className="process__show">

@@ -15,7 +15,7 @@ const IconItem = ({ type, fillColor, strokeColor, width, height, classType }) =>
 				</svg>
 			) : null}
 			{type === "vector" ? (
-				<svg width={width} height={height} viewBox="0 0 52 365" fill={fillColor} xmlns="http://www.w3.org/2000/svg">
+				<svg width={width} height={height} viewBox="0 0 52 365" fill={fillColor} className={classType} xmlns="http://www.w3.org/2000/svg">
 				<path d="M26 314C10.5 314 1 322.5 1 338.5C1 354.5 10 364.5 26 364.5M26 364.5C42 364.5 50.9016 356.4 50.5 338.5C50.0984 320.6 27.3356 321.68 26 338.5V364.5ZM26 0V314.5" stroke="black"/>
 				</svg>
 			) : null}

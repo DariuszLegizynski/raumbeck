@@ -6,17 +6,20 @@ import IconItem from "../../assets/icons/icons"
 import "./DrawPathSVG.css"
 
 const DrawPathSVG = () => {
-	const ref = useRef(null)
+	const pathRef = useRef(null)
+	const ballRef = useRef(null)
 
 	gsap.registerPlugin(ScrollTrigger)
 
 	useEffect(() => {
-		let element = ref.current;
+		let element = pathRef.current
 
 		let svg = document.querySelector(".svg-path")
     const length = svg.getTotalLength()
 
 		svg.style.strokeDashoffset = length
+		// pathRef.current.style.display = 'none'
+
 
 		let t1 = gsap.timeline({
       scrollTrigger: {
@@ -27,19 +30,26 @@ const DrawPathSVG = () => {
         onUpdate: (self) => {
           let draw = length + length * self.progress
           svg.style.strokeDasharray = draw
-          
+					// svg.style.strokeDashoffset = length
         },
+				onToggle: self => {
+					ballRef.current.style.display = 'inline-block'
+					if(self.isActive) {
+							ballRef.current.style.display = 'none'
+					}
+				}
       },
     });
-	
+
 		return () => {
 			if(t1) t1.kill();
 		}
 	}, [])
 
 	return (
-		<section className="vector" ref={ref}>
-			{/* <IconItem type="vector" width="52" height="365" fillColor="none" pathClass="vector-path" /> */}
+		<>
+		<div className="vector__ball" ref={ballRef} />
+		<section className="vector" ref={pathRef}>
 			<svg viewBox="0 0 52 2047" fill="none">
 				<path
 					strokeWidth="6px"
@@ -49,6 +59,7 @@ const DrawPathSVG = () => {
 				/>
 			</svg>
 		</section>
+		</>
 	)
 }
 

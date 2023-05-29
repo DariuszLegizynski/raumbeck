@@ -1,8 +1,8 @@
 .process {
-	// height: 100vh;
 	width: 100vw;
 	position: relative;
-	display: inline-block;
+	display: grid;
+	grid-template-columns: 30% 70%;
   overflow: hidden;
 
 	&__container {
@@ -14,7 +14,7 @@
 
 	&__show {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		align-items: center;
 
 		column-gap: 0.8rem;
@@ -22,7 +22,7 @@
 	}
 
 	&__img {
-		width: 10rem;
+		width: 6rem;
 		height: auto;
 	}
 

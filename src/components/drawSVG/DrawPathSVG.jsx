@@ -16,10 +16,7 @@ const DrawPathSVG = () => {
 
 		let svg = document.querySelector(".svg-path")
     const length = svg.getTotalLength()
-
-		svg.style.strokeDashoffset = length
-		// pathRef.current.style.display = 'none'
-
+		pathRef.current.style.display = 'none'
 
 		let t1 = gsap.timeline({
       scrollTrigger: {
@@ -28,9 +25,10 @@ const DrawPathSVG = () => {
         end:"bottom center",
 				markers: true,
         onUpdate: (self) => {
-          let draw = length + length * self.progress
-          svg.style.strokeDasharray = draw
-					// svg.style.strokeDashoffset = length
+					pathRef.current.style.display = 'inline-block'
+          let draw = length - length * self.progress
+          svg.style.strokeDasharray = length
+					svg.style.strokeDashoffset = draw
         },
 				onToggle: self => {
 					ballRef.current.style.display = 'inline-block'

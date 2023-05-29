@@ -28,6 +28,7 @@ const Process = () => {
 					<DrawPathSVG />
 				</div>
 			</section>
+			<section className='process__description'>
 			<section className="process__show">
 				<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
 					<img className="process__img" src={welcomeImage} alt="image of a couple in love" />
@@ -61,6 +62,7 @@ const Process = () => {
 				<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
 					<img className="process__img" src={therapyImage} alt="image of a couple in love" />
 				</motion.div>
+			</section>
 			</section>
 		</article>
 	)

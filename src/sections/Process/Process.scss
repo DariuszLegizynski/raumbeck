@@ -1,23 +1,15 @@
 .process {
-	min-height: 100vh;
+	// height: 100vh;
+	width: 100vw;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: inline-block;
+  overflow: hidden;
 
 	&__container {
 		width: 70%;
-		min-height: 100vh;
-		display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative
-	}
-
-	&__svg-container {
-		display: flex;
-	flex-direction: column;
-	align-items: center;
+		height: 200vh;
+		margin: 0 auto;
+		position: relative;
 	}
 
 	&__show {
@@ -25,14 +17,14 @@
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 
-		column-gap: .8rem;
-		padding: 3rem .8rem;
+		column-gap: 0.8rem;
+		padding: 3rem 0.8rem;
 	}
 
 	&__img {
-    width: 10rem;
-    height: auto;
-  }
+		width: 10rem;
+		height: auto;
+	}
 
 	& p {
 		font-size: 1rem;

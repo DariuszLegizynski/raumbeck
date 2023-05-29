@@ -1,22 +1,14 @@
 .process {
-  height: 260vh;
+  width: 100vw;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
+  overflow: hidden;
 }
 .process__container {
   width: 70%;
-  height: 260vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 200vh;
+  margin: 0 auto;
   position: relative;
-}
-.process__svg-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .process__show {
   display: grid;

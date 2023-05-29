@@ -23,8 +23,8 @@ const Process = () => {
 
 	return (
 		<article className="process">
-			<section className="process__container">
-				<div className="process__svg-container">
+			<section className="process__container flex-center">
+				<div className="flex-center">
 					<DrawPathSVG />
 				</div>
 			</section>

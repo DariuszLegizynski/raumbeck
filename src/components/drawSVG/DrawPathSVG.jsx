@@ -23,7 +23,6 @@ const DrawPathSVG = () => {
 				trigger: element,
         start:"top center",
         end:"bottom center",
-				markers: true,
         onUpdate: (self) => {
 					pathRef.current.style.display = 'inline-block'
           let draw = length - length * self.progress

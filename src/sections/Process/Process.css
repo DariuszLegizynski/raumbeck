@@ -11,10 +11,11 @@
   margin: 0 auto;
   position: relative;
 }
-.process__show {
+.process__item {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
+  background-color: lightblue;
   -moz-column-gap: 0.8rem;
        column-gap: 0.8rem;
   padding: 3rem 0.8rem;

@@ -1,4 +1,7 @@
 import { motion } from "framer-motion"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useRef, useEffect } from "react"
 
 import DrawPathSVG from "../../components/drawSVG/DrawPathSVG"
 
@@ -10,6 +13,43 @@ import therapyImage from "../../assets/illustrations/004_undraw_options_re_9vxh.
 import "./Process.css"
 
 const Process = () => {
+	const revealRefs = useRef([])
+  revealRefs.current = []
+  gsap.registerPlugin(ScrollTrigger)
+
+  const addToRefs = (el) => {
+    if (el && !revealRefs.current.includes(el)) {
+      revealRefs.current.push(el);
+    }
+  }
+
+	useEffect(() => {
+    let t1 = gsap.timeline();
+    revealRefs.current.forEach((el, index) => {
+      t1.fromTo(
+        el.childNodes[0],
+        {
+          y: "0",
+        },
+        {
+          y: "-30%",
+
+          scrollTrigger: {
+            id: `section-${index + 1}`,
+            trigger: el,
+            start: "top center+=200px",
+            end: "bottom center",
+            scrub: true,
+          },
+        }
+      );
+    });
+
+    return () => {
+      if (t1) t1.kill()
+    };
+  }, []);
+
 	const container = {
 		hidden: {
 			opacity: 0,
@@ -21,6 +61,19 @@ const Process = () => {
 		},
 	}
 
+	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef}) => {
+		return (
+			<section ref={addToRef} className="process__item">
+					<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
+						<img className="process__img" src={imgSrc} alt={imgAlt} />
+					</motion.div>
+					<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
+						{text}
+					</motion.p>
+				</section>
+		)
+	}
+
 	return (
 		<article className="process">
 			<section className="process__container flex-center">
@@ -28,41 +81,13 @@ const Process = () => {
 					<DrawPathSVG />
 				</div>
 			</section>
-			<section className='process__description'>
-			<section className="process__show">
-				<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
-					<img className="process__img" src={welcomeImage} alt="image of a couple in love" />
-				</motion.div>
-				<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
-					Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden.
-				</motion.p>
-			</section>
-			<section className="process__show">
-				<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
-					Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
-					genauer auf Ihre Bedürfnisse einzugehen.
-				</motion.p>
-				<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
-					<img className="process__img" src={examImage} alt="image of a couple in love" />
-				</motion.div>
-			</section>
-			<section className="process__show">
-				<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
-					<img className="process__img" src={protocolImage} alt="image of a couple in love" />
-				</motion.div>
-				<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
-					Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die Herkunft
-					der eingetretenen Veränderung geben.
-				</motion.p>
-			</section>
-			<section className="process__show">
-				<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
-					Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst.
-				</motion.p>
-				<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
-					<img className="process__img" src={therapyImage} alt="image of a couple in love" />
-				</motion.div>
-			</section>
+			<section className="process__description">
+				<ProcessItem addToRef={addToRefs} imgSrc={welcomeImage} imgAlt="a couple in love" text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden." />
+				<ProcessItem addToRef={addToRefs} imgSrc={examImage} imgAlt="examing a patient" text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
+						genauer auf Ihre Bedürfnisse einzugehen." />
+				<ProcessItem addToRef={addToRefs} imgSrc={protocolImage} imgAlt="writing a protocol" text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
+						Herkunft der eingetretenen Veränderung geben." />
+<ProcessItem addToRef={addToRefs} imgSrc={therapyImage} imgAlt="person having a therapy" text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst." />
 			</section>
 		</article>
 	)

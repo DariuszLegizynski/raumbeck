@@ -12,10 +12,12 @@
 		position: relative;
 	}
 
-	&__show {
+	&__item {
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		align-items: center;
+
+		background-color: lightblue;
 
 		column-gap: 0.8rem;
 		padding: 3rem 0.8rem;

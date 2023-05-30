@@ -14,41 +14,57 @@ import "./Process.css"
 
 const Process = () => {
 	const revealRefs = useRef([])
-  revealRefs.current = []
-  gsap.registerPlugin(ScrollTrigger)
+	revealRefs.current = []
+	gsap.registerPlugin(ScrollTrigger)
 
-  const addToRefs = (el) => {
-    if (el && !revealRefs.current.includes(el)) {
-      revealRefs.current.push(el);
-    }
-  }
+	const addToRefs = el => {
+		if (el && !revealRefs.current.includes(el)) {
+			revealRefs.current.push(el)
+		}
+	}
 
 	useEffect(() => {
-    let t1 = gsap.timeline();
-    revealRefs.current.forEach((el, index) => {
-      t1.fromTo(
-        el.childNodes[0],
-        {
-          y: "0",
-        },
-        {
-          y: "-30%",
+		revealRefs.current.forEach(el => {
+			gsap.fromTo(
+				el,
+				{ opacity: 0 },
+				{
+					opacity: 1,
+					duration: 1,
+					scrollTrigger: {
+						trigger: el,
+					},
+				}
+			)
+		})
+	})
 
-          scrollTrigger: {
-            id: `section-${index + 1}`,
-            trigger: el,
-            start: "top center+=200px",
-            end: "bottom center",
-            scrub: true,
-          },
-        }
-      );
-    });
+	// useEffect(() => {
+	// 	let t1 = gsap.timeline()
+	// 	revealRefs.current.forEach((el, index) => {
+	// 		t1.fromTo(
+	// 			el.childNodes[0],
+	// 			{
+	// 				y: "0",
+	// 			},
+	// 			{
+	// 				y: "-30%",
 
-    return () => {
-      if (t1) t1.kill()
-    };
-  }, []);
+	// 				scrollTrigger: {
+	// 					id: `section-${index + 1}`,
+	// 					trigger: el,
+	// 					start: "top center+=200px",
+	// 					end: "bottom center",
+	// 					scrub: true,
+	// 				},
+	// 			}
+	// 		)
+	// 	})
+
+	// 	return () => {
+	// 		if (t1) t1.kill()
+	// 	}
+	// }, [])
 
 	const container = {
 		hidden: {
@@ -59,20 +75,32 @@ const Process = () => {
 			opacity: 1,
 			scale: 1,
 		},
+		viewport: { once: true },
 	}
 
-	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef}) => {
+	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef }) => {
 		return (
 			<section ref={addToRef} className="process__item">
-					<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
-						<img className="process__img" src={imgSrc} alt={imgAlt} />
-					</motion.div>
-					<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
-						{text}
-					</motion.p>
-				</section>
+				<div>
+					<img className="process__img" src={imgSrc} alt={imgAlt} />
+				</div>
+				<p>{text}</p>
+			</section>
 		)
 	}
+
+	// const ProcessItem = ({ imgSrc, imgAlt, text, addToRef }) => {
+	// 	return (
+	// 		<section ref={addToRef} className="process__item">
+	// 			<motion.div variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2 }}>
+	// 				<img className="process__img" src={imgSrc} alt={imgAlt} />
+	// 			</motion.div>
+	// 			<motion.p variants={container} initial="hidden" whileInView="visible" transition={{ duration: 1.2, delay: 0.4 }}>
+	// 				{text}
+	// 			</motion.p>
+	// 		</section>
+	// 	)
+	// }
 
 	return (
 		<article className="process">
@@ -82,12 +110,32 @@ const Process = () => {
 				</div>
 			</section>
 			<section className="process__description">
-				<ProcessItem addToRef={addToRefs} imgSrc={welcomeImage} imgAlt="a couple in love" text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden." />
-				<ProcessItem addToRef={addToRefs} imgSrc={examImage} imgAlt="examing a patient" text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
-						genauer auf Ihre Bedürfnisse einzugehen." />
-				<ProcessItem addToRef={addToRefs} imgSrc={protocolImage} imgAlt="writing a protocol" text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
-						Herkunft der eingetretenen Veränderung geben." />
-<ProcessItem addToRef={addToRefs} imgSrc={therapyImage} imgAlt="person having a therapy" text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst." />
+				<ProcessItem
+					addToRef={addToRefs}
+					imgSrc={welcomeImage}
+					imgAlt="a couple in love"
+					text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
+				/>
+				<ProcessItem
+					addToRef={addToRefs}
+					imgSrc={examImage}
+					imgAlt="examing a patient"
+					text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
+						genauer auf Ihre Bedürfnisse einzugehen."
+				/>
+				<ProcessItem
+					addToRef={addToRefs}
+					imgSrc={protocolImage}
+					imgAlt="writing a protocol"
+					text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
+						Herkunft der eingetretenen Veränderung geben."
+				/>
+				<ProcessItem
+					addToRef={addToRefs}
+					imgSrc={therapyImage}
+					imgAlt="person having a therapy"
+					text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
+				/>
 			</section>
 		</article>
 	)

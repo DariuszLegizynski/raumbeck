@@ -1,25 +1,47 @@
+@import "../../styles/main.scss";
+
 .process {
-	height: 300vh;
+	width: 100vw;
+	height: 210vh;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 20% 80%;
+  overflow: hidden;
 
-	&__show {
+	&__container {
+		width: 70%;
+		height: 200vh;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	&__description {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
+		grid-auto-rows: min-content;
+		align-items: start;
+		row-gap: 2rem;
 
-		column-gap: .8rem;
-		padding: 3rem .8rem;
+		margin-top: 4rem;
+	}
+
+	&__item {
+		display: grid;
+		grid-template-rows: auto 1fr;
+		row-gap: 1rem;
+
+		background-color: $color-tertiary-opacity;
+
+		padding: 0.8rem;
+		margin-right: .4rem;
+		border-radius: 20px;
 	}
 
 	&__img {
-    width: 10rem;
-    height: auto;
-  }
+		width: 6rem;
+		height: auto;
+	}
 
 	& p {
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 }

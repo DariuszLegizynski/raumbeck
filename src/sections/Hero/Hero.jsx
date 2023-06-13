@@ -31,10 +31,6 @@ const Hero = () => {
 					start: "500 450",
 					end: "600 350",
 					scrub: true,
-					markers: true,
-					// onUpdate: (self) => {
-					// 		setBackground(Math.ceil(self.progress * 100 + 20))
-					// },
 			},
 			})
 			t1.to(letterA1.current,{

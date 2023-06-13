@@ -56,6 +56,8 @@ p {
   row-gap: 1rem;
   background-color: hsl(184, 100%, 87%);
   padding: 0.8rem;
+  margin-right: 0.4rem;
+  border-radius: 20px;
 }
 .process__img {
   width: 6rem;

@@ -23,6 +23,12 @@ p {
   color: hsl(220, 17%, 59%);
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .burger {
   width: 2rem;
   height: 2rem;

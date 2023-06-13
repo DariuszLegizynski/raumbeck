@@ -1,8 +1,40 @@
+@font-face {
+  font-family: "FuturaLT-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
+}
+h1 {
+  font-family: "FuturaLT-Light";
+  font-size: 3rem;
+}
+
+p {
+  font-family: "FuturaLT-Light";
+  font-size: 1.2rem;
+}
+
+.green {
+  color: hsl(85, 55%, 51%);
+}
+
+.grey {
+  color: hsl(220, 17%, 59%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .process {
   width: 100vw;
+  height: 210vh;
   position: relative;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
   overflow: hidden;
 }
 .process__container {
@@ -11,19 +43,24 @@
   margin: 0 auto;
   position: relative;
 }
+.process__description {
+  display: grid;
+  grid-auto-rows: min-content;
+  align-items: start;
+  row-gap: 2rem;
+  margin-top: 4rem;
+}
 .process__item {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  background-color: lightblue;
-  -moz-column-gap: 0.8rem;
-       column-gap: 0.8rem;
-  padding: 3rem 0.8rem;
+  grid-template-rows: auto 1fr;
+  row-gap: 1rem;
+  background-color: hsl(184, 100%, 87%);
+  padding: 0.8rem;
 }
 .process__img {
   width: 6rem;
   height: auto;
 }
 .process p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=Process.css.map */

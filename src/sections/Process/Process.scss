@@ -1,8 +1,11 @@
+@import "../../styles/main.scss";
+
 .process {
 	width: 100vw;
+	height: 210vh;
 	position: relative;
 	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 20% 80%;
   overflow: hidden;
 
 	&__container {
@@ -12,15 +15,23 @@
 		position: relative;
 	}
 
+	&__description {
+		display: grid;
+		grid-auto-rows: min-content;
+		align-items: start;
+		row-gap: 2rem;
+
+		margin-top: 4rem;
+	}
+
 	&__item {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
-		align-items: center;
+		grid-template-rows: auto 1fr;
+		row-gap: 1rem;
 
-		background-color: lightblue;
+		background-color: $color-tertiary;
 
-		column-gap: 0.8rem;
-		padding: 3rem 0.8rem;
+		padding: 0.8rem;
 	}
 
 	&__img {
@@ -29,6 +40,6 @@
 	}
 
 	& p {
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 }

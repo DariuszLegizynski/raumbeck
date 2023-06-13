@@ -54,7 +54,7 @@ p {
   display: grid;
   grid-template-rows: auto 1fr;
   row-gap: 1rem;
-  background-color: hsl(184, 100%, 87%);
+  background-color: hsla(184, 100%, 87%, 0.6);
   padding: 0.8rem;
   margin-right: 0.4rem;
   border-radius: 20px;

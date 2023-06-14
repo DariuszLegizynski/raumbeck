@@ -2,11 +2,15 @@
 
 .process {
 	width: 100vw;
-	height: 210vh;
+	height: 155vh;
 	position: relative;
 	display: grid;
 	grid-template-columns: 20% 80%;
   overflow: hidden;
+
+	&__h1 {
+		text-align:center;
+	}
 
 	&__container {
 		width: 70%;

@@ -31,11 +31,14 @@ p {
 
 .process {
   width: 100vw;
-  height: 210vh;
+  height: 155vh;
   position: relative;
   display: grid;
   grid-template-columns: 20% 80%;
   overflow: hidden;
+}
+.process__h1 {
+  text-align: center;
 }
 .process__container {
   width: 70%;

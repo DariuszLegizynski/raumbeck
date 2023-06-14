@@ -53,6 +53,8 @@ const Process = () => {
 	}
 
 	return (
+		<>
+		<h1 className="process__h1">Therpaie</h1>
 		<article className="process">
 			<section className="process__container flex-center">
 				<div className="flex-center">
@@ -88,6 +90,7 @@ const Process = () => {
 				/>
 			</section>
 		</article>
+		</>
 	)
 }
 

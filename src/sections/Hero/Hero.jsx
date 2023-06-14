@@ -138,7 +138,7 @@ const Hero = () => {
 			</motion.section>
 			<section className="hero__greeting">
 				<p>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>
-				<p>Mein Kerngebiet ist die physiotherapeutische Behandlung im gynäkologischen, urologischen und proktologischen Bereich.</p>
+				<p>Mein Kerngebiet ist die <b>physiotherapeutische</b> Behandlung im <b>gynäkologischen</b>, <b>urologischen</b> und <b>proktologischen</b> Bereich.</p>
 				<p>Mir liegen dabei eine fachkompetente Betreuung sowie großes Einfühlungsvermögen am Herzen.</p>
 			</section>
 		</article>

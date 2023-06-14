@@ -6,10 +6,14 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: 20% 80%;
-  overflow: hidden;
+	overflow: hidden;
+
+	&__title > img {
+		margin: 1rem 0;
+	}
 
 	&__h1 {
-		text-align:center;
+		text-align: center;
 	}
 
 	&__container {
@@ -36,7 +40,7 @@
 		background-color: $color-tertiary-opacity;
 
 		padding: 0.8rem;
-		margin-right: .4rem;
+		margin-right: 0.4rem;
 		border-radius: 20px;
 	}
 
@@ -46,6 +50,6 @@
 	}
 
 	& p {
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
 }

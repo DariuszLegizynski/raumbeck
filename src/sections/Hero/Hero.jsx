@@ -99,7 +99,7 @@ const Hero = () => {
 
 	return (
 		<article ref={parallax} className="hero">
-			<img src={hero} />
+			<img src={hero} alt="therapist" />
 			<motion.section  className="hero__text" variants={container} initial="hidden" animate="show">
 				<div className="hero__title">
 					<motion.h1 ref={letterA1} className="green" variants={item}>

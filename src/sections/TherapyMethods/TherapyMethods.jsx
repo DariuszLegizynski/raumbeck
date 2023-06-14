@@ -1,13 +1,66 @@
+import { useRef, useEffect } from "react"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+
 import "./TherapyMethods.css"
 
 const TherapyMethods = () => {
-  return (
-    <article className="therapy-methods"><h1>Therapiemethoden</h1>
-    <h2>je nach Beschwerdebild</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, nihil quidem molestias maiores doloremque perspiciatis minima cum accusantium atque hic quam recusandae dicta sequi, aliquam laudantium ad. Accusantium, dolorem cupiditate?
-    Voluptas inventore nulla alias minima aut quisquam minus, illo quo, reiciendis consequatur quae quidem qui fugit dolor exercitationem natus? Porro quod recusandae reprehenderit neque atque. Non id quo assumenda consequatur?
-    Maxime non dignissimos aperiam illum delectus earum, iure modi provident accusantium laudantium, quo quam error id eligendi minima necessitatibus, incidunt ipsum soluta ullam veritatis sit temporibus totam porro deserunt! Dolores!</p></article>
-  )
+  const sectionRef = useRef(null)
+  const triggerRef = useRef(null)
+
+	gsap.registerPlugin(ScrollTrigger)
+
+	useEffect(() => {
+    const pin = gsap.fromTo(
+      sectionRef.current,
+      {
+        translateX: 0,
+      },
+      {
+        translateX: "-300vw",
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: triggerRef.current,
+          start: "top center",
+          end: "center top",
+          scrub: 0.6,
+          pin: true,
+					markers: true,
+        },
+      }
+    );
+    return () => {
+      {/* A return function for killing the animation on component unmount */ }
+      pin.kill();
+    };
+  }, []);
+
+	return (
+		<article className="therapy-methods">
+			<h1>Therapiemethoden</h1>
+			<h2>je nach Beschwerdebild</h2>
+			<section ref={triggerRef}>
+				<div ref={sectionRef} className="therapy-methods__wrapper">
+					<ul className="therapy-methods__list">
+						<li>Kräftigen oder entspannen der Beckenboden-, Bauch-, Rücken- und/oder Hüftmuskulatur</li>
+						<li>Dehnungsübungen</li>
+						<li>Mobilisation von Gelenken im Hüft-, Becken- und/oder Rückenbereich</li>
+						<li>Atemübungen</li>
+						<li>Entspannungsübungen</li>
+						<li>Passive Behandlungstechniken wie Faszien- oder Viszeraltechniken</li>
+						<li>Narbenbehandlung im Beckenboden-, Bauch- oder Rückenbereich</li>
+						<li>Elektrotherapie</li>
+						<li>Biofeedback für den Beckenboden und die Bauchmuskulatur mittels Echtzeitultraschall oder einem klassischen Biofeedbackgerät</li>
+						<li>Erkennen und Bewältigen von typischen Belastungssituationen in Alltag, Sport sowie Beruf</li>
+						<li>Tipps und Support für den optimalen Umgang nach Operationen im Becken- oder Bauchbereich</li>
+						<li>Tipps und Support für den optimalen Umgang mit der Blase und dem Darm</li>
+						<li>Heimprogramm</li>
+					</ul>
+				</div>
+			</section>
+		</article>
+	)
 }
 
 export default TherapyMethods

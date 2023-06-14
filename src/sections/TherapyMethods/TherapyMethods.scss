@@ -1,3 +1,24 @@
 .therapy-methods {
-  background-color: aquamarine;
+	background-color: aquamarine;
+	overflow: hidden;
+
+	&__wrapper {
+		// height: 100vh;
+		width: 400vw;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__list > li {
+		height: 16rem;
+		width: 12rem;
+		background-color: chartreuse;
+		border: 1px solid black;
+		padding: 1.5rem 2rem;
+		margin-right: 4rem;
+	}
 }

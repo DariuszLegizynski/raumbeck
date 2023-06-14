@@ -4,6 +4,8 @@ import { useRef, useEffect } from "react"
 
 import DrawPathSVG from "../../components/drawSVG/DrawPathSVG"
 
+import meeting from "../../assets/images/Homepage3_2.jpg"
+
 import welcomeImage from "../../assets/illustrations/001_undraw_welcome_re_h3d9.svg"
 import examImage from "../../assets/illustrations/002_undraw_medicine_b-1-ol.svg"
 import protocolImage from "../../assets/illustrations/003_undraw_done_checking_re_6vyx.svg"
@@ -54,7 +56,10 @@ const Process = () => {
 
 	return (
 		<>
-			<h1 className="process__h1">Ersttreffen</h1>
+			<section className="process__title">
+				<h1 className="process__h1">Ersttreffen</h1>
+				<img src={meeting} alt="therapist" />
+			</section>
 			<article className="process">
 				<section className="process__container flex-center">
 					<div className="flex-center">

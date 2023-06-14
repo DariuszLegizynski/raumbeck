@@ -37,6 +37,9 @@ p {
   grid-template-columns: 20% 80%;
   overflow: hidden;
 }
+.process__title > img {
+  margin: 1rem 0;
+}
 .process__h1 {
   text-align: center;
 }

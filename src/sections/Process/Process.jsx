@@ -54,42 +54,42 @@ const Process = () => {
 
 	return (
 		<>
-		<h1 className="process__h1">Therpaie</h1>
-		<article className="process">
-			<section className="process__container flex-center">
-				<div className="flex-center">
-					<DrawPathSVG />
-				</div>
-			</section>
-			<section className="process__description">
-				<ProcessItem
-					addToRef={addToRefs}
-					imgSrc={welcomeImage}
-					imgAlt="a couple in love"
-					text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
-				/>
-				<ProcessItem
-					addToRef={addToRefs}
-					imgSrc={examImage}
-					imgAlt="examing a patient"
-					text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
+			<h1 className="process__h1">Ersttreffen</h1>
+			<article className="process">
+				<section className="process__container flex-center">
+					<div className="flex-center">
+						<DrawPathSVG />
+					</div>
+				</section>
+				<section className="process__description">
+					<ProcessItem
+						addToRef={addToRefs}
+						imgSrc={welcomeImage}
+						imgAlt="a couple in love"
+						text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
+					/>
+					<ProcessItem
+						addToRef={addToRefs}
+						imgSrc={examImage}
+						imgAlt="examing a patient"
+						text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
 						genauer auf Ihre Bedürfnisse einzugehen."
-				/>
-				<ProcessItem
-					addToRef={addToRefs}
-					imgSrc={protocolImage}
-					imgAlt="writing a protocol"
-					text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
+					/>
+					<ProcessItem
+						addToRef={addToRefs}
+						imgSrc={protocolImage}
+						imgAlt="writing a protocol"
+						text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
 						Herkunft der eingetretenen Veränderung geben."
-				/>
-				<ProcessItem
-					addToRef={addToRefs}
-					imgSrc={therapyImage}
-					imgAlt="person having a therapy"
-					text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
-				/>
-			</section>
-		</article>
+					/>
+					<ProcessItem
+						addToRef={addToRefs}
+						imgSrc={therapyImage}
+						imgAlt="person having a therapy"
+						text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
+					/>
+				</section>
+			</article>
 		</>
 	)
 }

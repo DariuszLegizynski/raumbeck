@@ -8,7 +8,7 @@ import "./Hero.css"
 
 const Hero = () => {
 	gsap.registerPlugin(ScrollTrigger)
-	const speed = 100
+	const speed = 20
 
 	const parallax = useRef()
 

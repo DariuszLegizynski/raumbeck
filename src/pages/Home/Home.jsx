@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Process from "../../sections/Process/Process"
 import "./Home.css"
 import Contact from '../../sections/Contact/Contact'
+import TherapyMethods from '../../sections/TherapyMethods/TherapyMethods'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Navbar />
       <Process />
+      <TherapyMethods />
       <Contact />
     </section>
   )

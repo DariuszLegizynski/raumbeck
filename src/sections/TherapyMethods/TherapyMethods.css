@@ -1,6 +1,10 @@
 .therapy-methods {
   background-color: aquamarine;
   overflow: hidden;
+  padding: 2rem 1rem;
+}
+.therapy-methods__title {
+  margin-bottom: 2rem;
 }
 .therapy-methods__wrapper {
   width: 400vw;
@@ -9,6 +13,8 @@
 }
 .therapy-methods__list {
   display: flex;
+  margin: 0 2rem;
+  overflow-x: auto;
 }
 .therapy-methods__list > li {
   height: 16rem;

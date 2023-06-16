@@ -5,13 +5,27 @@
   font-display: auto;
   src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
 }
-h1 {
+h1, h2, h3, p, span {
   font-family: "FuturaLT-Light";
+}
+
+h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+span {
+  font-size: 1.8rem;
+}
+
 p {
-  font-family: "FuturaLT-Light";
   font-size: 1.2rem;
 }
 

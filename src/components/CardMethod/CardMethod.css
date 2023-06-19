@@ -41,4 +41,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.card-method {
+  min-width: 16rem;
+  padding: 1.5rem 2rem;
+  margin-right: 4rem;
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom right, hsl(85, 55%, 51%), transparent 50%) 1 100%;
+     border-image: linear-gradient(to bottom right, hsl(85, 55%, 51%), transparent 50%) 1 100%;
+  border-image-slice: 1;
+}/*# sourceMappingURL=CardMethod.css.map */

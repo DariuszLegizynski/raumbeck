@@ -5,12 +5,15 @@
 	padding: 1.5rem 2rem;
 	margin-right: 4rem;
 
-	border-width: 4px;
-  border-style: solid;
-	border-image: linear-gradient(
-		to bottom right,
-		$color-primary,
-		transparent 50%
-	) 1 100%;
-	border-image-slice: 1;
+	color: $color-white;
+	background-color: $color-primary;
+
+	// border-width: 4px;
+  // border-style: solid;
+	// border-image: linear-gradient(
+	// 	to bottom right,
+	// 	$color-primary,
+	// 	transparent 50%
+	// ) 1 100%;
+	// border-image-slice: 1;
 }

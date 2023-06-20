@@ -4,6 +4,7 @@
 }
 .therapy-methods__title {
   margin-bottom: 2rem;
+  text-align: left;
 }
 .therapy-methods__wrapper {
   display: flex;

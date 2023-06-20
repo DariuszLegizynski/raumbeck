@@ -7,6 +7,7 @@
 }
 h1, h2, h3, p, span {
   font-family: "FuturaLT-Light";
+  font-weight: 300;
 }
 
 h1 {
@@ -47,6 +48,5 @@ p {
   min-width: 16rem;
   padding: 1.5rem 2rem;
   margin-right: 4rem;
-  color: hsl(0, 0%, 98%);
-  background-color: hsl(85, 55%, 51%);
+  background-color: hsla(184, 100%, 87%, 0.6);
 }/*# sourceMappingURL=CardMethod.css.map */

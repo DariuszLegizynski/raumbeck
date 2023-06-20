@@ -3,6 +3,7 @@ import "./CardMethod.css"
 const CardMethod = ({text1, text2, text3, text4, text5, hr}) => {
 	
   
+  
   return (
 		<li className="card-method">
 			{text1 ? <p>{text1}</p> : null}

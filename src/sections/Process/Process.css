@@ -7,6 +7,7 @@
 }
 h1, h2, h3, p, span {
   font-family: "FuturaLT-Light";
+  font-weight: 300;
 }
 
 h1 {
@@ -55,7 +56,8 @@ p {
   margin: 1rem 0;
 }
 .process__h1 {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.4rem;
 }
 .process__container {
   width: 70%;

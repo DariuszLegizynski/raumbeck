@@ -1,6 +1,9 @@
+@import "../../styles/main.scss";
+
 .therapy-methods {
 	overflow: hidden;
   padding: 2rem 1rem;
+	background-color: $color-white;
 
   &__title {
     margin-bottom: 2rem;

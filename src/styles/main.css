@@ -5,6 +5,13 @@
   font-display: auto;
   src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
 }
+@font-face {
+  font-family: "FuturaLT";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("FuturaLT"), url("/fonts/PublicSans/FuturaLT.ttf") format("opentype");
+}
 .btn {
   display: flex;
   flex-direction: column;
@@ -13,24 +20,20 @@
   width: 100%;
   color: hsl(0, 0%, 98%);
   background-color: hsl(85, 55%, 51%);
-  font-family: "FuturaLT-Light";
-  font-weight: 300;
-  text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0.9rem;
   margin: 0.6rem auto;
+  font-family: "FuturaLT-Heavy";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
   border: none;
   border-radius: 0;
 }
 
 h1, h2, h3, p, span {
   font-family: "FuturaLT-Light";
-  font-weight: 300;
-  color: hsl(0, 0%, 12%);
-}
-
-p, span {
-  color: hsl(169, 7%, 48%);
+  color: hsl(0, 0%, 10%);
 }
 
 h1 {

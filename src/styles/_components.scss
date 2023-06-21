@@ -6,14 +6,19 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+
   color: $color-white;
   background-color: $color-primary;
-  font-family: "FuturaLT-Light";
-  font-weight: 300;
-  text-align: center;
-  font-size: 1.4rem;
+
+  font-size: 1.6rem;
   padding: 0.9rem;
   margin: 0.6rem auto;
+
+  font-family: "FuturaLT-Heavy";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+
   border: none;
   border-radius: 0;
 }

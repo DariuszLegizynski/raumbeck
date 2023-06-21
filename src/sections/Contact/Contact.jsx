@@ -11,7 +11,7 @@ const Contact = () => {
 				Es stehen für Sie ein Warteraum, eine Kaffeeküche, 2 moderne Behandlungsräume und ein großzügiger Trainingsraum mit allen wichtigen Trainingsgeräten zur
 				Verfügung.
 			</p>
-			<p>Ich freue mich über Ihre Kontaktaufnahme</p>
+			<p>Ich freue mich über Ihre Kontaktaufnahme.</p>
       </section>
 			<section>
 				<ul className="contact__list">

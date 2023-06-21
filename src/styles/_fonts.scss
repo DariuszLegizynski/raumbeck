@@ -7,33 +7,14 @@
     url('/fonts/FuturaLT-Light.ttf') format('opentype');
 }
 
-// @font-face {
-//   font-family: 'Montserrat-Regular';
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: auto;
-//   src: local('Montserrat-Regular'),
-//     url('/fonts/Montserrat/Montserrat-Regular.ttf') format('opentype');
-// }
-
-// @font-face {
-//   font-family: 'Montserrat-Light';
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: auto;
-//   src: local('Montserrat-Light'),
-//     url('/fonts/Montserrat/Montserrat-Light.ttf') format('opentype');
-// }
-
-// @font-face {
-//   font-family: 'PublicSans-Thin';
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: auto;
-//   src: local('PublicSans-Thin'),
-//     url('/fonts/PublicSans/PublicSans-Thin.woff2') format('woff2'),
-//     url('/fonts/PublicSans/PublicSans-Thin.woff') format('woff');
-// }
+@font-face {
+  font-family: 'FuturaLT';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local('FuturaLT'),
+    url('/fonts/PublicSans/FuturaLT.ttf') format('opentype');
+}
 
 // @font-face {
 //   font-family: 'PublicSans-Light';

@@ -32,14 +32,6 @@
 }
 
 h1, h2, h3, p, span {
-  color: hsl(0, 0%, 10%);
-}
-
-h1, h2, h3 {
-  font-family: "FuturaLT-Light";
-}
-
-p, span {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
 }
@@ -101,13 +93,16 @@ textarea:focus-visible {
 }
 
 .process {
+  padding: 4rem 0;
+  background-color: hsl(170, 17%, 86%);
+}
+.process__body {
   width: 100vw;
   height: 155vh;
   position: relative;
   display: grid;
   grid-template-columns: 20% 80%;
   overflow: hidden;
-  background-color: hsl(170, 17%, 86%);
 }
 .process__title > img {
   margin: 1rem 0;

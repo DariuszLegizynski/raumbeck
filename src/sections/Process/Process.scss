@@ -1,14 +1,18 @@
 @import "../../styles/main.scss";
 
 .process {
-	width: 100vw;
-	height: 155vh;
-	position: relative;
-	display: grid;
-	grid-template-columns: 20% 80%;
-	overflow: hidden;
+	padding: 4rem 0;
 	background-color: $color-tertiary;
 
+	&__body {
+		width: 100vw;
+		height: 155vh;
+		position: relative;
+		display: grid;
+		grid-template-columns: 20% 80%;
+		overflow: hidden;
+	}
+	
 	&__title > img {
 		margin: 1rem 0;
 	}

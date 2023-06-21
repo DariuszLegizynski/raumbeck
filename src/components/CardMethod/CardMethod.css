@@ -19,7 +19,7 @@
   justify-content: center;
   width: 100%;
   color: hsl(0, 0%, 98%);
-  background-color: hsl(85, 55%, 51%);
+  background-color: hsl(169, 7%, 48%);
   font-size: 1.6rem;
   padding: 0.9rem;
   margin: 0.6rem auto;
@@ -32,14 +32,6 @@
 }
 
 h1, h2, h3, p, span {
-  color: hsl(0, 0%, 10%);
-}
-
-h1, h2, h3 {
-  font-family: "FuturaLT-Light";
-}
-
-p, span {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
 }
@@ -62,6 +54,12 @@ p {
 
 span {
   font-size: 1rem;
+}
+
+.hr-line {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(169, 7%, 48%);
 }
 
 .green {
@@ -102,7 +100,15 @@ textarea:focus-visible {
 
 .card-method {
   min-width: 16rem;
-  padding: 1.5rem 2rem;
-  margin-right: 4rem;
+  padding: 2rem;
   background-color: hsl(170, 17%, 86%);
+}
+.card-method__img {
+  width: 6rem;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.card-method__horizontal-line {
+  margin: 0.8rem 0;
 }/*# sourceMappingURL=CardMethod.css.map */

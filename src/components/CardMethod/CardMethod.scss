@@ -2,8 +2,18 @@
 
 .card-method {
 	min-width: 16rem;
-	padding: 1.5rem 2rem;
-	margin-right: 4rem;
+	padding: 2rem;
 
 	background-color: $color-tertiary;
+
+	&__img {
+		width: 6rem;
+		height: auto;
+		margin: 0 auto;
+		padding-bottom: 1rem;
+	}
+
+	&__horizontal-line {
+		margin: .8rem 0;
+	}
 }

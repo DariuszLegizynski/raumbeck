@@ -6,20 +6,26 @@
 
 	&__body {
 		width: 100vw;
-		height: 155vh;
+		height: 162vh;
 		position: relative;
 		display: grid;
 		grid-template-columns: 20% 80%;
 		overflow: hidden;
+
+		padding-top: 2rem;
+	}
+
+	&__title {
+		padding: 1rem;
 	}
 	
 	&__title > img {
 		margin: 1rem 0;
+
 	}
 
-	&__h1 {
+	&__title > h1 {
 		text-align: left;
-		padding-left: .4rem;
 	}
 
 	&__container {
@@ -35,7 +41,7 @@
 		align-items: start;
 		row-gap: 2rem;
 
-		margin-top: 4rem;
+		margin-top: 5rem;
 	}
 
 	&__item {

@@ -33,7 +33,7 @@ const TherapyMethods = () => {
 	return (
 		<article className="therapy-methods">
 			<section className="therapy-methods__title">
-				<h1>Therapiemethoden</h1>
+				<h1>Therapie</h1>
 				<span>je nach Beschwerdebild</span>
 			</section>
 			<section className="therapy-methods__wrapper">

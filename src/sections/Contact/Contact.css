@@ -56,6 +56,12 @@ span {
   font-size: 1rem;
 }
 
+.hr-line {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(169, 7%, 48%);
+}
+
 .green {
   color: hsl(85, 55%, 51%);
 }
@@ -99,12 +105,6 @@ textarea:focus-visible {
 .contact__text > p {
   margin: 1.8rem 0;
   line-height: 1.6rem;
-}
-.contact__hr-line {
-  width: 100%;
-  height: 4px;
-  padding: 0 1rem;
-  border-top: 4px solid hsl(169, 7%, 48%);
 }
 .contact__list > * {
   margin: 0.8rem 0;

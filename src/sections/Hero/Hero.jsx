@@ -1,16 +1,11 @@
 import hero from "../../assets/images/AboutMe.jpg"
-import { useRef, useEffect } from "react"
-import { motion } from "framer-motion"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useRef, useEffect, useState } from "react"
+import { motion, useScroll } from "framer-motion"
 
 import "./Hero.css"
 
 const Hero = () => {
-	gsap.registerPlugin(ScrollTrigger)
-	const speed = 20
-
-	const parallax = useRef()
+	const [ scrollPosition, setScrollPosition ] = useState(85)
 
 	const letterA1 = useRef()
 	const letterN1 = useRef()
@@ -23,63 +18,20 @@ const Hero = () => {
 
 	const sentence = useRef()
 
+	const { scrollYProgress } = useScroll({
+		target: letterA1
+	})
+
 	useEffect(() => {
-		gsap.context(() => {
-			const t1 = gsap.timeline({
-				scrollTrigger: {
-					trigger: parallax.current,
-					start: "500 450",
-					end: "600 350",
-					scrub: true,
-			},
-			})
-			t1.to(letterA1.current,{
-				y: -1 * speed,
-				opacity: 0,
-				ease: "power1.in",
-			})
-			t1.to(letterN1.current,{
-				y: -1.025 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(letterN2.current,{
-				y: -1.05 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(letterA2.current,{
-				y: -1.075 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(letterM.current,{
-				y: -1.1 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(letterE.current,{
-				y: -1.125 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(letterH.current,{
-				y: -1.15 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(letterR.current,{
-				y: -1.175 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-			t1.to(sentence.current,{
-				y: -1.2 * speed,
-				ease: "power1.in",
-				opacity: 0,
-			})
-		})
-	}, [])
+		setScrollPosition(scrollYProgress.current)
+	}, [scrollYProgress])
+
+	// gsap.registerPlugin(ScrollTrigger)
+	// const speed = 20
+
+	// const parallax = useRef()
+	console.log(scrollPosition)
+
 
 	const container = {
 		hidden: { opacity: 0 },
@@ -93,12 +45,14 @@ const Hero = () => {
 	}
 
 	const item = {
+		initial: { y: '0px'},
 		hidden: { opacity: 0 },
 		show: { opacity: 1 },
+		animate:{y: scrollYProgress}
 	}
 
 	return (
-		<article ref={parallax} className="hero">
+		<article className="hero">
 			<img src={hero} alt="therapist" />
 			<motion.section  className="hero__text" variants={container} initial="hidden" animate="show">
 				<div className="hero__title">

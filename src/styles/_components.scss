@@ -1,23 +1,24 @@
-h1, h2, h3, p, span {
-  font-family: "FuturaLT-Light";
-}
+@import "./variables";
 
-h1 {
-  font-size: 3rem;
-}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-h2 {
-  font-size: 2rem
-}
+  color: $color-white;
+  background-color: $color-grey;
 
-h3 {
-  font-size: 1.6rem
-}
+  font-size: 1.6rem;
+  padding: 0.9rem;
+  margin: 0.6rem auto;
 
-span {
-  font-size: 1.8rem;
-}
+  font-family: "FuturaLT-Heavy";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
 
-p {
-  font-size: 1.2rem;
+  border: none;
+  border-radius: 0;
 }

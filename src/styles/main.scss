@@ -2,6 +2,37 @@
 @import "./components";
 @import "./variables";
 
+h1, h2, h3, p, span {
+  font-family: "FuturaLT-Light";
+  color: $color-black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem
+}
+
+h3 {
+  font-size: 1.6rem
+}
+
+p {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.hr-line {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(169, 7%, 48%);
+}
+
 .green {
   color: $color-primary;
 }
@@ -14,4 +45,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input,
+textarea {
+  border: none;
+  text-decoration: none;
+  background-color: $color-white;
+  font-family: "FuturaLT-Light";
+  font-size: 1rem;
+
+  &::placeholder {
+    color: $color-grey;
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 }

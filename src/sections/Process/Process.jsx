@@ -55,12 +55,13 @@ const Process = () => {
 	}
 
 	return (
-		<>
+		<article className="process">
 			<section className="process__title">
-				<h1 className="process__h1">Ersttreffen</h1>
-				<img src={meeting} alt="therapist" />
+				<h1>Erstgespräch</h1>
+				<div className="hr-line" />
 			</section>
-			<article className="process">
+			<img src={meeting} alt="therapist" />
+			<section className="process__body">
 				<section className="process__container flex-center">
 					<div className="flex-center">
 						<DrawPathSVG />
@@ -94,8 +95,8 @@ const Process = () => {
 						text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
 					/>
 				</section>
-			</article>
-		</>
+			</section>
+		</article>
 	)
 }
 

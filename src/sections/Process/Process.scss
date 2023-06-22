@@ -1,19 +1,31 @@
 @import "../../styles/main.scss";
 
 .process {
-	width: 100vw;
-	height: 155vh;
-	position: relative;
-	display: grid;
-	grid-template-columns: 20% 80%;
-	overflow: hidden;
+	padding: 4rem 0;
+	background-color: $color-tertiary;
 
-	&__title > img {
-		margin: 1rem 0;
+	&__body {
+		width: 100vw;
+		height: 162vh;
+		position: relative;
+		display: grid;
+		grid-template-columns: 20% 80%;
+		overflow: hidden;
+
+		padding-top: 2rem;
 	}
 
-	&__h1 {
-		text-align: center;
+	&__title {
+		padding: 1rem;
+	}
+	
+	&__title > img {
+		margin: 1rem 0;
+
+	}
+
+	&__title > h1 {
+		text-align: left;
 	}
 
 	&__container {
@@ -29,7 +41,7 @@
 		align-items: start;
 		row-gap: 2rem;
 
-		margin-top: 4rem;
+		margin-top: 5rem;
 	}
 
 	&__item {
@@ -37,7 +49,7 @@
 		grid-template-rows: auto 1fr;
 		row-gap: 1rem;
 
-		background-color: $color-tertiary-opacity;
+		background-color: $color-white;
 
 		padding: 0.8rem;
 		margin-right: 0.4rem;

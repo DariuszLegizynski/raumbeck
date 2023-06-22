@@ -5,8 +5,35 @@
   font-display: auto;
   src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
 }
+@font-face {
+  font-family: "FuturaLT";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("FuturaLT"), url("/fonts/PublicSans/FuturaLT.ttf") format("opentype");
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(169, 7%, 48%);
+  font-size: 1.6rem;
+  padding: 0.9rem;
+  margin: 0.6rem auto;
+  font-family: "FuturaLT-Heavy";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 0;
+}
+
 h1, h2, h3, p, span {
   font-family: "FuturaLT-Light";
+  color: hsl(0, 0%, 10%);
 }
 
 h1 {
@@ -21,12 +48,18 @@ h3 {
   font-size: 1.6rem;
 }
 
-span {
-  font-size: 1.8rem;
+p {
+  font-size: 1rem;
 }
 
-p {
-  font-size: 1.2rem;
+span {
+  font-size: 1rem;
+}
+
+.hr-line {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(169, 7%, 48%);
 }
 
 .green {
@@ -43,13 +76,39 @@ p {
   align-items: center;
 }
 
+input,
+textarea {
+  border: none;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "FuturaLT-Light";
+  font-size: 1rem;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: hsl(169, 7%, 48%);
+  opacity: 1;
+}
+input::placeholder,
+textarea::placeholder {
+  color: hsl(169, 7%, 48%);
+  opacity: 1;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
 .card-method {
   min-width: 16rem;
-  padding: 1.5rem 2rem;
-  margin-right: 4rem;
-  border-width: 4px;
-  border-style: solid;
-  -o-border-image: linear-gradient(to bottom right, hsl(85, 55%, 51%), transparent 50%) 1 100%;
-     border-image: linear-gradient(to bottom right, hsl(85, 55%, 51%), transparent 50%) 1 100%;
-  border-image-slice: 1;
+  padding: 2rem;
+  background-color: hsl(170, 17%, 86%);
+}
+.card-method__img {
+  width: 6rem;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.card-method__horizontal-line {
+  margin: 0.8rem 0;
 }/*# sourceMappingURL=CardMethod.css.map */

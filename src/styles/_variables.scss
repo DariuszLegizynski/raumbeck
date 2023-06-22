@@ -1,13 +1,15 @@
 $color-primary: hsl(85, 55%, 51%);
 $color-secondary: hsl(220, 17%, 59%);
-$color-tertiary: hsl(184, 100%, 87%);
+$color-tertiary: hsl(170, 17%, 86%);
 $color-quaternary: hsl(190, 100%, 50%);
 $color-highlight: hsl(33, 100%, 79%);
 
 $color-white: hsl(0, 0%, 98%);
 $color-white-2: hsl(120, 100%, 99%);
-$color-black: #1f1f1f;
+$color-black: hsl(0, 0%, 10%);
+$color-grey: hsl(169, 7%, 48%);
 
 $color-white-opacity: hsla(0, 0%, 98%, 0.4);
 $color-white-opacity-dark: hsla(0, 0%, 98%, 0.8);
-$color-tertiary-opacity: hsla(184, 100%, 87%, 0.6);
+$color-primary-opacity: hsla(85, 55%, 51%, 0.6);
+$color-secondary-opacity: hsla(220, 17%, 59%, 0.2);

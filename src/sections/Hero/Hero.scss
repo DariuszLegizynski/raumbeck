@@ -2,7 +2,6 @@
 
 .hero {
 	width: 100%;
-	min-height: 160vh;
 	position: relative;
 
 	&__text {
@@ -26,7 +25,7 @@
 	}
 
 	&__greeting {
-		padding: 10rem 1rem 4rem 1rem;
+		padding: 8rem 1rem 4rem 1rem;
 
 		& > p {
 			margin: 1rem 0;

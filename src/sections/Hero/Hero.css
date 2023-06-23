@@ -100,7 +100,6 @@ textarea:focus-visible {
 
 .hero {
   width: 100%;
-  min-height: 160vh;
   position: relative;
 }
 .hero__text {
@@ -119,7 +118,7 @@ textarea:focus-visible {
   height: 100%;
 }
 .hero__greeting {
-  padding: 10rem 1rem 4rem 1rem;
+  padding: 8rem 1rem 4rem 1rem;
 }
 .hero__greeting > p {
   margin: 1rem 0;

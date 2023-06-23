@@ -112,9 +112,7 @@ textarea:focus-visible {
 }
 .hero__title {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  height: 72.5%;
+  padding-top: 32rem;
 }
 .hero__greeting {
   padding: 10rem 1rem 4rem 1rem;

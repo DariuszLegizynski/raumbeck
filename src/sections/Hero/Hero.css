@@ -99,13 +99,12 @@ textarea:focus-visible {
 }
 
 .hero {
-  width: 100%;
   position: relative;
 }
 .hero__text {
   position: absolute;
   top: 0;
-  height: 92svh;
+  height: 95svh;
   display: flex;
   flex-direction: column;
   padding-left: 0.4rem;
@@ -118,7 +117,7 @@ textarea:focus-visible {
   height: 100%;
 }
 .hero__greeting {
-  padding: 8rem 1rem 4rem 1rem;
+  padding: 10rem 1rem 4rem 1rem;
 }
 .hero__greeting > p {
   margin: 1rem 0;

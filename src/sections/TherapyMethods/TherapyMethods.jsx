@@ -9,33 +9,6 @@ import stressSituation from "../../assets/illustrations/a-clerk-chased-by-a-phon
 import happyWomen from "../../assets/illustrations/happy-woman-svgrepo-com.svg"
 
 const TherapyMethods = () => {
-	// useEffect(() => {
-	// 	const pin = gsap.fromTo(
-	// 		sectionRef.current,
-	// 		{
-	// 			translateX: 0,
-	// 		},
-	// 		{
-	// 			translateX: "-300vw",
-	// 			ease: "none",
-	// 			duration: 1,
-	// 			scrollTrigger: {
-	// 				trigger: triggerRef.current,
-	// 				start: "top center",
-	// 				end: "center top",
-	// 				scrub: 0.6,
-	// 				// pin: true,
-	// 				markers: true,
-	// 			},
-	// 		}
-	// 	)
-	// 	return () => {
-	// 		{
-	// 			/* A return function for killing the animation on component unmount */
-	// 		}
-	// 		pin.kill()
-	// 	}
-	// }, [])
 
 	return (
 		<article className="therapy-methods">

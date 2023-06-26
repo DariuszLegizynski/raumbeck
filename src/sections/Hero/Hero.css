@@ -107,7 +107,7 @@ textarea:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 38rem;
+  height: 67.5%;
   padding-left: 0.4rem;
   overflow: hidden;
 }

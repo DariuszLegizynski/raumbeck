@@ -31,15 +31,15 @@ const Navbar = () => {
 			<Link to ="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Home</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to ="/">Home</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }} >Kontakt</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#contact">Kontakt</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }} >Leistungsumfang</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}>Leistungsumfang</motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }} >Preise</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}>Preise</motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }} >Über mich</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}>Über mich</motion.ul>
 			</li>
 			<div className="navbar__burger" onClick={() => setOpenBurger(!openBurger)}>
 				<Burger isOpen={openBurger ? "--open" : ""} />

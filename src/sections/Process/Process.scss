@@ -6,7 +6,7 @@
 
 	&__body {
 		width: 100vw;
-		height: 1034px;
+		height: 1220px;
 		position: relative;
 		display: grid;
 		grid-template-columns: 20% 80%;
@@ -39,9 +39,9 @@
 		display: grid;
 		grid-auto-rows: min-content;
 		align-items: start;
-		row-gap: 2rem;
+		row-gap: 4rem;
 
-		margin-top: 80px;
+		margin-top: 10rem;
 	}
 
 	&__item {

@@ -1,18 +1,23 @@
 @import "../../styles/main.scss";
 
 .hero {
-	position: relative;
+
+	&__picture {
+		position: relative;
+		height: min-content;
+		padding-bottom: 6rem;
+	}
 
 	&__text {
 		position: absolute;
 
-		top: 0;
+		bottom: 0;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 
-		height: 67.5%;
+		height: 600px;
 
 		padding-left: .4rem;
 
@@ -24,7 +29,7 @@
 	}
 
 	&__greeting {
-		padding: 10rem 1rem 4rem 1rem;
+		padding: 2rem 1rem 4rem 1rem;
 
 		& > p {
 			margin: 1rem 0;

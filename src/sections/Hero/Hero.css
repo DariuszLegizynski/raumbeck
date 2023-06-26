@@ -104,15 +104,16 @@ textarea:focus-visible {
 .hero__text {
   position: absolute;
   top: 0;
-  height: 100svh;
+  left: 0.4rem;
   display: flex;
   flex-direction: column;
+  height: 100svh;
+  padding-top: 32rem;
   padding-left: 0.4rem;
   overflow: hidden;
 }
 .hero__title {
   display: flex;
-  padding-top: 32rem;
 }
 .hero__greeting {
   padding: 10rem 1rem 4rem 1rem;

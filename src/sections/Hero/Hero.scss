@@ -5,12 +5,16 @@
 
 	&__text {
 		position: absolute;
+
 		top: 0;
-		height: 100svh;
+    left: .4rem;
 
 		display: flex;
 		flex-direction: column;
 
+		height: 100svh;
+
+		padding-top: 32rem;
 		padding-left: .4rem;
 
 		overflow: hidden;
@@ -18,7 +22,6 @@
 
 	&__title {
 		display: flex;
-		padding-top: 32rem;
 	}
 
 	&__greeting {

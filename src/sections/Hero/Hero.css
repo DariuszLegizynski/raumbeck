@@ -122,4 +122,7 @@ textarea:focus-visible {
 }
 .hero__greeting > p {
   margin: 1rem 0;
+}
+.hero__greeting > img {
+  padding: 2rem 0;
 }/*# sourceMappingURL=Hero.css.map */

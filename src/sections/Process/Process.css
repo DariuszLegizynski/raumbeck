@@ -104,7 +104,7 @@ textarea:focus-visible {
 }
 .process__body {
   width: 100vw;
-  height: 162vh;
+  height: 1220px;
   position: relative;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -130,8 +130,8 @@ textarea:focus-visible {
   display: grid;
   grid-auto-rows: min-content;
   align-items: start;
-  row-gap: 2rem;
-  margin-top: 5rem;
+  row-gap: 4rem;
+  margin-top: 10rem;
 }
 .process__item {
   display: grid;

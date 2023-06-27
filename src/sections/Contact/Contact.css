@@ -31,7 +31,7 @@
   border-radius: 0;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, p, span, a {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
 }
@@ -54,6 +54,15 @@ p {
 
 span {
   font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover, a:active {
+  text-decoration: none;
 }
 
 .hr-line {
@@ -106,8 +115,13 @@ textarea:focus-visible {
   margin: 1.8rem 0;
   line-height: 1.6rem;
 }
-.contact__list > * {
+.contact__list__item {
+  display: flex;
+  align-items: center;
   margin: 0.8rem 0;
+}
+.contact__list__item > a, .contact__list__item > p {
+  padding-left: 1rem;
 }
 .contact__form {
   padding-top: 1rem;

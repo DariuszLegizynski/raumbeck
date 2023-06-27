@@ -28,10 +28,10 @@ const Navbar = () => {
     initial={{ y: `-100%` }}
     animate={{ y: 0 }}
     transition={{ duration: 2}} ref={navbarHeight}>
-			<Link to ="/"><img src={logo} /></Link>
+			<Link to="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to ="/">Home</Link></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/">Home</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}><Link to="/#contact">Kontakt</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}

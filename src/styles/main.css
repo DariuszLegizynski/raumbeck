@@ -31,7 +31,7 @@
   border-radius: 0;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, p, span, a {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
 }
@@ -54,6 +54,15 @@ p {
 
 span {
   font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover, a:active {
+  text-decoration: none;
 }
 
 .hr-line {

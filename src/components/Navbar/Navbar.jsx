@@ -3,7 +3,7 @@ import logo from "../../assets/logo/Logo-remove-bg-small.png"
 
 import "./Navbar.css"
 import Burger from "../Burger/Burger"
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import { motion } from "framer-motion"
 
 const Navbar = () => {

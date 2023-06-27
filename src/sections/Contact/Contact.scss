@@ -1,36 +1,45 @@
 @import "../../styles/main.scss";
 
 .contact {
-  padding: 2rem 1rem;
-  background-color: $color-tertiary;
+	padding: 2rem 1rem;
+	background-color: $color-tertiary;
 
-  &__text > p {
-    margin: 1.8rem 0;
-    line-height: 1.6rem;
-  }
+	&__text > p {
+		margin: 1.8rem 0;
+		line-height: 1.6rem;
+	}
 
-  &__list > * {
-    margin: 0.8rem 0;
-  }
+	&__list {
+		&__item {
+			display: flex;
+			align-items: center;
 
-  &__form {
-    padding-top: 1rem;
+      margin: 0.8rem 0;
 
-    & input,
-    & textarea {
-      padding: 0.8rem;
-      width: 100%;
-    }
-    & textarea {
-      min-height: 8rem;
-    }
+      & > a, & > p {
+        padding-left: 1rem;
+      }
+		}
+	}
 
-    &__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0.4rem 0;
-      max-width: 100%;
-    }
-  }
+	&__form {
+		padding-top: 1rem;
+
+		& input,
+		& textarea {
+			padding: 0.8rem;
+			width: 100%;
+		}
+		& textarea {
+			min-height: 8rem;
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0.4rem 0;
+			max-width: 100%;
+		}
+	}
 }

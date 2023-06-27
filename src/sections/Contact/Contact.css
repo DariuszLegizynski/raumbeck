@@ -123,6 +123,9 @@ textarea:focus-visible {
 .contact__list__item > a, .contact__list__item > p {
   padding-left: 1rem;
 }
+.contact__list__item > b {
+  width: 1.8rem;
+}
 .contact__form {
   padding-top: 1rem;
 }

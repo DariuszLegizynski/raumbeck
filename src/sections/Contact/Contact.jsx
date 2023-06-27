@@ -17,10 +17,11 @@ const Contact = () => {
       </section>
 			<section>
 				<ul className="contact__list">
-					<li className="contact__list__item"><IconItem type="phone" width="1.8rem" height="1.8rem" fillColor="none" /><a>0681 / 104 94 841</a></li>
-					<li className="contact__list__item"><IconItem type="email" width="1.8rem" height="1.8rem" fillColor="none" /><a>info@beckenraum.at</a></li>
+					<li className="contact__list__item"><IconItem type="phone" width="1.8rem" height="1.8rem" fillColor="none" /><a href="tel:068110494841">0681 / 104 94 841</a></li>
+					<li className="contact__list__item"><IconItem type="email" width="1.8rem" height="1.8rem" fillColor="none" /><a href="mailto:info@beckenraum.at">info@beckenraum.at</a></li>
 					<li className="contact__list__item"><IconItem type="home" width="1.8rem" height="1.8rem" fillColor="none" /><p>Ferdinand-Porsche-Ring 7 / Top 1</p></li>
 					<li className="contact__list__item"><b>&nbsp;</b><p>A-2700 Wiener Neustadt</p></li>
+					<li className="contact__list__item"><IconItem type="location" width="1.8rem" height="1.8rem" fillColor="none" /><a href="https://goo.gl/maps/L47fTuhFUsojYWn19">Auf Google Maps Öffnen</a></li>
 				</ul>
         <form className="contact__form">
         <div className="contact__form__item">

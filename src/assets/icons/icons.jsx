@@ -10,6 +10,9 @@ const IconItem = ({ type, fillColor, strokeColor, width, height, classType, path
 			{type === "home" ? (
 				<svg width={width} height={height} fill={fillColor} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><polygon points="8 24 8 56 56 56 56 24 32 8 8 24"/><polyline points="40 56 40 36 24 36 24 56"/></svg>
 			) : null}
+			{type === "location" ? (
+				<svg width={width} height={height} fill={fillColor} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><path d="M12 27.2C12 46.4 32 56 32 56s20-9.6 20-28.8C52 16.6 43.05 8 32 8s-20 8.6-20 19.2z"/><circle cx="32" cy="26.88" r="6.88"/></svg>
+			) : null}
 			{type === "vector" ? (
 				<svg width={width} height={height} viewBox="0 0 52 365" fill={fillColor} className={classType} xmlns="http://www.w3.org/2000/svg">
 					<path

@@ -1,4 +1,3 @@
-import IconItem from '../../assets/icons/icons'
 import "./CardMethod.css"
 
 const CardMethod = ({text1, text2, text3, text4, text5, imgSrc, imgAlt, hr}) => {

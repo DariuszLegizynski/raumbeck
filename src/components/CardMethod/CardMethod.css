@@ -31,7 +31,7 @@
   border-radius: 0;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, p, span, a {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
 }
@@ -108,7 +108,7 @@ textarea:focus-visible {
 }
 
 .card-method {
-  min-width: 16rem;
+  min-width: 14rem;
   padding: 2rem;
   background-color: hsl(170, 17%, 86%);
 }

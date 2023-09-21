@@ -4,12 +4,14 @@ import Process from "../../sections/Process/Process"
 import "./Home.css"
 import Contact from '../../sections/Contact/Contact'
 import TherapyMethods from '../../sections/TherapyMethods/TherapyMethods'
+import Reasons from '../../sections/Reasons/Reasons'
 
 const Home = () => {
   return (
     <section className='home'>
       <Hero />
       <Navbar />
+      <Reasons />
       <Process />
       <TherapyMethods />
       <Contact />

@@ -6,38 +6,42 @@ const Reasons = () => {
   const cardList = [
     {
       id:1,
-      category: "Urinary Incontinence",
+      category: "Harninkontinenz",
       reasons: [
           "Harn- oder Stuhlverlust",
-          "Blasen-, Gebärmutter- oder Darmsenkung",
-          "Häufiges Harnlassen mit oder ohne Harnverlust",
-          "Schwierigkeiten beim Harnlassen oder Stuhlgang"
+          "Blasen-, Gebärmutter-, Darmsenkung",
+          "Häufiges Harnlassen, ",
+          "Schwierigkeiten: Harnlassen,",
+          "Stuhlgang, Harnverlust"
       ]
     },
     {
       id:2,
-      category: "Surgical Procedures and Postoperative Care",
+      category: "Chirurgische Eingriffe und postoperative Versorgung",
       reasons: [
-          "Gebärmutterentfernung sowie Senkungsoperationen",
-          "Vor- und/oder Nachbetreuung bei Prostataentfernung bzw. Anlage einer Neoblase",
-          "Vor- und/oder Nachbetreuung bei Darmoperationen bzw. Stoma Rück OP",
+          "Gebärmutterentfernung",
+          "Senkungsoperationen",
+          "Prostataentfernung",
+          "Neoblaseanlage",
+          "Darmoperation",
+          "Stoma Rück OP",
       ]
     },
     {
       id:3,
-      category: "Pregnancy and Postpartum",
+      category: "Schwangerschaft und Wochenbett",
       reasons: [
-        "Schwangerschaftsbeschwerden sowie Rückbildung nach der Schwangerschaft",
-        "Vor- und/oder Nachbetreuung bei Prostataentfernung bzw. Anlage einer Neoblase",
-        "Vor- und/oder Nachbetreuung bei Darmoperationen bzw. Stoma Rück OP",
+        "Schwangerschaftsbeschwerden",
+        "Rückbildung nach der Schwangerschaft",
         ]
     },
     {
       id:4,
-      category: "Sexual Health",
+      category: "Sexuelle Gesundheit",
       reasons: [
-        "Schmerzen beim Geschlechtsverkehr ",
-        "Vulvodynie, chronische Schmerzen im Bereich der äußeren Geschlechtsorgane",
+        "Schmerzen beim Geschlechtsverkehr",
+        "Vulvodynie",
+        "Chronische Schmerzen: Geschlechtsorgane",
       ]
     }
   ]
@@ -51,11 +55,11 @@ const Reasons = () => {
 	return (
 		<article className="reasons">
       <section className="reasons__title">
-        <h1>Behandlungsbereiche</h1>
+        <h2>Behandlungsbereiche</h2>
         <div className="hr-line" />
         <p>Sie sind bei mir richtig, wenn Sie folgende Beschwerden haben, da ich auf deren Behandlung spezialisiert bin:</p>
       </section>
-			<section className="reasons__card">
+			<section className="reasons__cards">
 				{renderedListOfReasonCards}
 			</section>
 		</article>

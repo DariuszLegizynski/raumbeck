@@ -4,7 +4,7 @@ const ReasonCard = ({title, reasonList}) => {
 
   const renderedReasons = reasonList.map((reason, id) => {
     return (
-      <p key={`${id}${reason}`}>{reason}</p>
+      <p className="reason-card__reason" key={`${id}${reason}`}>{reason}</p>
     )
   })
 

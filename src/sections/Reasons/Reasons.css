@@ -112,6 +112,7 @@ textarea:focus-visible {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  background-color: hsl(170, 17%, 86%);
 }
 .reasons__title > * {
   color: hsl(0, 0%, 10%);

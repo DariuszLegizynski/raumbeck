@@ -109,17 +109,20 @@ textarea:focus-visible {
 
 .reason-card {
   padding: 1rem 1.6rem;
-  margin: 1rem 0;
-  background-color: hsla(170, 17%, 86%, 0.6);
-  border-radius: 3rem;
+  margin: 2rem 0;
+  background-color: hsla(0, 0%, 98%, 0.4);
+  min-width: 10rem;
 }
 .reason-card > h3 {
   font-size: 1.3rem;
   font-family: "FuturaLT-Light";
-  color: hsl(85, 55%, 51%);
-  text-align: center;
+  color: hsl(0, 0%, 10%);
+  text-align: left;
   margin-bottom: 0.8rem;
 }
 .reason-card__reason {
   padding-bottom: 0.2rem;
+  color: hsl(0, 0%, 10%);
+  text-align: left;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=ReasonCard.css.map */

@@ -2,20 +2,23 @@
 
 .reason-card {
   padding: 1rem 1.6rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 
-  background-color: $color-tertiary-opacity;
-  border-radius: 3rem;
+  background-color: $color-white-opacity;
+  min-width: 10rem;
 
   & > h3 {
     font-size: 1.3rem;
     font-family: "FuturaLT-Light";
-    color: $color-primary;
-    text-align: center;
+    color: $color-black;
+    text-align: left;
     margin-bottom: 0.8rem;
   }
 
   &__reason {
     padding-bottom: 0.2rem;
+    color: $color-black;
+    text-align: left;
+    font-size: .9rem;
   }
 }

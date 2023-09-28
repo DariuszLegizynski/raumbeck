@@ -17,7 +17,7 @@ const Reasons = () => {
     },
     {
       id:2,
-      category: "Chirurgische Eingriffe und postoperative Versorgung",
+      category: "Postoperative Versorgung",
       reasons: [
           "Gebärmutterentfernung",
           "Senkungsoperationen",
@@ -59,7 +59,7 @@ const Reasons = () => {
         <div className="hr-line" />
         <p>Sie sind bei mir richtig, wenn Sie folgende Beschwerden haben, da ich auf deren Behandlung spezialisiert bin:</p>
       </section>
-			<section className="reasons__cards">
+			<section>
 				{renderedListOfReasonCards}
 			</section>
 		</article>

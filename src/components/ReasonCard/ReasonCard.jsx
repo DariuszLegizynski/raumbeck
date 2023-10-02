@@ -1,4 +1,5 @@
-import "./ReasonCard.css"
+import "./ReasonCard.css";
+import DrawHumanWalkIcon from "../../components/animations/DrawHumanWalkIcon.jsx";
 
 const ReasonCard = ({title, reasonList, image}) => {
   const renderedReasons = reasonList.map((reason, id) => {
@@ -9,14 +10,15 @@ const ReasonCard = ({title, reasonList, image}) => {
 
 	return (
 		<article className="reason-card">
-			<section>
-				<img className="reason-card__img" src={image} alt={`health issue`} />
+			<section className="reason-card__img">
+				<DrawHumanWalkIcon />
 			</section>
 			<h3>{title}</h3>
 			<section className="reason-card__reasons">
 				{renderedReasons}
 			</section>
 		</article>
+
 	)
 }
 

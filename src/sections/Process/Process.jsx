@@ -2,7 +2,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef, useEffect } from "react"
 
-import DrawPathSVG from "../../components/drawSVG/DrawPathSVG"
+import DrawPathSVG from "../../components/animations/drawPath/DrawPathSVG"
 
 import meeting from "../../assets/images/Homepage3_2.jpg"
 

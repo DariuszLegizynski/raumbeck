@@ -11,7 +11,7 @@ const DrawPathSVG = () => {
 	gsap.registerPlugin(ScrollTrigger)
 
 	useEffect(() => {
-		let element = pathRef.current
+		let pathElement = pathRef.current
 
 		let svg = document.querySelector(".svg-path")
     const length = svg.getTotalLength()
@@ -19,7 +19,7 @@ const DrawPathSVG = () => {
 
 		let t1 = gsap.timeline({
       scrollTrigger: {
-				trigger: element,
+				trigger: pathElement,
         start:"top center",
         end:"bottom center",
         onUpdate: (self) => {

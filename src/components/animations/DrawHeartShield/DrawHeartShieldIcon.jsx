@@ -17,8 +17,6 @@ const DrawHeartShieldIcon = () => {
     let heartLength = document.querySelector(".heart")
     let heartPathLength = heartLength.getTotalLength()
 
-    console.log({heartPathLength})
-
     gsap.fromTo(
       heartPath,
       { strokeDashoffset: heartPathLength },
@@ -32,8 +30,6 @@ const DrawHeartShieldIcon = () => {
 
     let shieldLength = document.querySelector(".shield")
     let shieldPathLength = shieldLength.getTotalLength()
-
-    console.log({shieldPathLength})
 
     gsap.fromTo(
       shieldPath,

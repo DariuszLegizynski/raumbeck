@@ -1,7 +1,8 @@
 import "./ReasonCard.css";
-import DrawHumanWalkIcon from "../../components/animations/DrawHumanWalk/DrawHumanWalkIcon.jsx"
-import DrawPflasterIcon from "../../components/animations/DrawPflaster/DrawPflasterIcon.jsx"
-import DrawHeartShieldIcon from '../../components/animations/DrawHeartShield/DrawHeartShield';
+import DrawHumanWalkIcon from "../../components/animations/DrawHumanWalk/DrawHumanWalkIcon"
+import DrawPflasterIcon from "../../components/animations/DrawPflaster/DrawPflasterIcon"
+import DrawHeartShieldIcon from '../../components/animations/DrawHeartShield/DrawHeartShieldIcon'
+import DrawHeartFolderIcon from '../../components/animations/DrawHeartFolder/DrawHeartFolderIcon'
 
 const ReasonCard = ({title, reasonList, image}) => {
   const renderedReasons = reasonList.map((reason, id) => {
@@ -13,7 +14,8 @@ const ReasonCard = ({title, reasonList, image}) => {
 	return (
 		<article className="reason-card">
 			<section className="reason-card__img">
-				<DrawHeartShieldIcon />
+				<DrawHeartFolderIcon />
+				{/* <DrawHeartShieldIcon /> */}
 				{/* <DrawPflasterIcon /> */}
 				{/* <DrawHumanWalkIcon /> */}
 			</section>

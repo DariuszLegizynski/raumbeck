@@ -1,17 +1,12 @@
 import ReasonCard from '../../components/ReasonCard/ReasonCard'
 import "./Reasons.css"
 
-import plaster from "../../assets/icons/health/goodrx-svgrepo-com.svg"
-import walkHuman from "../../assets/icons/health/health-sync-svgrepo-com.svg"
-import crossShield from "../../assets/icons/health/librehealth-svgrepo-com.svg"
-import heartFolder from "../../assets/icons/health/mychart-svgrepo-com.svg"
-
 const Reasons = () => {
 	
   const cardList = [
     {
       id:1,
-      image: walkHuman,
+      image: 'walkHuman',
       category: "Harninkontinenz",
       reasons: [
           "Harn- oder Stuhlverlust",
@@ -23,7 +18,7 @@ const Reasons = () => {
     },
     {
       id:2,
-      image: plaster,
+      image: 'plaster',
       category: "Postoperative Versorgung",
       reasons: [
           "Gebärmutterentfernung",
@@ -36,7 +31,7 @@ const Reasons = () => {
     },
     {
       id:3,
-      image: heartFolder,
+      image: 'heartFolder',
       category: "Schwangerschaft und Wochenbett",
       reasons: [
         "Schwangerschaftsbeschwerden",
@@ -45,7 +40,7 @@ const Reasons = () => {
     },
     {
       id:4,
-      image: crossShield,
+      image: 'crossShield',
       category: "Sexuelle Gesundheit",
       reasons: [
         "Schmerzen beim Geschlechtsverkehr",

@@ -33,8 +33,6 @@ const DrawHeartFolderIcon = () => {
     let folderLength = document.querySelector(".folder")
     let folderPathLength = folderLength.getTotalLength()
 
-    console.log({folderPathLength})
-
     gsap.fromTo(
       folderPath,
       { strokeDashoffset: folderPathLength },
@@ -72,7 +70,7 @@ const DrawHeartFolderIcon = () => {
           ref={upperPathRef}
           className="upper"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeDasharray='92.21954345703125px'
           strokeDashoffset='92.21954345703125px'
           d="M41.68,13.015H24.77c-2-.1-5.93-4.23-8.19-4.23H6.68A2.18,2.18,0,0,0,4.5,10.9644c0,.0169,0,.0337.0006.0506h0v7.29h39v-3.42a1.83,1.83,0,0,0-1.79-1.87Z"
@@ -81,7 +79,7 @@ const DrawHeartFolderIcon = () => {
           ref={folderPathRef}
           className="folder"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeDasharray='117.96983337402344px'
           strokeDashoffset='117.96983337402344px'
           d="M43.5,18.295H4.5v18.72a2.18,2.18,0,0,0,2.16,2.2l.01,0H41.32a2.18,2.18,0,0,0,2.18-2.18l0-.02h0Z"
@@ -90,7 +88,7 @@ const DrawHeartFolderIcon = () => {
           ref={heartPathRef}
           className="heart"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeDasharray='36.75298309326172px'
           strokeDashoffset='36.75298309326172px'
           d="M21.2152,23.3A3.5695,3.5695,0,0,0,18.94,29.3855L24,34.4344l5.06-5.0489A3.574,3.574,0,0,0,24,24.3367,3.5823,3.5823,0,0,0,21.2152,23.3Z"

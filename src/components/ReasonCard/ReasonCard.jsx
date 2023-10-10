@@ -14,10 +14,10 @@ const ReasonCard = ({title, reasonList, image}) => {
 	return (
 		<article className="reason-card">
 			<section className="reason-card__img">
-				<DrawHeartFolderIcon />
-				{/* <DrawHeartShieldIcon /> */}
-				{/* <DrawPflasterIcon /> */}
-				{/* <DrawHumanWalkIcon /> */}
+				{image === 'walkHuman' && <DrawHumanWalkIcon />}
+				{image === 'plaster' && <DrawPflasterIcon />}
+				{image === 'crossShield' && <DrawHeartShieldIcon />}
+				{image === 'heartFolder' && <DrawHeartFolderIcon />}
 			</section>
 			<h3>{title}</h3>
 			<section className="reason-card__reasons">

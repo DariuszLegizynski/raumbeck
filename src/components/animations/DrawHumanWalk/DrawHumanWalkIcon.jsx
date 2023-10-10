@@ -85,7 +85,7 @@ const DrawHumanWalkIcon = () => {
           ref={circlePathRef}
           className="circle-path"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeDasharray='109.83px'
@@ -96,18 +96,18 @@ const DrawHumanWalkIcon = () => {
           ref={arrowPathRef}
           className="arrow-path"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeLinecap='round'
           strokeLinejoin='round'
-          strokeDasharray='9.5px'
-          strokeDashoffset='9.5px'
+          strokeDasharray='9.502635955810547px'
+          strokeDashoffset='9.502635955810547px'
           d="M31.8164,38.6064,29.8255,42.97,34.0715,45"
         />
         <circle
           ref={headPathRef}
           className="head-circle"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeLinecap='round'
           strokeLinejoin='round'
           cx="25.3111"
@@ -117,7 +117,7 @@ const DrawHumanWalkIcon = () => {
           ref={humanPathRef}
           className="human-path"
           fill="none"
-          stroke='#000000'
+          stroke='#8ec73d'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeDasharray='97.85px'

@@ -69,7 +69,7 @@ const DrawPflasterIcon = () => {
           ref={outerPathRef}
           className="outer-line"
           fill="none"
-          stroke='#8ec73d'
+          stroke='#8591a8'
           strokeDasharray='129.12484741210938px'
           strokeDashoffset='129.12484741210938px'
           d="M37,18.5H29.5V11a5.5,5.5,0,0,0-11,0v7.5H11a5.5,5.5,0,0,0,0,11h7.5V37a5.5,5.5,0,0,0,11,0V29.5H37a5.5,5.5,0,0,0,0-11Z"
@@ -78,7 +78,7 @@ const DrawPflasterIcon = () => {
           ref={innerPath1Ref}
           className="inner-line-1"
           fill="none"
-          stroke='#8ec73d'
+          stroke='#8591a8'
           strokeDasharray='11px'
           strokeDashoffset='11px'
           x1="29.4997"
@@ -90,7 +90,7 @@ const DrawPflasterIcon = () => {
           ref={innerPath2Ref}
           className="inner-line-2"
           fill="none"
-          stroke='#8ec73d'
+          stroke='#8591a8'
           strokeDasharray='11px'
           strokeDashoffset='11px'
           x1="18.4997"

@@ -107,31 +107,13 @@ textarea:focus-visible {
   outline: none;
 }
 
-.hero__picture {
-  position: relative;
-  height: -moz-min-content;
-  height: min-content;
-  padding-bottom: 6rem;
-}
-.hero__text {
-  position: absolute;
-  bottom: 0;
+.reasons {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 600px;
-  padding-left: 1rem;
-  overflow: hidden;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(170, 17%, 86%);
 }
-.hero__title {
-  display: flex;
-}
-.hero__greeting {
-  padding: 2rem 1rem 4rem 1rem;
-}
-.hero__greeting > p {
-  margin: 1rem 0;
-}
-.hero__greeting > img {
-  padding: 2rem 0;
-}/*# sourceMappingURL=Hero.css.map */
+.reasons__title > * {
+  color: hsl(0, 0%, 10%);
+}/*# sourceMappingURL=Reasons.css.map */

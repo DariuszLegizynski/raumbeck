@@ -107,31 +107,27 @@ textarea:focus-visible {
   outline: none;
 }
 
-.hero__picture {
-  position: relative;
-  height: -moz-min-content;
-  height: min-content;
-  padding-bottom: 6rem;
+.reason-card {
+  padding: 1rem 1.6rem;
+  margin: 2rem 0;
+  background-color: hsla(0, 0%, 98%, 0.4);
+  min-width: 10rem;
 }
-.hero__text {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 600px;
-  padding-left: 1rem;
-  overflow: hidden;
+.reason-card > h3 {
+  font-size: 1.3rem;
+  font-family: "FuturaLT-Light";
+  color: hsl(85, 55%, 51%);
+  text-align: left;
+  margin-bottom: 0.8rem;
 }
-.hero__title {
-  display: flex;
+.reason-card__reason {
+  padding-bottom: 0.2rem;
+  color: hsl(0, 0%, 10%);
+  text-align: left;
+  font-size: 0.9rem;
 }
-.hero__greeting {
-  padding: 2rem 1rem 4rem 1rem;
-}
-.hero__greeting > p {
-  margin: 1rem 0;
-}
-.hero__greeting > img {
-  padding: 2rem 0;
-}/*# sourceMappingURL=Hero.css.map */
+.reason-card__img {
+  width: 5rem;
+  height: auto;
+  margin: 2rem auto;
+}/*# sourceMappingURL=ReasonCard.css.map */

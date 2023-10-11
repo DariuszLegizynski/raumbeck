@@ -120,7 +120,7 @@ textarea:focus-visible {
   flex-direction: column;
   justify-content: flex-end;
   height: 600px;
-  padding-left: 0.4rem;
+  padding-left: 1rem;
   overflow: hidden;
 }
 .hero__title {

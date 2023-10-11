@@ -78,7 +78,7 @@ const DrawPflasterIcon = () => {
           ref={innerPath1Ref}
           className="inner-line-1"
           fill="none"
-          stroke='#8591a8'
+          stroke='#8ec73d'
           strokeDasharray='11px'
           strokeDashoffset='11px'
           x1="29.4997"
@@ -90,7 +90,7 @@ const DrawPflasterIcon = () => {
           ref={innerPath2Ref}
           className="inner-line-2"
           fill="none"
-          stroke='#8591a8'
+          stroke='#8ec73d'
           strokeDasharray='11px'
           strokeDashoffset='11px'
           x1="18.4997"

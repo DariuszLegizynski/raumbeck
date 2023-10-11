@@ -2,29 +2,29 @@ import { useRef, useEffect } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-const DrawHeartShieldIcon = () => {
-  const heartShieldIconRef = useRef(null)
-	const heartPathRef = useRef(null)
+const DrawcrossShieldIcon = () => {
+  const crossShieldIconRef = useRef(null)
+	const crossPathRef = useRef(null)
   const shieldPathRef = useRef(null)
 
 	gsap.registerPlugin(ScrollTrigger)
 
 	useEffect(() => {
-    const heartShieldIcon = heartShieldIconRef.current
-		const heartPath = heartPathRef.current
+    const crossShieldIcon = crossShieldIconRef.current
+		const crossPath = crossPathRef.current
     const shieldPath = shieldPathRef.current
 
-    let heartLength = document.querySelector(".heart")
-    let heartPathLength = heartLength.getTotalLength()
+    let crossLength = document.querySelector(".cross")
+    let crossPathLength = crossLength.getTotalLength()
 
     gsap.fromTo(
-      heartPath,
-      { strokeDashoffset: heartPathLength },
+      crossPath,
+      { strokeDashoffset: crossPathLength },
       {
         strokeDashoffset: 0,
         duration: 3,
         scrollTrigger: {
-          trigger: heartShieldIcon,
+          trigger: crossShieldIcon,
         }
       })
 
@@ -38,22 +38,22 @@ const DrawHeartShieldIcon = () => {
         strokeDashoffset: 0,
         duration: 3,
         scrollTrigger: {
-          trigger: heartShieldIcon,
+          trigger: crossShieldIcon,
         }
       })
 	}, [])
 
 	return (
-		<section ref={heartShieldIconRef} >
+		<section ref={crossShieldIconRef} >
       <svg
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          ref={heartPathRef}
-          className="heart"
+          ref={crossPathRef}
+          className="cross"
           fill="none"
-          stroke='#8591a8'
+          stroke='#8ec73d'
           strokeDasharray='87.41299438476562px'
           strokeDashoffset='87.41299438476562px'
           d="M20.9937,9.4593v7.92h-7.92v6.0112h7.92v7.922H27.007v-7.922h7.92V17.3793h-7.92v-7.92Z"
@@ -72,4 +72,4 @@ const DrawHeartShieldIcon = () => {
 	)
 }
 
-export default DrawHeartShieldIcon
+export default DrawcrossShieldIcon

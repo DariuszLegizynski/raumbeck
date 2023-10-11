@@ -88,7 +88,7 @@ const DrawHeartFolderIcon = () => {
           ref={heartPathRef}
           className="heart"
           fill="none"
-          stroke='#8591a8'
+          stroke='#8ec73d'
           strokeDasharray='36.75298309326172px'
           strokeDashoffset='36.75298309326172px'
           d="M21.2152,23.3A3.5695,3.5695,0,0,0,18.94,29.3855L24,34.4344l5.06-5.0489A3.574,3.574,0,0,0,24,24.3367,3.5823,3.5823,0,0,0,21.2152,23.3Z"

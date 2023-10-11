@@ -85,7 +85,7 @@ const DrawHumanWalkIcon = () => {
           ref={circlePathRef}
           className="circle-path"
           fill="none"
-          stroke='#8591a8'
+          stroke='#8ec73d'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeDasharray='109.83px'
@@ -96,7 +96,7 @@ const DrawHumanWalkIcon = () => {
           ref={arrowPathRef}
           className="arrow-path"
           fill="none"
-          stroke='#8591a8'
+          stroke='#8ec73d'
           strokeLinecap='round'
           strokeLinejoin='round'
           strokeDasharray='9.502635955810547px'

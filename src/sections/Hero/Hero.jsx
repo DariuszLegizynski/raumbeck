@@ -30,43 +30,46 @@ const Hero = () => {
 
 	return (
 		<article className="hero">
-			<section className="hero__picture">
+			<div className="hero__picture">
 				<img src={hero} alt="therapist" />
-				<motion.div className="hero__text" variants={container} initial="hidden" animate="show">
-					<div className="hero__title">
-						<motion.h1 style={{ y: -yPos * 2200 }} className="green" variants={item}>
-							A
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2400 }} className="green" variants={item}>
-							n
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2600 }} className="green" variants={item}>
-							n
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2800 }} className="green" variants={item}>
-							a
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 3000 }} variants={item}>
-							&nbsp;
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2800 }} className="grey" variants={item}>
-							M
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2600 }} className="grey" variants={item}>
-							e
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2400 }} className="grey" variants={item}>
-							h
-						</motion.h1>
-						<motion.h1 style={{ y: -yPos * 2200 }} className="grey" variants={item}>
-							r
-						</motion.h1>
-					</div>
-					<motion.p className="grey" variants={item} style={{ y: -yPos * 2000 }}>
-						--- Physiotherapeutin
-					</motion.p>
-				</motion.div>
-			</section>
+				<div className="hero__content">
+					<motion.div className="hero__text" variants={container} initial="hidden" animate="show">
+						<div className="hero__title">
+							<motion.h1 style={{ y: -yPos * 2200 }} className="green" variants={item}>
+								A
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2400 }} className="green" variants={item}>
+								n
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2600 }} className="green" variants={item}>
+								n
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2800 }} className="green" variants={item}>
+								a
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 3000 }} variants={item}>
+								&nbsp;
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2800 }} className="grey" variants={item}>
+								M
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2600 }} className="grey" variants={item}>
+								e
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2400 }} className="grey" variants={item}>
+								h
+							</motion.h1>
+							<motion.h1 style={{ y: -yPos * 2200 }} className="grey" variants={item}>
+								r
+							</motion.h1>
+						</div>
+						<motion.p className="grey" variants={item} style={{ y: -yPos * 2000 }}>
+							--- Physiotherapeutin
+						</motion.p>
+					</motion.div>
+					<button className='hero__contact btn'>Kontakt</button>
+				</div>
+			</div>
 			<section className="hero__greeting">
 				<hr />
 				<p>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>

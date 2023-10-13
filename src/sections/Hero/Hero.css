@@ -113,6 +113,10 @@ textarea:focus-visible {
   height: min-content;
   padding-bottom: 6rem;
 }
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
 .hero__text {
   position: absolute;
   bottom: 0;
@@ -122,6 +126,9 @@ textarea:focus-visible {
   height: 600px;
   padding-left: 1rem;
   overflow: hidden;
+}
+.hero__contact {
+  display: none !important;
 }
 .hero__title {
   display: flex;
@@ -134,4 +141,45 @@ textarea:focus-visible {
 }
 .hero__greeting > img {
   padding: 2rem 0;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__picture {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero__text {
+    padding-left: 1.2rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .hero {
+    padding: 0 1rem;
+  }
+  .hero__picture > img {
+    max-height: 48rem;
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0;
+  }
+  .hero__picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .hero__content {
+    padding: 0 2rem;
+  }
+  .hero__text {
+    position: relative;
+    height: 400px;
+  }
+  .hero__contact {
+    display: flex !important;
+  }
 }/*# sourceMappingURL=Hero.css.map */

@@ -157,4 +157,10 @@ textarea:focus-visible {
 }
 .process p {
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 425px) {
+  .process__body {
+    padding-right: 1rem;
+  }
 }/*# sourceMappingURL=Process.css.map */

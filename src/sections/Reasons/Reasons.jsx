@@ -63,7 +63,7 @@ const Reasons = () => {
         <div className="hr-line" />
         <p>Sie sind bei mir richtig, wenn Sie folgende Beschwerden haben, da ich auf deren Behandlung spezialisiert bin:</p>
       </section>
-			<section>
+			<section className='reasons__cards'>
 				{renderedListOfReasonCards}
 			</section>
 		</article>

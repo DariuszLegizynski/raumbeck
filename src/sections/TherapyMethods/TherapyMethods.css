@@ -162,4 +162,33 @@ textarea:focus-visible {
 }
 .therapy-methods__list::-webkit-scrollbar-thumb:active {
   background-color: hsl(85, 55%, 51%);
+}
+
+@media screen and (min-width: 768px) {
+  .therapy-methods .hand-icon {
+    display: none;
+  }
+  .therapy-methods__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+  .therapy-methods__list * {
+    scrollbar-width: none;
+    scrollbar-color: none;
+  }
+  .therapy-methods__list > :not(:last-child) {
+    margin-right: 0rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .therapy-methods__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .therapy-methods__list {
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=TherapyMethods.css.map */

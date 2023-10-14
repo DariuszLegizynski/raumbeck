@@ -45,11 +45,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 span {
@@ -107,6 +107,22 @@ textarea:focus-visible {
   outline: none;
 }
 
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
 .reason-card {
   padding: 1rem 1.6rem;
   margin: 2rem 0;
@@ -114,7 +130,6 @@ textarea:focus-visible {
   min-width: 10rem;
 }
 .reason-card > h3 {
-  font-size: 1.3rem;
   font-family: "FuturaLT-Light";
   color: hsl(85, 55%, 51%);
   text-align: left;
@@ -124,7 +139,6 @@ textarea:focus-visible {
   padding-bottom: 0.2rem;
   color: hsl(0, 0%, 10%);
   text-align: left;
-  font-size: 0.9rem;
 }
 .reason-card__img {
   width: 5rem;

@@ -39,7 +39,7 @@ const TherapyMethods = () => {
 
 	const HandIcon = () => {
 		return (
-			<svg ref={iconItem} viewBox="-20.5 0 154 154" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+			<svg className="hand-icon" ref={iconItem} viewBox="-20.5 0 154 154" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
 				<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 				<g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
 				<g id="SVGRepo_iconCarrier">

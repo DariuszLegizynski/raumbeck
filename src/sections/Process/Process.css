@@ -107,6 +107,22 @@ textarea:focus-visible {
   outline: none;
 }
 
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
 .process {
   padding: 4rem 0;
   background-color: hsl(170, 17%, 86%);
@@ -155,9 +171,6 @@ textarea:focus-visible {
   width: 6rem;
   height: auto;
 }
-.process p {
-  font-size: 0.9rem;
-}
 
 @media screen and (min-width: 350px) {
   .process__description {
@@ -170,9 +183,6 @@ textarea:focus-visible {
   }
   .process__description {
     row-gap: 3.2rem;
-  }
-  .process__item > p {
-    font-size: 1rem;
   }
 }
 @media screen and (min-width: 425px) {
@@ -203,9 +213,6 @@ textarea:focus-visible {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     height: 12rem;
-  }
-  .process__item > p {
-    font-size: 1.2rem;
   }
   .process__img {
     width: 12rem;

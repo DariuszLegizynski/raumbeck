@@ -68,3 +68,44 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.therapy-methods {
+		& .hand-icon {
+			display: none;
+		}
+
+		&__list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1rem;
+
+			padding-bottom: 0;
+
+			* {
+				scrollbar-width: none;
+				scrollbar-color: none;
+			}
+
+			& > :not(:last-child) {
+				margin-right: 0rem;
+			}
+		}
+	} 
+}
+
+@media screen and (min-width: 1024px) {
+	.therapy-methods {
+		&__list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	} 
+}
+
+@media screen and (min-width: 1200px) {
+	.therapy-methods {
+		&__list {
+			gap: 2rem;
+		}
+	} 
+}

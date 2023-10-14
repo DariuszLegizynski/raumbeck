@@ -60,10 +60,6 @@
 		width: 6rem;
 		height: auto;
 	}
-
-	& p {
-		font-size: 0.9rem;
-	}
 }
 
 @media screen and (min-width: 350px) {
@@ -82,12 +78,6 @@
 
 		&__description {
 			row-gap: 3.2rem;
-		}
-
-		&__item {
-			& > p {
-				font-size: 1rem;
-			}
 		}
   }
 }
@@ -131,10 +121,6 @@
 			grid-template-columns: auto 1fr;
 			column-gap: 2rem;
 			height: 12rem;
-
-			& > p {
-				font-size: 1.2rem;
-			}
 		}
 
 		&__img {

@@ -132,7 +132,7 @@ textarea:focus-visible {
     width: 100%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .reasons {
     align-items: left;
   }

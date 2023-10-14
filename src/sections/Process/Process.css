@@ -113,7 +113,7 @@ textarea:focus-visible {
 }
 .process__body {
   width: 100vw;
-  height: 1220px;
+  height: 1300px;
   position: relative;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -159,8 +159,55 @@ textarea:focus-visible {
   font-size: 0.9rem;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 350px) {
+  .process__description {
+    row-gap: 4.4rem;
+  }
+}
+@media screen and (min-width: 375px) {
   .process__body {
     padding-right: 1rem;
+  }
+  .process__description {
+    row-gap: 3.2rem;
+  }
+  .process__item > p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .process__description {
+    row-gap: 4.4rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  .process__description {
+    row-gap: 5.6rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .process__description {
+    row-gap: 7rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .process__body {
+    padding-right: 3rem;
+  }
+  .process__description {
+    row-gap: 6rem;
+  }
+  .process__item {
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    height: 12rem;
+  }
+  .process__item > p {
+    font-size: 1.2rem;
+  }
+  .process__img {
+    width: 12rem;
   }
 }/*# sourceMappingURL=Process.css.map */

@@ -6,7 +6,7 @@
 
 	&__body {
 		width: 100vw;
-		height: 1220px;
+		height: 1300px;
 		position: relative;
 		display: grid;
 		grid-template-columns: 20% 80%;
@@ -66,10 +66,79 @@
 	}
 }
 
+@media screen and (min-width: 350px) {
+  .process {
+		&__description {
+			row-gap: 4.4rem;
+		}
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .process {
+		&__body {
+			padding-right: 1rem;
+		}
+
+		&__description {
+			row-gap: 3.2rem;
+		}
+
+		&__item {
+			& > p {
+				font-size: 1rem;
+			}
+		}
+  }
+}
+
 @media screen and (min-width: 425px) {
   .process {
+		&__description {
+			row-gap: 4.4rem;
+		}
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .process {
+		&__description {
+			row-gap: 5.6rem;
+		}
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .process {
+		&__description {
+			row-gap: 7rem;
+		}
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .process {
     &__body {
-			padding-right: 1rem;
+			padding-right: 3rem;
+		}
+
+		&__description {
+			row-gap: 6rem;
+		}
+
+		&__item {
+			grid-template-rows: 1fr;
+			grid-template-columns: auto 1fr;
+			column-gap: 2rem;
+			height: 12rem;
+
+			& > p {
+				font-size: 1.2rem;
+			}
+		}
+
+		&__img {
+			width: 12rem;
 		}
   }
 }

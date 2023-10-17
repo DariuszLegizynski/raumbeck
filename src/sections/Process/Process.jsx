@@ -74,8 +74,8 @@ const Process = () => {
 						imgAlt="a couple in love"
 						text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
 					/>
-					<div className='process__item-placeholder'>&nbsp;</div>
-					<div className='process__item-placeholder'>&nbsp;</div>
+					{/* <div className='process__item-placeholder'>&nbsp;</div>
+					<div className='process__item-placeholder'>&nbsp;</div> */}
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={examImage}
@@ -90,8 +90,8 @@ const Process = () => {
 						text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
 						Herkunft der eingetretenen Veränderung geben."
 					/>
-					<div className='process__item-placeholder'>&nbsp;</div>
-					<div className='process__item-placeholder'>&nbsp;</div>
+					{/* <div className='process__item-placeholder'>&nbsp;</div>
+					<div className='process__item-placeholder'>&nbsp;</div> */}
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={therapyImage}

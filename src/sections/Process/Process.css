@@ -210,7 +210,7 @@ textarea:focus-visible {
   .process__body {
     grid-template-columns: 1fr;
     padding: 0 2rem;
-    height: auto;
+    height: 1264px;
   }
   .process__container {
     position: absolute;

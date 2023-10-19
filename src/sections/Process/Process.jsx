@@ -12,6 +12,7 @@ import protocolImage from "../../assets/illustrations/003_undraw_done_checking_r
 import therapyImage from "../../assets/illustrations/004_undraw_options_re_9vxh.svg"
 
 import "./Process.css"
+import { transform } from 'framer-motion'
 
 const Process = () => {
 	const revealRefs = useRef([])
@@ -43,9 +44,9 @@ const Process = () => {
 		})
 	})
 
-	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef }) => {
+	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef, adjustYPosition = null }) => {
 		return (
-			<section ref={addToRef} className="process__item">
+			<section ref={addToRef} className="process__item" style={adjustYPosition}>
 				<div>
 					<img className="process__img" src={imgSrc} alt={imgAlt} />
 				</div>
@@ -86,6 +87,7 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={protocolImage}
+						adjustYPosition={{ transform: 'translateY(-135px)' }}
 						imgAlt="writing a protocol"
 						text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
 						Herkunft der eingetretenen Veränderung geben."
@@ -95,6 +97,7 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={therapyImage}
+						adjustYPosition={{ transform: 'translateY(-175px)' }}
 						imgAlt="person having a therapy"
 						text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
 					/>

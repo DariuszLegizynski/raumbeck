@@ -248,4 +248,37 @@ textarea:focus-visible {
   .process__img {
     width: 12rem;
   }
+}
+@media screen and (min-width: 900px) {
+  .process__child-2 {
+    transform: translateY(-15px);
+  }
+  .process__child-3 {
+    transform: translateY(-90px);
+  }
+  .process__child-4 {
+    transform: translateY(-160px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .process__child-3 {
+    transform: translateY(-45px);
+  }
+  .process__child-4 {
+    transform: translateY(-80px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .process__child-1 {
+    transform: translateY(40px);
+  }
+  .process__child-2 {
+    transform: translateY(45px);
+  }
+  .process__child-3 {
+    transform: translateY(30px);
+  }
+  .process__child-4 {
+    transform: translateY(40px);
+  }
 }/*# sourceMappingURL=Process.css.map */

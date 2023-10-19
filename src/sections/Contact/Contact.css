@@ -173,7 +173,12 @@ textarea:focus-visible {
 }
 @media screen and (min-width: 1024px) {
   .contact {
-    max-width: 1024px;
-    margin: 0 auto;
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 }/*# sourceMappingURL=Contact.css.map */

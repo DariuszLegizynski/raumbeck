@@ -63,8 +63,13 @@
 
 @media screen and (min-width: 1024px) {
 	.contact {
-    max-width: 1024px;
-		margin: 0 auto;
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+	.contact {
+    column-gap: 4rem;
   }
 }
 

@@ -12,7 +12,6 @@ import protocolImage from "../../assets/illustrations/003_undraw_done_checking_r
 import therapyImage from "../../assets/illustrations/004_undraw_options_re_9vxh.svg"
 
 import "./Process.css"
-import { transform } from 'framer-motion'
 
 const Process = () => {
 	const revealRefs = useRef([])
@@ -44,9 +43,9 @@ const Process = () => {
 		})
 	})
 
-	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef, adjustYPosition = null }) => {
+	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef, childIdentifier }) => {
 		return (
-			<section ref={addToRef} className="process__item" style={adjustYPosition}>
+			<section ref={addToRef} className={`process__item ${childIdentifier}`}>
 				<div>
 					<img className="process__img" src={imgSrc} alt={imgAlt} />
 				</div>
@@ -72,14 +71,14 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={welcomeImage}
+						childIdentifier={"process__child-1"}
 						imgAlt="a couple in love"
 						text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
 					/>
-					{/* <div className='process__item-placeholder'>&nbsp;</div>
-					<div className='process__item-placeholder'>&nbsp;</div> */}
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={examImage}
+						childIdentifier={"process__child-2"}
 						imgAlt="examing a patient"
 						text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
 						genauer auf Ihre Bedürfnisse einzugehen."
@@ -87,17 +86,15 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={protocolImage}
-						adjustYPosition={{ transform: 'translateY(-135px)' }}
+						childIdentifier={"process__child-3"}
 						imgAlt="writing a protocol"
 						text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
 						Herkunft der eingetretenen Veränderung geben."
 					/>
-					{/* <div className='process__item-placeholder'>&nbsp;</div>
-					<div className='process__item-placeholder'>&nbsp;</div> */}
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={therapyImage}
-						adjustYPosition={{ transform: 'translateY(-175px)' }}
+						childIdentifier={"process__child-4"}
 						imgAlt="person having a therapy"
 						text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
 					/>

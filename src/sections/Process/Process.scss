@@ -118,7 +118,7 @@
     &__body {
 			grid-template-columns: 1fr;
 			padding: 0 2rem;
-			height: 1264px;
+			height: 1320px;
 		}
 
 		&__container {
@@ -133,7 +133,7 @@
 			flex-direction: column;
 			row-gap: 0;
 
-			margin-top: 4rem;
+			margin-top: 12rem;
 		}
 
 		&__item {
@@ -146,6 +146,22 @@
 
 		&__item:nth-of-type(odd) {
 			align-self: flex-start;
+		}
+
+		&__child-1 {
+			transform: translateY(40px);
+		}
+
+		&__child-2 {
+			transform: translateY(-30px);
+		}
+
+		&__child-3 {
+			transform: translateY(-120px);
+		}
+
+		&__child-4 {
+			transform: translateY(-260px);
 		}
 
 		// &__description:nth-child(even) {

@@ -198,4 +198,20 @@ textarea:focus-visible {
   .hero__contact {
     display: flex !important;
   }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+  .hero__picture {
+    align-items: central;
+    justify-items: center;
+  }
+  .hero__picture > img {
+    padding: 4rem;
+  }
+  .hero__content {
+    width: 28rem;
+  }
 }/*# sourceMappingURL=Hero.css.map */

@@ -59,8 +59,8 @@ const Reasons = () => {
 	return (
 		<article className="reasons">
       <section className="reasons__title">
-        <h2>Behandlungsbereiche</h2>
-        <div className="hr-line" />
+        <h2 className='green'>Behandlungsbereiche</h2>
+        <div class="hr-line" style={{ borderBottom: '4px solid white' }} />
         <p>Sie sind bei mir richtig, wenn Sie folgende Beschwerden haben, da ich auf deren Behandlung spezialisiert bin:</p>
       </section>
 			<section>

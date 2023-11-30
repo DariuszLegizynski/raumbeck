@@ -1,16 +1,18 @@
 import Hero from '../../sections/Hero/Hero'
-import Navbar from '../../components/Navbar/Navbar'
+import NavbarMobile from '../../components/Navbar/Mobile/NavbarMobile'
 import Process from "../../sections/Process/Process"
 import "./Home.css"
 import Contact from '../../sections/Contact/Contact'
 import TherapyMethods from '../../sections/TherapyMethods/TherapyMethods'
 import Reasons from '../../sections/Reasons/Reasons'
+import NavbarDesktop from '../../components/Navbar/Desktop/NavbarDesktop'
 
 const Home = () => {
   return (
     <section className='home'>
       <Hero />
-      <Navbar />
+      <NavbarMobile />
+      <NavbarDesktop />
       <Reasons />
       <Process />
       <TherapyMethods />

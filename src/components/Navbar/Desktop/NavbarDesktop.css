@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "FuturaLT-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
+}
+@font-face {
+  font-family: "FuturaLT";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("FuturaLT"), url("/fonts/PublicSans/FuturaLT.ttf") format("opentype");
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(169, 7%, 48%);
+  font-size: 1.6rem;
+  padding: 0.9rem;
+  margin: 0.6rem auto;
+  font-family: "FuturaLT-Heavy";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 0;
+}
+
+h1, h2, h3, p, span, a {
+  font-family: "FuturaLT-Light";
+  color: hsl(0, 0%, 10%);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover, a:active {
+  text-decoration: none;
+}
+
+.hr-line {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(169, 7%, 48%);
+}
+
+.green {
+  color: hsl(85, 55%, 51%);
+}
+
+.grey {
+  color: hsl(220, 17%, 59%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  border: none;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "FuturaLT-Light";
+  font-size: 1rem;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: hsl(169, 7%, 48%);
+  opacity: 1;
+}
+input::placeholder,
+textarea::placeholder {
+  color: hsl(169, 7%, 48%);
+  opacity: 1;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+@font-face {
+  font-family: "FuturaLT-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("Futura-Light"), url("/fonts/FuturaLT-Light.ttf") format("opentype");
+}
+@font-face {
+  font-family: "FuturaLT";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: local("FuturaLT"), url("/fonts/PublicSans/FuturaLT.ttf") format("opentype");
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(169, 7%, 48%);
+  font-size: 1.6rem;
+  padding: 0.9rem;
+  margin: 0.6rem auto;
+  font-family: "FuturaLT-Heavy";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 0;
+}
+
+h1, h2, h3, p, span, a {
+  font-family: "FuturaLT-Light";
+  color: hsl(0, 0%, 10%);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover, a:active {
+  text-decoration: none;
+}
+
+.hr-line {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(169, 7%, 48%);
+}
+
+.green {
+  color: hsl(85, 55%, 51%);
+}
+
+.grey {
+  color: hsl(220, 17%, 59%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  border: none;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "FuturaLT-Light";
+  font-size: 1rem;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: hsl(169, 7%, 48%);
+  opacity: 1;
+}
+input::placeholder,
+textarea::placeholder {
+  color: hsl(169, 7%, 48%);
+  opacity: 1;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.navbar-desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    padding: 0.4rem;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: hsla(0, 0%, 98%, 0.8);
+  }
+  .navbar-desktop > li {
+    position: fixed;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: hsla(0, 0%, 98%, 0.8);
+    transition: top 0.4s ease-out;
+  }
+  .navbar-desktop > li > ul {
+    padding: 0.8rem 0;
+  }
+  .navbar-desktop img {
+    width: auto;
+    height: 2rem;
+  }
+}/*# sourceMappingURL=NavbarDesktop.css.map */

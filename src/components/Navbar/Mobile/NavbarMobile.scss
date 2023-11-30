@@ -1,6 +1,6 @@
-@import "../../styles/main.scss";
+@import "../../../styles/main.scss";
 
-.navbar {
+.navbar-mobile {
 	position: fixed;
 	top: 0;
   left: 0;
@@ -43,5 +43,12 @@
 	& img {
 		width: auto;
     height: 2rem;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.navbar-mobile {
+		display: none;
+		visibility: hidden;
 	}
 }

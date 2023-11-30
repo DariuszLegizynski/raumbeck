@@ -132,6 +132,7 @@ textarea:focus-visible {
 .hero__content {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .hero__text {
   position: absolute;
@@ -203,15 +204,48 @@ textarea:focus-visible {
   .hero {
     max-width: 72rem;
     margin: 0 auto;
+    padding: 2rem;
   }
   .hero__picture {
+    height: 93vh;
     align-items: central;
     justify-items: center;
+    background-image: linear-gradient(to right, hsla(0, 0%, 98%, 0.6), hsla(0, 0%, 10%, 0.1)), url(src/assets/images/Homepage2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
   .hero__picture > img {
-    padding: 4rem;
+    display: none;
+  }
+  .hero__text {
+    height: 450px;
+    padding-left: 0rem;
   }
   .hero__content {
     width: 28rem;
+  }
+  .hero__greeting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    grid-template-areas: "first first" "image second" "image third";
+  }
+  .hero__greeting > hr {
+    display: none;
+  }
+  .hero__greeting__first {
+    grid-area: first;
+  }
+  .hero__greeting > img {
+    grid-area: image;
+  }
+  .hero__greeting__second {
+    grid-area: second;
+  }
+  .hero__greeting__third {
+    grid-area: third;
   }
 }/*# sourceMappingURL=Hero.css.map */

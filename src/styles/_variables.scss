@@ -9,9 +9,13 @@ $color-white-2: hsl(120, 100%, 99%);
 $color-black: hsl(0, 0%, 10%);
 $color-grey: hsl(169, 7%, 48%);
 
+$color-white-opacity-light: hsla(0, 0%, 98%, 0.6);
 $color-white-opacity: hsla(0, 0%, 98%, 0.4);
-$color-black-opacity: hsla(0, 0%, 10%, 0.3);
+$color-white-opacity-semi-dark: hsla(0, 0%, 98%, 0.6);
 $color-white-opacity-dark: hsla(0, 0%, 98%, 0.8);
+$color-black-opacity-light: hsla(0, 0%, 10%, 0.1);
+$color-black-opacity: hsla(0, 0%, 10%, 0.3);
+$color-black-opacity-dark: hsla(0, 0%, 10%, 0.5);
 $color-primary-opacity: hsla(85, 55%, 51%, 0.6);
 $color-secondary-opacity: hsla(220, 17%, 59%, 0.4);
 $color-tertiary-opacity: hsl(170, 17%, 86%, 0.6);

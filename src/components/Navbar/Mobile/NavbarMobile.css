@@ -123,7 +123,7 @@ textarea:focus-visible {
     font-size: 1.2rem;
   }
 }
-.navbar {
+.navbar-mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -137,7 +137,7 @@ textarea:focus-visible {
   backdrop-filter: blur(3px);
   background-color: hsla(0, 0%, 98%, 0.8);
 }
-.navbar > li {
+.navbar-mobile > li {
   position: fixed;
   left: 0;
   display: grid;
@@ -149,10 +149,17 @@ textarea:focus-visible {
   background-color: hsla(0, 0%, 98%, 0.8);
   transition: top 0.4s ease-out;
 }
-.navbar > li > ul {
+.navbar-mobile > li > ul {
   padding: 0.8rem 0;
 }
-.navbar img {
+.navbar-mobile img {
   width: auto;
   height: 2rem;
-}/*# sourceMappingURL=Navbar.css.map */
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=NavbarMobile.css.map */

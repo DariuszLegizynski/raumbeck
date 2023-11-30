@@ -10,6 +10,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		height: 100vh;
 	}
 
 	&__text {
@@ -107,18 +108,68 @@
   .hero {
 		max-width: 72rem;
     margin: 0 auto;
+		padding: 2rem;
 
 		&__picture {
+			height: 93vh;
+
 			align-items: central;
 			justify-items: center;
+			
+			background-image: linear-gradient(
+        to right,
+        $color-white-opacity-semi-dark,
+        $color-black-opacity-light
+      ),
+			url(src/assets/images/Homepage2.jpg);
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
 
 			& > img {
-				padding: 4rem;
+				display: none;
 			}
+		}
+
+		&__text {
+			height: 450px;
+
+			padding-left: 0rem;
 		}
 
 		&__content {
 			width: 28rem;
+		}
+
+		&__greeting {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			column-gap: 1rem;
+			grid-template-areas: 
+				"first first"
+				"image second"
+				"image third";
+
+			& > hr {
+				display: none;
+			}
+
+			&__first {
+				grid-area: first;
+			}
+
+			& > img {
+				grid-area: image;
+			}
+
+			&__second {
+				grid-area: second;
+			}
+
+			&__third {
+				grid-area: third;
+			}
 		}
   }
 }

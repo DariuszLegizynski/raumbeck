@@ -1,4 +1,5 @@
 import hero from "../../assets/images/AboutMe.jpg"
+import hero2 from "../../assets/images/Homepage2.jpg"
 import therapy from "../../assets/images/Homepage1.jpg"
 import { useState } from "react"
 import { motion, useScroll } from "framer-motion"
@@ -31,7 +32,10 @@ const Hero = () => {
 	return (
 		<article className="hero">
 			<div className="hero__picture">
-				<img src={hero} alt="therapist" />
+				<img
+					src={hero}
+					alt="therapist"
+				/>
 				<div className="hero__content">
 					<motion.div className="hero__text" variants={container} initial="hidden" animate="show">
 						<div className="hero__title">
@@ -72,12 +76,12 @@ const Hero = () => {
 			</div>
 			<section className="hero__greeting">
 				<hr />
-				<p>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>
-				<p>
+				<p className='hero__greeting__first'>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>
+				<p className='hero__greeting__second'>
 					Mein Kerngebiet ist die <b>physiotherapeutische</b> Behandlung im <b>gynäkologischen</b>, <b>urologischen</b> und <b>proktologischen</b> Bereich.
 				</p>
 				<img src={therapy} alt="therapy" />
-				<p>Mir liegen dabei eine fachkompetente Betreuung sowie großes Einfühlungsvermögen am Herzen.</p>
+				<p className='hero__greeting__third'>Mir liegen dabei eine fachkompetente Betreuung sowie großes Einfühlungsvermögen am Herzen.</p>
 			</section>
 		</article>
 	)

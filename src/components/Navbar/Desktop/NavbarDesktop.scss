@@ -1,0 +1,53 @@
+@import "../../../styles/main.scss";
+
+@import "../../../styles/main.scss";
+
+.navbar-desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+	.navbar-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    z-index: 10;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    width: 100vw;
+    height: auto;
+  
+    padding: .4rem;
+  
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  
+    background-color: $color-white-opacity-dark;
+  
+    & > li {
+      position: fixed;
+      left: 0;
+  
+      display: flex;
+  
+      width: 100%;
+      padding: .8rem 0;
+  
+      background-color: $color-white-opacity-dark;
+      transition: top 0.4s ease-out;
+  
+      & > ul {
+        padding: .8rem 0;
+      }
+    }
+  
+    & img {
+      width: auto;
+      height: 2rem;
+    }
+  }
+}

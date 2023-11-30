@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from "react"
-import logo from "../../assets/logo/Logo-remove-bg-small.png"
+import logo from "../../../assets/logo/Logo-remove-bg-small.png"
 
-import "./Navbar.css"
-import Burger from "../Burger/Burger"
+import "./NavbarMobile.css"
+import Burger from "../../Burger/Burger"
 import { HashLink as Link } from 'react-router-hash-link'
 import { motion } from "framer-motion"
 
-const Navbar = () => {
+const NavbarMobile = () => {
 	const [ openBurger, setOpenBurger ] = useState(false)
 
 	const listHeight = useRef()
@@ -24,10 +24,12 @@ const Navbar = () => {
 
 	return (
 		<motion.nav
-		className="navbar"
-    initial={{ y: `-100%` }}
-    animate={{ y: 0 }}
-    transition={{ duration: 2}} ref={navbarHeight}>
+			className="navbar-mobile"
+    	initial={{ y: `-100%` }}
+    	animate={{ y: 0 }}
+    	transition={{ duration: 2}}
+			ref={navbarHeight}
+		>
 			<Link to="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
@@ -41,11 +43,11 @@ const Navbar = () => {
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}>Über mich</motion.ul>
 			</li>
-			<div className="navbar__burger" onClick={() => setOpenBurger(!openBurger)}>
+			<div onClick={() => setOpenBurger(!openBurger)}>
 				<Burger isOpen={openBurger ? "--open" : ""} />
 			</div>
 		</motion.nav>
 	)
 }
 
-export default Navbar
+export default NavbarMobile

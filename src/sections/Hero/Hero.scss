@@ -148,8 +148,10 @@
 			column-gap: 1rem;
 			grid-template-areas: 
 				"first first"
-				"image second"
-				"image third";
+				"second second"
+				"third ."
+				"image image"
+				"image image";
 
 			& > hr {
 				display: none;

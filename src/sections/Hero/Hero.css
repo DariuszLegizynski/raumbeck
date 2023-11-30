@@ -231,7 +231,7 @@ textarea:focus-visible {
     grid-template-rows: auto;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
-    grid-template-areas: "first first" "image second" "image third";
+    grid-template-areas: "first first" "second second" "third ." "image image" "image image";
   }
   .hero__greeting > hr {
     display: none;

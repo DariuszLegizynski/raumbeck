@@ -7,10 +7,8 @@ import { motion } from "framer-motion"
 
 const NavbarDesktop = () => {
 	const listHeight = useRef()
-	// const [ liHeight, setLiHeight ] = useState(0)
 
   const navbarHeight = useRef()
-  const [ headerHeight, setHeaderHeight ] = useState(0)
 
 	useEffect(() => {
 		if (!listHeight?.current?.clientHeight || !navbarHeight?.current?.clientHeight) return
@@ -27,18 +25,17 @@ const NavbarDesktop = () => {
     	transition={{ duration: 2}}
 			ref={navbarHeight}
 		>
-			<Link to="/"><img src={logo} /></Link>
 			<li>
-				<ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/">Home</Link></ul>
-				<ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#contact">Kontakt</Link></ul>
-				<ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Leistungsumfang</ul>
-				<ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Preise</ul>
-				<ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Über mich</ul>
+				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/"><img src={logo} /></Link></motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#contact">Kontakt</Link></motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#services">Leistungsumfang</Link></motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#price">Preise</Link></motion.ul>
+				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#about">Über mich</Link></motion.ul>
 			</li>
 		</nav>
 	)

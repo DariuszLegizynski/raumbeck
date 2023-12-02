@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -127,6 +132,8 @@ textarea:focus-visible {
   overflow: hidden;
   padding: 4rem 1rem 6rem;
   background-color: hsl(0, 0%, 98%);
+  max-width: 72rem;
+  margin: 0 auto;
 }
 .therapy-methods__title {
   margin-bottom: 2rem;
@@ -181,6 +188,9 @@ textarea:focus-visible {
 }
 
 @media screen and (min-width: 768px) {
+  .therapy-methods {
+    padding: 4rem 0 6rem;
+  }
   .therapy-methods .hand-icon {
     display: none;
   }

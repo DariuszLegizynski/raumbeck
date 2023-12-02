@@ -128,25 +128,34 @@ textarea:focus-visible {
     font-size: 1.2rem;
   }
 }
-.reason-card {
-  padding: 1rem 1.6rem;
-  margin: 2rem 0;
-  background-color: hsla(0, 0%, 98%, 0.4);
-  min-width: 10rem;
+.greeting {
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
-.reason-card > h3 {
-  font-family: "FuturaLT-Light";
-  color: hsl(85, 55%, 51%);
-  text-align: left;
-  margin-bottom: 0.8rem;
+.greeting > p {
+  margin: 1rem 0;
 }
-.reason-card__reason {
-  padding-bottom: 0.2rem;
-  color: hsl(0, 0%, 10%);
-  text-align: left;
+.greeting > img {
+  padding: 2rem 0;
 }
-.reason-card__img {
-  width: 5rem;
-  height: auto;
-  margin: 2rem auto;
-}/*# sourceMappingURL=ReasonCard.css.map */
+
+@media screen and (min-width: 1024px) {
+  .greeting > hr {
+    display: none;
+  }
+  .greeting__first {
+    grid-area: first;
+  }
+  .greeting > img {
+    grid-area: image;
+  }
+  .greeting__second {
+    grid-area: second;
+  }
+  .greeting__third {
+    grid-area: third;
+  }
+}/*# sourceMappingURL=Greeting.css.map */

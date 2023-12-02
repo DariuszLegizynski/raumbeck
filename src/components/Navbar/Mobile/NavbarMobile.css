@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {

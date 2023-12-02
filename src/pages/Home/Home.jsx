@@ -6,11 +6,13 @@ import Contact from '../../sections/Contact/Contact'
 import TherapyMethods from '../../sections/TherapyMethods/TherapyMethods'
 import Reasons from '../../sections/Reasons/Reasons'
 import NavbarDesktop from '../../components/Navbar/Desktop/NavbarDesktop'
+import Greeting from '../../sections/Greeting/Greeting'
 
 const Home = () => {
   return (
     <section className='home'>
       <Hero />
+      <Greeting />
       <NavbarMobile />
       <NavbarDesktop />
       <Reasons />

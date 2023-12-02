@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -150,15 +155,6 @@ textarea:focus-visible {
 .hero__title {
   display: flex;
 }
-.hero__greeting {
-  padding: 2rem 1rem 4rem 1rem;
-}
-.hero__greeting > p {
-  margin: 1rem 0;
-}
-.hero__greeting > img {
-  padding: 2rem 0;
-}
 
 @media screen and (min-width: 480px) {
   .hero__picture {
@@ -201,17 +197,17 @@ textarea:focus-visible {
   }
 }
 @media screen and (min-width: 1024px) {
-  .hero {
-    max-width: 72rem;
-    margin: 0 auto;
-    padding: 2rem;
+  .hero__bg {
+    margin: 4rem 2rem 0 2rem;
+    background-color: hsl(220, 17%, 59%);
   }
   .hero__picture {
-    height: 93vh;
+    height: 90vh;
+    max-width: 72rem;
     align-items: central;
     justify-items: center;
-    background-image: linear-gradient(to right, hsla(0, 0%, 98%, 0.6), hsla(0, 0%, 10%, 0.1)), url(src/assets/images/Homepage2.jpg);
-    background-size: cover;
+    background-image: url(src/assets/images/Homepage1.jpg);
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -224,28 +220,5 @@ textarea:focus-visible {
   }
   .hero__content {
     width: 28rem;
-  }
-  .hero__greeting {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-    grid-template-areas: "first first" "second second" "third ." "image image" "image image";
-  }
-  .hero__greeting > hr {
-    display: none;
-  }
-  .hero__greeting__first {
-    grid-area: first;
-  }
-  .hero__greeting > img {
-    grid-area: image;
-  }
-  .hero__greeting__second {
-    grid-area: second;
-  }
-  .hero__greeting__third {
-    grid-area: third;
   }
 }/*# sourceMappingURL=Hero.css.map */

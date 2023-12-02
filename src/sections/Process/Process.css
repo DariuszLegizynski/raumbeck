@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -136,8 +141,14 @@ textarea:focus-visible {
   overflow: hidden;
   padding-top: 2rem;
 }
+.process > img {
+  max-width: 72rem;
+  margin: 0 auto;
+}
 .process__title {
-  padding: 1rem;
+  padding: 1rem 0;
+  max-width: 72rem;
+  margin: 0 auto;
 }
 .process__title > img {
   margin: 1rem 0;
@@ -207,7 +218,13 @@ textarea:focus-visible {
   }
 }
 @media screen and (min-width: 768px) {
+  .process__title {
+    max-width: 72rem;
+    margin: 0 auto;
+  }
   .process__body {
+    max-width: 72rem;
+    margin: 0 auto;
     grid-template-columns: 1fr;
     padding: 0 2rem;
     height: 1320px;

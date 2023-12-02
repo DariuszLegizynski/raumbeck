@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -124,7 +129,9 @@ textarea:focus-visible {
   }
 }
 .contact {
-  padding: 2rem 1rem;
+  padding: 0 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
 }
 .contact__bg {
   background-color: hsl(170, 17%, 86%);
@@ -173,7 +180,7 @@ textarea:focus-visible {
 }
 @media screen and (min-width: 1024px) {
   .contact {
-    padding: 2rem 4rem;
+    padding: 2rem 0;
   }
 }
 @media screen and (min-width: 1200px) {

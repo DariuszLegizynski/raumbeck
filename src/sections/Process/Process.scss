@@ -15,8 +15,15 @@
 		padding-top: 2rem;
 	}
 
+	& > img {
+		max-width: 72rem;
+		margin: 0 auto;
+	}
+
 	&__title {
-		padding: 1rem;
+		padding: 1rem 0;
+		max-width: 72rem;
+		margin: 0 auto;
 	}
 	
 	&__title > img {
@@ -115,7 +122,14 @@
 
 @media screen and (min-width: 768px) {
   .process {
+		&__title {
+			max-width: 72rem;
+			margin: 0 auto;
+		}
+
     &__body {
+			max-width: 72rem;
+			margin: 0 auto;
 			grid-template-columns: 1fr;
 			padding: 0 2rem;
 			height: 1320px;

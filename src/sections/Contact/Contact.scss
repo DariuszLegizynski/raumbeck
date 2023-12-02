@@ -1,8 +1,9 @@
 @import "../../styles/main.scss";
 
 .contact {
-	padding: 2rem 1rem;
-	
+	padding: 0 1rem;
+	max-width: 72rem;
+  margin: 0 auto;
 
 	&__bg {
 		background-color: $color-tertiary;
@@ -63,7 +64,7 @@
 
 @media screen and (min-width: 1024px) {
 	.contact {
-    padding: 2rem 4rem;
+    padding: 2rem 0;
   }
 }
 

@@ -5,6 +5,9 @@
 	padding: 4rem 1rem 6rem;
 	background-color: $color-white;
 
+	max-width: 72rem;
+  margin: 0 auto;
+
 	&__title {
 		margin-bottom: 2rem;
 		text-align: left;
@@ -71,6 +74,9 @@
 
 @media screen and (min-width: 768px) {
 	.therapy-methods {
+
+		padding: 4rem 0 6rem;
+		
 		& .hand-icon {
 			display: none;
 		}

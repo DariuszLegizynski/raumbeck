@@ -31,6 +31,7 @@ const Hero = () => {
 
 	return (
 		<article className="hero">
+			<div class="hero__bg">
 			<div className="hero__picture">
 				<img
 					src={hero}
@@ -71,18 +72,11 @@ const Hero = () => {
 							--- Physiotherapeutin
 						</motion.p>
 					</motion.div>
-					<button className='hero__contact btn'>Kontakt</button>
+					<button className='hero__contact btn btn--green'>Kontakt</button>
 				</div>
 			</div>
-			<section className="hero__greeting">
-				<hr />
-				<p className='hero__greeting__first'>Ich freue mich über Ihr Interesse an meiner therapeutischen Arbeit.</p>
-				<p className='hero__greeting__second'>
-					Mein Kerngebiet ist die <b>physiotherapeutische</b> Behandlung im <b>gynäkologischen</b>, <b>urologischen</b> und <b>proktologischen</b> Bereich.
-				</p>
-				<img src={therapy} alt="therapy" />
-				<p className='hero__greeting__third'>Mir liegen dabei eine fachkompetente Betreuung sowie großes Einfühlungsvermögen am Herzen.</p>
-			</section>
+			</div>
+			
 		</article>
 	)
 }

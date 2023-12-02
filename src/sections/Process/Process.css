@@ -278,6 +278,9 @@ textarea:focus-visible {
   }
 }
 @media screen and (min-width: 1024px) {
+  .process__description {
+    margin-top: 9rem;
+  }
   .process__child-3 {
     transform: translateY(-45px);
   }

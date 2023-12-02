@@ -201,6 +201,10 @@
 
 @media screen and (min-width: 1024px) {
   .process {
+		&__description {
+			margin-top: 9rem;
+		}
+
 		&__child-3 {
 			transform: translateY(-45px);
 		}

@@ -5,12 +5,15 @@
 		position: relative;
 		height: min-content;
 		padding-bottom: 6rem;
+
+		& > img {
+			max-height: 80vh;
+		}
 	}
 
 	&__content {
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
 	}
 
 	&__text {
@@ -29,14 +32,37 @@
 		overflow: hidden;
 	}
 
-	&__contact {
-		display: none !important;
-	}
-
 	&__title {
 		display: flex;
 	}
+
+	&__bg {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__contact {
+		&--desktop {
+			display: none !important;
+		}
+
+		&--mobile {
+			width: 93% !important;
+		}
+	}
 }
+
+// @media screen and (min-width: 425px) {
+//   .hero {
+// 		&__contact {
+// 			&--mobile {
+// 				// width: 80% !important;
+				
+// 			}
+// 		}
+//   }
+// }
 
 @media screen and (min-width: 480px) {
   .hero {
@@ -88,6 +114,14 @@
 
 		&__contact {
 			display: flex !important;
+
+			&--desktop {
+				display: flex !important;
+			}
+	
+			&--mobile {
+				display: none !important;
+			}
 		}
   }
 }

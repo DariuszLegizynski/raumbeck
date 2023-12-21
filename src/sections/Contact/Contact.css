@@ -129,7 +129,7 @@ textarea:focus-visible {
   }
 }
 .contact {
-  padding: 0 1rem;
+  padding: 4rem 1rem 0;
   max-width: 72rem;
   margin: 0 auto;
 }
@@ -176,15 +176,17 @@ textarea:focus-visible {
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+    padding: 4rem 1rem 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .contact {
-    padding: 2rem 0;
+    padding: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact {
+    padding: 4rem 2rem;
     -moz-column-gap: 4rem;
          column-gap: 4rem;
   }

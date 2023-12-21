@@ -8,7 +8,7 @@ const Contact = () => {
 				<section className="contact__text">
 					<h1>Kontakt</h1>
 					<div className="hr-line" />
-					<p>Die Praxis liegt zentral im Zentrum von Wiener Neustadt am Ferdinand-Porsche-Ring Nr. 7/Top 1.</p>
+					<p>Die Praxis liegt zentral im Zentrum von Wiener Neustadt am Ferdinand-Porsche-Ring Nr.&nbsp;7/Top&nbsp;1.</p>
 					<p>Parkmöglichkeiten sind direkt vor dem Gebäude in den umliegenden Kurzparkzonen oder in einem der naheliegenden Parkhäuser vorhanden.</p>
 					<p>
 						Es stehen für Sie ein Warteraum, eine Kaffeeküche, 2 moderne Behandlungsräume und ein großzügiger Trainingsraum mit allen wichtigen Trainingsgeräten zur

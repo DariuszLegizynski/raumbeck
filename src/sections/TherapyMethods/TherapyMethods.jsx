@@ -65,54 +65,56 @@ const TherapyMethods = () => {
 
 	return (
 		<article className="therapy-methods">
-			<section className="therapy-methods__title">
-				<h1>Therapie</h1>
-				<span>je nach Beschwerdebild</span>
-			</section>
-			<section className="therapy-methods__wrapper">
-				<HandIcon />
-				<ul className="therapy-methods__list" onClick={hideIcon} onMouseDown={hideIcon} onMouseUp={hideIcon} onTouchStart={hideIcon} onTouchEnd={hideIcon}>
-					<CardMethod
-						imgSrc={backpain}
-						imgAlt="women with backpain"
-						text1={"Kräftigen oder entspannen der Beckenboden-, Bauch-, Rücken- und/oder Hüftmuskulatur"}
-						text2={"Mobilisation von Gelenken im Hüft-, Becken- und/oder Rückenbereich"}
-						hr
-					/>
-					<CardMethod
-						imgSrc={gymnastics}
-						imgAlt="women doing gimnastics"
-						text1={"Dehnungsübungen"}
-						text2={"Atemübungen"}
-						text3={"Entspannungsübungen"}
-						text4={"Elektrotherapie"}
-						text5={"Heimprogramm"}
-					/>
-					<CardMethod
-						imgSrc={treatment}
-						imgAlt="women giving treatment"
-						text1={"Passive Behandlungstechniken wie Faszien- oder Viszeraltechniken"}
-						text2={"Narbenbehandlung im Beckenboden-, Bauch- oder Rückenbereich"}
-					/>
-					<CardMethod
-						imgSrc={feedback}
-						imgAlt="women getting medical feedback"
-						text1={"Biofeedback für den Beckenboden und die Bauchmuskulatur mittels Echtzeitultraschall oder einem klassischen Biofeedbackgerät"}
-					/>
-					<CardMethod
-						imgSrc={stressSituation}
-						imgAlt="person in a stressfull situation"
-						text1={"Erkennen und Bewältigen von typischen Belastungssituationen in Alltag, Sport sowie Beruf"}
-					/>
-					<CardMethod
-						imgSrc={happyWomen}
-						imgAlt="happy women"
-						text1={"Tipps und Support für den optimalen Umgang:"}
-						text2={"nach Operationen im Becken- oder Bauchbereich"}
-						text3={"mit der Blase und dem Darm"}
-					/>
-				</ul>
-			</section>
+			<div className="therapy-methods__wrapper">
+				<section className="therapy-methods__title">
+					<h1>Therapie</h1>
+					<span>je nach Beschwerdebild</span>
+				</section>
+				<section className="therapy-methods__content">
+					<HandIcon />
+					<ul className="therapy-methods__list" onClick={hideIcon} onMouseDown={hideIcon} onMouseUp={hideIcon} onTouchStart={hideIcon} onTouchEnd={hideIcon}>
+						<CardMethod
+							imgSrc={backpain}
+							imgAlt="women with backpain"
+							text1={"Kräftigen oder entspannen der Beckenboden-, Bauch-, Rücken- und/oder Hüftmuskulatur"}
+							text2={"Mobilisation von Gelenken im Hüft-, Becken- und/oder Rückenbereich"}
+							hr
+						/>
+						<CardMethod
+							imgSrc={gymnastics}
+							imgAlt="women doing gimnastics"
+							text1={"Dehnungsübungen"}
+							text2={"Atemübungen"}
+							text3={"Entspannungsübungen"}
+							text4={"Elektrotherapie"}
+							text5={"Heimprogramm"}
+						/>
+						<CardMethod
+							imgSrc={treatment}
+							imgAlt="women giving treatment"
+							text1={"Passive Behandlungstechniken wie Faszien- oder Viszeraltechniken"}
+							text2={"Narbenbehandlung im Beckenboden-, Bauch- oder Rückenbereich"}
+						/>
+						<CardMethod
+							imgSrc={feedback}
+							imgAlt="women getting medical feedback"
+							text1={"Biofeedback für den Beckenboden und die Bauchmuskulatur mittels Echtzeitultraschall oder einem klassischen Biofeedbackgerät"}
+						/>
+						<CardMethod
+							imgSrc={stressSituation}
+							imgAlt="person in a stressfull situation"
+							text1={"Erkennen und Bewältigen von typischen Belastungssituationen in Alltag, Sport sowie Beruf"}
+						/>
+						<CardMethod
+							imgSrc={happyWomen}
+							imgAlt="happy women"
+							text1={"Tipps und Support für den optimalen Umgang:"}
+							text2={"nach Operationen im Becken- oder Bauchbereich"}
+							text3={"mit der Blase und dem Darm"}
+						/>
+					</ul>
+				</section>
+			</div>
 		</article>
 	)
 }

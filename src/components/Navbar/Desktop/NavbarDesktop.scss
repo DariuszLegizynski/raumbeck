@@ -49,3 +49,13 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+	.navbar-desktop {
+    & > li {
+      & > ul {
+        font-size: 20px;
+      }
+    }
+  }
+}

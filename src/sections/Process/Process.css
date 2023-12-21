@@ -281,11 +281,14 @@ textarea:focus-visible {
   .process__description {
     margin-top: 9rem;
   }
+  .process__child-1 {
+    transform: translateY(-15px);
+  }
   .process__child-3 {
     transform: translateY(-45px);
   }
   .process__child-4 {
-    transform: translateY(-80px);
+    transform: translateY(-60px);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -296,9 +299,9 @@ textarea:focus-visible {
     transform: translateY(45px);
   }
   .process__child-3 {
-    transform: translateY(30px);
+    transform: translateY(-20px);
   }
   .process__child-4 {
-    transform: translateY(40px);
+    transform: translateY(-60px);
   }
 }/*# sourceMappingURL=Process.css.map */

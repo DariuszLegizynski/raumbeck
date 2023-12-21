@@ -129,22 +129,27 @@ textarea:focus-visible {
   }
 }
 .therapy-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
-  padding: 4rem 1rem 6rem;
+  padding: 4rem 0 6rem;
   background-color: hsl(0, 0%, 98%);
-  max-width: 72rem;
-  margin: 0 auto;
+}
+.therapy-methods__wrapper {
+  width: 100%;
+  padding: 0 1rem;
 }
 .therapy-methods__title {
   margin-bottom: 2rem;
   text-align: left;
 }
-.therapy-methods__wrapper {
+.therapy-methods__content {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.therapy-methods__wrapper > svg {
+.therapy-methods__content > svg {
   position: absolute;
   z-index: 5;
   left: 75%;
@@ -209,6 +214,9 @@ textarea:focus-visible {
   }
 }
 @media screen and (min-width: 1024px) {
+  .therapy-methods__wrapper {
+    max-width: 72rem;
+  }
   .therapy-methods__list {
     grid-template-columns: repeat(3, 1fr);
   }

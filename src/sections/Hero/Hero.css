@@ -134,10 +134,12 @@ textarea:focus-visible {
   height: min-content;
   padding-bottom: 6rem;
 }
+.hero__picture > img {
+  max-height: 80vh;
+}
 .hero__content {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .hero__text {
   position: absolute;
@@ -149,11 +151,19 @@ textarea:focus-visible {
   padding-left: 1rem;
   overflow: hidden;
 }
-.hero__contact {
-  display: none !important;
-}
 .hero__title {
   display: flex;
+}
+.hero__bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__contact--desktop {
+  display: none !important;
+}
+.hero__contact--mobile {
+  width: 93% !important;
 }
 
 @media screen and (min-width: 480px) {
@@ -194,6 +204,12 @@ textarea:focus-visible {
   }
   .hero__contact {
     display: flex !important;
+  }
+  .hero__contact--desktop {
+    display: flex !important;
+  }
+  .hero__contact--mobile {
+    display: none !important;
   }
 }
 @media screen and (min-width: 1024px) {

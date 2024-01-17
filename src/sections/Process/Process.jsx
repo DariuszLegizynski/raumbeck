@@ -55,7 +55,7 @@ const Process = () => {
 	}
 
 	return (
-		<article className="process">
+		<article className="process" id="services">
 			<section className="process__title">
 				<h1>Erstgespräch</h1>
 				<div className="hr-line" />

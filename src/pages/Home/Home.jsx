@@ -1,11 +1,10 @@
 import Hero from '../../sections/Hero/Hero'
-import NavbarMobile from '../../components/Navbar/Mobile/NavbarMobile'
 import Process from "../../sections/Process/Process"
 import "./Home.css"
 import Contact from '../../sections/Contact/Contact'
 import TherapyMethods from '../../sections/TherapyMethods/TherapyMethods'
 import Reasons from '../../sections/Reasons/Reasons'
-import NavbarDesktop from '../../components/Navbar/Desktop/NavbarDesktop'
+
 import Greeting from '../../sections/Greeting/Greeting'
 
 const Home = () => {
@@ -13,8 +12,6 @@ const Home = () => {
     <section className='home'>
       <Hero />
       <Greeting />
-      <NavbarMobile />
-      <NavbarDesktop />
       <Reasons />
       <Process />
       <TherapyMethods />

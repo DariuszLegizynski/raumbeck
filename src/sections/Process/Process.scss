@@ -238,3 +238,23 @@
 		}
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .process {
+		&__child-1 {
+			transform: translateY(0px);
+		}
+
+		&__child-2 {
+			transform: translateY(0px);
+		}
+
+		&__child-3 {
+			transform: translateY(-80px);
+		}
+
+		&__child-4 {
+			transform: translateY(-80px);
+		}
+  }
+}

@@ -304,4 +304,18 @@ textarea:focus-visible {
   .process__child-4 {
     transform: translateY(-60px);
   }
+}
+@media screen and (min-width: 2000px) {
+  .process__child-1 {
+    transform: translateY(0px);
+  }
+  .process__child-2 {
+    transform: translateY(0px);
+  }
+  .process__child-3 {
+    transform: translateY(-80px);
+  }
+  .process__child-4 {
+    transform: translateY(-80px);
+  }
 }/*# sourceMappingURL=Process.css.map */

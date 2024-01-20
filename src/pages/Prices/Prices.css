@@ -129,5 +129,29 @@ textarea:focus-visible {
   }
 }
 .prices {
-  background-color: orange;
+  margin: 3rem 1rem 0;
+}
+.prices > header > h2, .prices__card > body > p {
+  text-align: center;
+}
+.prices > header {
+  margin-top: 6rem;
+}
+.prices > header > h2 {
+  margin-bottom: 2rem;
+}
+.prices > header > p {
+  padding-left: 1rem;
+}
+.prices__card, .prices__card-summary > body {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+}
+.prices__card > body, .prices__card-summary > body {
+  margin: 1rem 0;
+}
+.prices__card > header > p {
+  text-align: center;
 }/*# sourceMappingURL=Prices.css.map */

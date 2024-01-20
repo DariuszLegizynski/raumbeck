@@ -1,5 +1,39 @@
 @import "../../styles/main.scss";
 
 .prices {
-  background-color: orange;
+  margin: 3rem 1rem 0;
+
+  & > header > h2,
+  &__card > body > p {
+    text-align: center;
+  }
+
+  & > header {
+    margin-top: 6rem;
+
+    & > h2 {
+      margin-bottom: 2rem;
+    }
+
+    & > p {
+      padding-left: 1rem;
+    }
+  }
+
+  &__card,
+  &__card-summary > body {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid grey;
+  }
+
+  &__card > body,
+  &__card-summary > body {
+    margin: 1rem 0;
+  }
+
+  &__card > header > p {
+    text-align: center;
+  }
 }

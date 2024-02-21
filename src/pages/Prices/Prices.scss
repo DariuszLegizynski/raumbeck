@@ -19,6 +19,14 @@
       text-align: center;
     }
 
+    &__body > h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 0.4rem;
+    }
+
     &.isActive {
       border: 2px solid $color-primary;
     }
@@ -26,12 +34,17 @@
     &.notActive {
       background-color: $color-black-opacity-light;
     }
+
+    &__exercise {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__card,
   &__card-summary__body {
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 1rem 0.8rem;
     border-radius: 1rem;
     border: 1px solid $color-tertiary;
   }
@@ -47,9 +60,15 @@
     &__list {
       display: flex;
       flex-direction: column;
-      row-gap: 0.4rem;
+      row-gap: 0.8rem;
 
-      margin-top: 1rem;
+      margin: 1rem 0;
+
+      & > ul {
+        display: flex;
+        align-items: center;
+        column-gap: 0.4rem;
+      }
     }
   }
 }

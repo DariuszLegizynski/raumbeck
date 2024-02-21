@@ -39,7 +39,7 @@ const NavbarMobile = () => {
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}>Leistungsumfang</motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Preise</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices">Preise</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}>Über mich</motion.ul>
 			</li>

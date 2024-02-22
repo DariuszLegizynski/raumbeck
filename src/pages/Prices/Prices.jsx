@@ -144,6 +144,10 @@ const Prices = () => {
 					/>
 				)}
 			</section>
+			<section className='prices__cancel'>
+				<h3>Therapieabsage</h3>
+				<p>Sollten Sie einen Termin nicht wahrnehmen können, geben Sie bitte möglichst frühzeitig Bescheid. Somit kann Patienten mit akuten Beschwerden auch kurzfristig eine Therapieeinheit ermöglicht werden. Termine, die später als 24 Stunden vor Therapiebeginn abgesagt werden, müssen in Rechnung gestellt werden.</p>
+			</section>
 		</article>
 	)
 }

@@ -136,6 +136,7 @@ textarea:focus-visible {
 .contact__bg {
   background-color: hsl(170, 17%, 86%);
   width: 100%;
+  padding-bottom: 1rem;
 }
 .contact__text > p {
   margin: 1.8rem 0;

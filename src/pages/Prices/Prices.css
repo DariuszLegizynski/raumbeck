@@ -181,4 +181,10 @@ textarea:focus-visible {
   align-items: center;
   -moz-column-gap: 0.4rem;
        column-gap: 0.4rem;
+}
+.prices__cancel {
+  padding: 2rem 0;
+}
+.prices__cancel > h3 {
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=Prices.css.map */

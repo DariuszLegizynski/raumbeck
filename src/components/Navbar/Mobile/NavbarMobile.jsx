@@ -3,7 +3,8 @@ import logo from "../../../assets/logo/Logo-remove-bg-small.png"
 
 import "./NavbarMobile.css"
 import Burger from "../../Burger/Burger"
-import { HashLink as Link } from 'react-router-hash-link'
+import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
 import { motion } from "framer-motion"
 
 const NavbarMobile = () => {
@@ -35,13 +36,13 @@ const NavbarMobile = () => {
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}><Link to="/">Home</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/#contact">Kontakt</Link></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact">Kontakt</HashLink></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Leistungsumfang</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services">Leistungsumfang</HashLink></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices">Preise</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}>Über mich</motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about">Über mich</Link></motion.ul>
 			</li>
 			<div onClick={() => setOpenBurger(!openBurger)}>
 				<Burger isOpen={openBurger ? "--open" : ""} />

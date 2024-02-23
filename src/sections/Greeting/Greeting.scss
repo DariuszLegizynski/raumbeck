@@ -1,0 +1,43 @@
+@import "../../styles/main.scss";
+
+.greeting {
+  display: flex;
+	flex-direction: column;
+  
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  & > p {
+    margin: 1rem 0;
+  }
+
+  & > img {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .greeting {
+  
+    & > hr {
+      display: none;
+    }
+  
+    &__first {
+      grid-area: first;
+    }
+  
+    & > img {
+      grid-area: image;
+    }
+  
+    &__second {
+      grid-area: second;
+    }
+  
+    &__third {
+      grid-area: third;
+    }
+  }
+}

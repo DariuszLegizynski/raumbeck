@@ -43,9 +43,9 @@ const Process = () => {
 		})
 	})
 
-	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef }) => {
+	const ProcessItem = ({ imgSrc, imgAlt, text, addToRef, childIdentifier }) => {
 		return (
-			<section ref={addToRef} className="process__item">
+			<section ref={addToRef} className={`process__item ${childIdentifier}`}>
 				<div>
 					<img className="process__img" src={imgSrc} alt={imgAlt} />
 				</div>
@@ -55,12 +55,12 @@ const Process = () => {
 	}
 
 	return (
-		<article className="process">
+		<article className="process" id="services">
 			<section className="process__title">
 				<h1 className="grey">Erstgespräch</h1>
 				<div class="hr-line" style={{ borderBottom: '4px solid white' }} />
 			</section>
-			<img src={meeting} alt="therapist" />
+			<img className="process__hero-image" src={meeting} alt="therapist" />
 			<section className="process__body">
 				<section className="process__container flex-center">
 					<div className="flex-center">
@@ -71,12 +71,14 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={welcomeImage}
+						childIdentifier={"process__child-1"}
 						imgAlt="a couple in love"
 						text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
 					/>
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={examImage}
+						childIdentifier={"process__child-2"}
 						imgAlt="examing a patient"
 						text="Ergänzend können Tests sowie eine Tastuntersuchung im Becken-, Bauch-, Rücken- und/oder Hüftbereich sowie dem Beckenboden gemacht werden, um noch
 						genauer auf Ihre Bedürfnisse einzugehen."
@@ -84,6 +86,7 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={protocolImage}
+						childIdentifier={"process__child-3"}
 						imgAlt="writing a protocol"
 						text="Je nach Beschwerdebild kann ein Protokoll über Ihre Blase oder Ihren Darm in Form eines entsprechenden Tagebuches noch mehr Aussage über die
 						Herkunft der eingetretenen Veränderung geben."
@@ -91,6 +94,7 @@ const Process = () => {
 					<ProcessItem
 						addToRef={addToRefs}
 						imgSrc={therapyImage}
+						childIdentifier={"process__child-4"}
 						imgAlt="person having a therapy"
 						text="Die Therapie wird daraufhin individuell ausgewählt und während des gesamten Behandlungsverlaufes adaptiert und angepasst."
 					/>

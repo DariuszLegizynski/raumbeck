@@ -128,25 +128,43 @@ textarea:focus-visible {
     font-size: 1.2rem;
   }
 }
-.reason-card {
-  padding: 1rem 1.6rem;
-  margin: 2rem 0;
-  background-color: hsla(0, 0%, 98%, 0.4);
-  min-width: 10rem;
-}
-.reason-card > h3 {
-  font-family: "FuturaLT-Light";
-  color: hsl(85, 55%, 51%);
-  text-align: left;
-  margin-bottom: 0.8rem;
-}
-.reason-card__reason {
-  padding-bottom: 0.2rem;
-  color: hsl(0, 0%, 10%);
-  text-align: left;
-}
-.reason-card__img {
-  width: 5rem;
+.navbar-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
   height: auto;
-  margin: 2rem auto;
-}/*# sourceMappingURL=ReasonCard.css.map */
+  padding: 0.4rem;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: hsla(0, 0%, 98%, 0.8);
+}
+.navbar-mobile > li {
+  position: fixed;
+  left: 0;
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.8rem 0;
+  background-color: hsla(0, 0%, 98%, 0.8);
+  transition: top 0.4s ease-out;
+}
+.navbar-mobile > li > ul {
+  padding: 0.8rem 0;
+}
+.navbar-mobile img {
+  width: auto;
+  height: 2rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=NavbarMobile.css.map */

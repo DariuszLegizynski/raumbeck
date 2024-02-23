@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -45,11 +50,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 span {
@@ -107,11 +112,34 @@ textarea:focus-visible {
   outline: none;
 }
 
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
 .hero__picture {
   position: relative;
   height: -moz-min-content;
   height: min-content;
   padding-bottom: 6rem;
+}
+.hero__picture > img {
+  max-height: 80vh;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
 }
 .hero__text {
   position: absolute;
@@ -126,12 +154,87 @@ textarea:focus-visible {
 .hero__title {
   display: flex;
 }
-.hero__greeting {
-  padding: 2rem 1rem 4rem 1rem;
+.hero__bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.hero__greeting > p {
-  margin: 1rem 0;
+.hero__contact--desktop {
+  display: none !important;
 }
-.hero__greeting > img {
-  padding: 2rem 0;
+.hero__contact--mobile {
+  width: 93% !important;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__picture {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero__text {
+    padding-left: 1.2rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .hero {
+    padding: 0 1rem;
+  }
+  .hero__picture > img {
+    max-height: 48rem;
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0;
+  }
+  .hero__picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .hero__content {
+    padding: 0 2rem;
+  }
+  .hero__text {
+    position: relative;
+    height: 400px;
+  }
+  .hero__contact {
+    display: flex !important;
+  }
+  .hero__contact--desktop {
+    display: flex !important;
+  }
+  .hero__contact--mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__bg {
+    margin: 4rem 2rem 0 2rem;
+    background-color: hsl(220, 17%, 59%);
+  }
+  .hero__picture {
+    height: 90vh;
+    max-width: 72rem;
+    align-items: central;
+    justify-items: center;
+    background-image: url(src/assets/images/Homepage1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .hero__picture > img {
+    display: none;
+  }
+  .hero__text {
+    height: 450px;
+    padding-left: 0rem;
+  }
+  .hero__content {
+    width: 28rem;
+  }
 }/*# sourceMappingURL=Hero.css.map */

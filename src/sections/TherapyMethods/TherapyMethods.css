@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -45,11 +50,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 span {
@@ -107,21 +112,44 @@ textarea:focus-visible {
   outline: none;
 }
 
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
 .therapy-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
-  padding: 4rem 1rem 6rem;
+  padding: 4rem 0 6rem;
   background-color: hsl(0, 0%, 98%);
+}
+.therapy-methods__wrapper {
+  width: 100%;
+  padding: 0 1rem;
 }
 .therapy-methods__title {
   margin-bottom: 2rem;
   text-align: left;
 }
-.therapy-methods__wrapper {
+.therapy-methods__content {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.therapy-methods__wrapper > svg {
+.therapy-methods__content > svg {
   position: absolute;
   z-index: 5;
   left: 75%;
@@ -162,4 +190,39 @@ textarea:focus-visible {
 }
 .therapy-methods__list::-webkit-scrollbar-thumb:active {
   background-color: hsl(85, 55%, 51%);
+}
+
+@media screen and (min-width: 768px) {
+  .therapy-methods {
+    padding: 4rem 0 6rem;
+  }
+  .therapy-methods .hand-icon {
+    display: none;
+  }
+  .therapy-methods__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+  .therapy-methods__list * {
+    scrollbar-width: none;
+    scrollbar-color: none;
+  }
+  .therapy-methods__list > :not(:last-child) {
+    margin-right: 0rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .therapy-methods__wrapper {
+    max-width: 72rem;
+  }
+  .therapy-methods__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .therapy-methods__list {
+    gap: 2rem;
+  }
 }/*# sourceMappingURL=TherapyMethods.css.map */

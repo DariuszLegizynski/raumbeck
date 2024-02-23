@@ -128,25 +128,76 @@ textarea:focus-visible {
     font-size: 1.2rem;
   }
 }
-.reason-card {
-  padding: 1rem 1.6rem;
-  margin: 2rem 0;
-  background-color: hsla(0, 0%, 98%, 0.4);
-  min-width: 10rem;
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 1rem 0;
 }
-.reason-card > h3 {
-  font-family: "FuturaLT-Light";
-  color: hsl(85, 55%, 51%);
-  text-align: left;
-  margin-bottom: 0.8rem;
+.prices__title {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
-.reason-card__reason {
-  padding-bottom: 0.2rem;
-  color: hsl(0, 0%, 10%);
-  text-align: left;
+.prices__title > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.reason-card__img {
-  width: 5rem;
-  height: auto;
-  margin: 2rem auto;
-}/*# sourceMappingURL=ReasonCard.css.map */
+.prices__card__body, .prices__card__footer {
+  text-align: center;
+}
+.prices__card__body > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+.prices__card.isActive {
+  border: 2px solid hsl(85, 55%, 51%);
+}
+.prices__card.notActive {
+  background-color: hsla(0, 0%, 10%, 0.1);
+}
+.prices__card__exercise {
+  display: flex;
+  justify-content: center;
+}
+.prices__card, .prices__card-summary__body {
+  margin: 1rem 0;
+  padding: 1rem 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(170, 17%, 86%);
+}
+.prices__card__body, .prices__card-summary__body {
+  margin: 1rem 0;
+}
+.prices__card-summary {
+  margin-top: 2rem;
+}
+.prices__card-summary__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  margin: 1rem 0;
+}
+.prices__card-summary__list > ul {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
+}
+.prices__cancel {
+  padding: 2rem 0;
+  max-width: 42rem;
+}
+.prices__cancel > h3 {
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  .prices__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}/*# sourceMappingURL=Prices.css.map */

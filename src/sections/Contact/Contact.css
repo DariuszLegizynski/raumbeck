@@ -29,6 +29,11 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.btn--green {
+  background-color: hsl(85, 55%, 51%);
 }
 
 h1, h2, h3, p, span, a {
@@ -45,11 +50,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 span {
@@ -107,9 +112,30 @@ textarea:focus-visible {
   outline: none;
 }
 
+@media screen and (min-width: 375px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
 .contact {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 0;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+.contact__bg {
   background-color: hsl(170, 17%, 86%);
+  width: 100%;
 }
 .contact__text > p {
   margin: 1.8rem 0;
@@ -142,4 +168,26 @@ textarea:focus-visible {
   align-items: center;
   margin: 0.4rem 0;
   max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    padding: 4rem 1rem 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: 4rem 2rem;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
 }/*# sourceMappingURL=Contact.css.map */

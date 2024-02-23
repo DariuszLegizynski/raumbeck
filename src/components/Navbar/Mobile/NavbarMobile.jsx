@@ -34,15 +34,15 @@ const NavbarMobile = () => {
 			<Link to="/"><img src={logo} /></Link>
 			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/">Home</Link></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/" onClick={() => setOpenBurger(!openBurger)}>Home</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact">Kontakt</HashLink></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact" onClick={() => setOpenBurger(!openBurger)}>Kontakt</HashLink></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services">Leistungsumfang</HashLink></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services" onClick={() => setOpenBurger(!openBurger)}>Leistungsumfang</HashLink></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices">Preise</Link></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices" onClick={() => setOpenBurger(!openBurger)}>Preise</Link></motion.ul>
 				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about">Über mich</Link></motion.ul>
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about" onClick={() => setOpenBurger(!openBurger)}>Über mich</Link></motion.ul>
 			</li>
 			<div onClick={() => setOpenBurger(!openBurger)}>
 				<Burger isOpen={openBurger ? "--open" : ""} />

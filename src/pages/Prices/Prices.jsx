@@ -116,19 +116,21 @@ const Prices = () => {
 				<p>Wählen Sie ein Tarif:</p>
 			</section>
 			<section>
-				<div onClick={() => setPrice(false)}>
-					<PriceCard
-						time={30}
-						price={!price}
-						iconEcercise={'exercise_short'}
-					/>
-				</div>
-				<div onClick={() => setPrice(true)}>
-					<PriceCard
-						time={45}
-						price={price}
-						iconEcercise={'exercise_long'}
-					/>
+				<div className='prices__cards'>
+					<div onClick={() => setPrice(false)}>
+						<PriceCard
+							time={30}
+							price={!price}
+							iconEcercise={'exercise_short'}
+						/>
+					</div>
+					<div onClick={() => setPrice(true)}>
+						<PriceCard
+							time={45}
+							price={price}
+							iconEcercise={'exercise_long'}
+						/>
+					</div>
 				</div>
 				{price ? (
 					<SummaryCard

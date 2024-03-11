@@ -84,6 +84,10 @@ a:hover, a:active {
   color: hsl(220, 17%, 59%);
 }
 
+.white {
+  color: hsl(0, 0%, 98%);
+}
+
 .flex-center {
   display: flex;
   justify-content: center;

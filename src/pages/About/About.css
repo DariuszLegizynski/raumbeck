@@ -4,6 +4,23 @@
 .about__text {
   padding: 0.8rem;
 }
+.about__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title > ul {
+  padding: 1rem 0;
+}
+.about__title > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+.about__title h3 {
+  padding: 0.4rem 0;
+}
 .about__story {
   padding-top: 1rem;
 }/*# sourceMappingURL=About.css.map */

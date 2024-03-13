@@ -132,7 +132,7 @@ textarea:focus-visible {
   h3 {
     font-size: 1.6rem;
   }
-  p {
+  span, p {
     font-size: 1.2rem;
   }
 }
@@ -230,7 +230,7 @@ textarea:focus-visible {
     max-width: 72rem;
     align-items: central;
     justify-items: center;
-    background-image: url(src/assets/images/Homepage1.jpg);
+    background-image: url(../../assets/images/Homepage1.jpg);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

@@ -21,7 +21,7 @@ const NavbarDesktop = () => {
 	return (
 		<nav
 			className="navbar-desktop"
-    	initial={{ y: `-100%` }}
+    	initial={{ y: `-110%` }}
     	animate={{ y: 0 }}
     	transition={{ duration: 2}}
 			ref={navbarHeight}

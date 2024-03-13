@@ -73,7 +73,7 @@ const IconItem = ({ type, fillColor, strokeColor, width, height, classType, path
 			) : null}
 			{type === 'knowledge' ? (
 				<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={fillColor} stroke={strokeColor} strokeWidth="3">
-					<g strokeWidth="00"></g>
+					<g strokeWidth="0"></g>
 					<g strokeLinecap="round" strokeLinejoin="round"></g>
 					<g>
 						<polygon points="32 36 8 24 32 12 56 24 32 36"></polygon>

@@ -17,6 +17,8 @@
   }
 
   &__card {
+    cursor: pointer;
+
     &__body,
     &__footer {
       text-align: center;

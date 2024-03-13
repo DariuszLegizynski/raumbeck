@@ -26,24 +26,24 @@ const NavbarMobile = () => {
 	return (
 		<motion.nav
 			className="navbar-mobile"
-    	initial={{ y: `-100%` }}
+    	initial={{ y: `-110%` }}
     	animate={{ y: 0 }}
     	transition={{ duration: 2}}
 			ref={navbarHeight}
 		>
 			<Link to="/"><img src={logo} /></Link>
-			<li ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
-				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/" onClick={() => setOpenBurger(!openBurger)}>Home</Link></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact" onClick={() => setOpenBurger(!openBurger)}>Kontakt</HashLink></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services" onClick={() => setOpenBurger(!openBurger)}>Leistungsumfang</HashLink></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices" onClick={() => setOpenBurger(!openBurger)}>Preise</Link></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: -5 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about" onClick={() => setOpenBurger(!openBurger)}>Über mich</Link></motion.ul>
-			</li>
+			<ul ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
+				<motion.li
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/" onClick={() => setOpenBurger(!openBurger)}><h3>Home</h3></Link></motion.li>
+				<motion.li
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact" onClick={() => setOpenBurger(!openBurger)}><h3>Kontakt</h3></HashLink></motion.li>
+				<motion.li
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services" onClick={() => setOpenBurger(!openBurger)}><h3>Leistungsumfang</h3></HashLink></motion.li>
+				<motion.li
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices" onClick={() => setOpenBurger(!openBurger)}><h3>Preise</h3></Link></motion.li>
+				<motion.li
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about" onClick={() => setOpenBurger(!openBurger)}><h3>Über mich</h3></Link></motion.li>
+			</ul>
 			<div onClick={() => setOpenBurger(!openBurger)}>
 				<Burger isOpen={openBurger ? "--open" : ""} />
 			</div>

@@ -1,7 +1,10 @@
 import { useState, useRef, useEffect } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { motion } from "framer-motion"
+import { HashLink as Link } from "react-router-hash-link"
 import IconItem from "../../assets/icons/icons"
+import praxis from "../../assets/images/AboutMe.jpg"
 
 import "./About.css"
 
@@ -26,16 +29,16 @@ const About = () => {
 		revealRefs.current.forEach(el => {
 			gsap.fromTo(
 				el,
-				{ opacity: 0, x: "-100%" },
+				{ opacity: 0, y: "150%" },
 				{
 					opacity: 1,
 					duration: 1,
-					x: 0,
+					y: 0,
 
 					scrollTrigger: {
 						trigger: el,
-						start: "bottom bottom",
-						end: "bottom bottom",
+						start: "top bottom",
+						end: "top bottom",
 					},
 				}
 			)
@@ -58,45 +61,57 @@ const About = () => {
 		)
 	}
 
-	const JobItem = ({ year, text, addToRef}) => {
+	const JobItem = ({ year, text, addToRef }) => {
 		return (
-						<div ref={addToRef} className="about__item">
-							<p>{year}</p>
-							<span>{text}</span>
-						</div>
+			<div
+				ref={addToRef}
+				className="about__item"
+			>
+				<p>{year}</p>
+				<span>{text}</span>
+			</div>
 		)
 	}
 
 	return (
 		<article className="about">
 			<h1>Über mich</h1>
-			<img
-				width="300px"
-				height="400px"
-			></img>
-			<section className="about__text">
-				<div>
+			<section className="about__hero">
+				<img
+					width="300px"
+					height="400px"
+					src={praxis}
+				></img>
+				<div  className="about__hero__me">
 					<h2>Anna Mehr</h2>
 					<h3>Dipl. Physiotherapeutin</h3>
 					<h3>&nbsp;</h3>
 					<h3>Schwerpunkt:</h3>
 					<h3>Gynäkologie, Urologie & Proktologie</h3>
 				</div>
+			</section>
+			<section className="about__body">
+				
 				<section className="about__title-mobile">
 					<ul>
-						<li
-							className="about__title-mobile__book"
+						<motion.li
+							whileHover={{ scale: 1.1, y: 3 }}
+							whileTap={{ scale: 0.9, y: 0 }}
+							className="about__title-mobile__nav about__title-mobile__book"
 							onClick={() => handleItemClick(1)}
 						>
 							<IconItem
 								type="book"
 								width="2rem"
 								height="2rem"
+								strokeColor={clickedItem === 1 ? "hsl(85, 55%, 51%)" : "#000000"}
 							/>
-							{clickedItem === 1 ? <h3>MEINE GESCHICHTE</h3> : null}
-						</li>
-						<li
-							className="about__title-mobile__knowledge"
+							{clickedItem === 1 ? <h3 style={clickedItem === 1 ? { color: "hsl(85, 55%, 51%)" } : {}}>MEINE GESCHICHTE</h3> : null}
+						</motion.li>
+						<motion.li
+							whileHover={{ scale: 1.1, y: 3 }}
+							whileTap={{ scale: 0.9, y: 0 }}
+							className="about__title-mobile__nav about__title-mobile__knowledge"
 							onClick={() => handleItemClick(2)}
 						>
 							<IconItem
@@ -104,55 +119,70 @@ const About = () => {
 								width="2.4rem"
 								height="2.4rem"
 								fillColor="none"
-								strokeColor="#000000"
+								strokeColor={clickedItem === 2 ? "hsl(85, 55%, 51%)" : "#000000"}
 							/>
-							{clickedItem === 2 ? <h3>WEITERBILDUNG</h3> : null}
-						</li>
-						<li
-							className="about__title-mobile__job"
+							{clickedItem === 2 ? <h3 style={clickedItem === 2 ? { color: "hsl(85, 55%, 51%)" } : {}}>WEITERBILDUNG</h3> : null}
+						</motion.li>
+						<motion.li
+							whileHover={{ scale: 1.1, y: 3 }}
+							whileTap={{ scale: 0.9, y: 0 }}
+							className="about__title-mobile__nav about__title-mobile__job"
 							onClick={() => handleItemClick(3)}
 						>
 							<IconItem
 								type="job"
 								width="2rem"
 								height="2rem"
-								strokeColor="#000000"
+								strokeColor={clickedItem === 3 ? "hsl(85, 55%, 51%)" : "#000000"}
 								fillColor="#000000"
 							/>
-							{clickedItem === 3 ? <h3>BERUFLICHES</h3> : null}
-						</li>
+							{clickedItem === 3 ? <h3 style={clickedItem === 3 ? { color: "hsl(85, 55%, 51%)" } : {}}>BERUFLICHES</h3> : null}
+						</motion.li>
 					</ul>
 				</section>
 				<section className="about__title-desktop">
 					<ul>
-						<li onClick={() => handleItemClick(1)}>
+						<motion.li
+							whileTap={{ scale: 0.9, y: 0 }}
+							onClick={() => handleItemClick(1)}
+							className="about__title-desktop__nav"
+						>
 							<IconItem
 								type="book"
 								width="2rem"
 								height="2rem"
+								strokeColor={clickedItem === 1 ? "hsl(85, 55%, 51%)" : ""}
 							/>
-							<h3>MEINE GESCHICHTE</h3>
-						</li>
-						<li onClick={() => handleItemClick(2)}>
+							<h3 style={clickedItem === 1 ? { color: "hsl(85, 55%, 51%)" } : {}}>MEINE GESCHICHTE</h3>
+						</motion.li>
+						<motion.li
+							whileTap={{ scale: 0.9, y: 0 }}
+							onClick={() => handleItemClick(2)}
+							className="about__title-desktop__nav"
+						>
 							<IconItem
 								type="knowledge"
 								width="2.4rem"
 								height="2.4rem"
 								fillColor="none"
-								strokeColor="#000000"
+								strokeColor={clickedItem === 2 ? "hsl(85, 55%, 51%)" : "#000000"}
 							/>
-							<h3>WEITERBILDUNG</h3>
-						</li>
-						<li onClick={() => handleItemClick(3)}>
+							<h3 style={clickedItem === 2 ? { color: "hsl(85, 55%, 51%)" } : {}}>WEITERBILDUNG</h3>
+						</motion.li>
+						<motion.li
+							whileTap={{ scale: 0.9, y: 0 }}
+							onClick={() => handleItemClick(3)}
+							className="about__title-desktop__nav"
+						>
 							<IconItem
 								type="job"
 								width="2rem"
 								height="2rem"
-								strokeColor="#000000"
+								strokeColor={clickedItem === 3 ? "hsl(85, 55%, 51%)" : "#000000"}
 								fillColor="#000000"
 							/>
-							<h3>BERUFLICHES</h3>
-						</li>
+							<h3 style={clickedItem === 3 ? { color: "hsl(85, 55%, 51%)" } : {}}>BERUFLICHES</h3>
+						</motion.li>
 					</ul>
 				</section>
 				{clickedItem === 1 ? (
@@ -191,7 +221,13 @@ const About = () => {
 				) : null}
 				{clickedItem === 3 ? (
 					<section className="about__item-list">
-						<h3>Weiterbildungen mit Schwerpunkt Beckenbodentherapie:</h3>
+						<motion.h3
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 2 }}
+						>
+							Weiterbildungen mit Schwerpunkt Beckenbodentherapie:
+						</motion.h3>
 						<JobItem
 							year="Mai 2023"
 							text="Beckenboden Special – Vulvodynie I & II"
@@ -346,6 +382,14 @@ const About = () => {
 						/>
 					</section>
 				) : null}
+			</section>
+			<section className="about__contact">
+				<Link
+					to="/#contact"
+					className="btn--contact btn btn--green"
+				>
+					Kontakt
+				</Link>
 			</section>
 		</article>
 	)

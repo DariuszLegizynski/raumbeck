@@ -20,7 +20,7 @@
 
   background-color: $color-white-opacity-dark;
 
-	& > li {
+	& > ul {
     position: fixed;
     left: 0;
 
@@ -35,7 +35,7 @@
     background-color: $color-white-opacity-dark;
     transition: top 0.4s ease-out;
 
-    & > ul {
+    & > li {
       padding: .8rem 0;
     }
 	}

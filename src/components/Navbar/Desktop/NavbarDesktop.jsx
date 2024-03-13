@@ -26,18 +26,18 @@ const NavbarDesktop = () => {
     	transition={{ duration: 2}}
 			ref={navbarHeight}
 		>
-			<li>
-				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/"><img src={logo} /></Link></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
-          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact">Kontakt</HashLink></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
-          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services">Leistungsumfang</HashLink></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices">Preise</Link></motion.ul>
-				<motion.ul whileHover={{ scale: 1.1, y: 3 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about">Über mich</Link></motion.ul>
-			</li>
+			<ul>
+				<motion.li whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/"><img src={logo} /></Link></motion.li>
+				<motion.li whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact"><h3>Kontakt</h3></HashLink></motion.li>
+				<motion.li whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#services"><h3>Leistungsumfang</h3></HashLink></motion.li>
+				<motion.li whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/prices"><h3>Preise</h3></Link></motion.li>
+				<motion.li whileHover={{ scale: 1.1, y: 3 }}
+          whileTap={{ scale: 0.9, y: 0 }}><Link to="/about"><h3>Über mich</h3></Link></motion.li>
+			</ul>
 		</nav>
 	)
 }

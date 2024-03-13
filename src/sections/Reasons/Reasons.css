@@ -132,7 +132,7 @@ textarea:focus-visible {
   h3 {
     font-size: 1.6rem;
   }
-  p {
+  span, p {
     font-size: 1.2rem;
   }
 }
@@ -140,7 +140,7 @@ textarea:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 4rem 1rem 0;
   background-color: hsl(170, 17%, 86%);
 }
 .reasons__title > * {
@@ -148,6 +148,9 @@ textarea:focus-visible {
 }
 
 @media screen and (min-width: 768px) {
+  .reasons {
+    padding: 4rem 1rem;
+  }
   .reasons__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;

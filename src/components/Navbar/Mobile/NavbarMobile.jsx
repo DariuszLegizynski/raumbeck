@@ -31,10 +31,10 @@ const NavbarMobile = () => {
     	transition={{ duration: 2}}
 			ref={navbarHeight}
 		>
-			<Link to="/"><img src={logo} /></Link>
+			<HashLink to="/#hero"><img src={logo} /></HashLink>
 			<ul ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight}}>
 				<motion.li
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/" onClick={() => setOpenBurger(!openBurger)}><h3>Home</h3></Link></motion.li>
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#hero" onClick={() => setOpenBurger(!openBurger)}><h3>Home</h3></HashLink></motion.li>
 				<motion.li
           whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact" onClick={() => setOpenBurger(!openBurger)}><h3>Kontakt</h3></HashLink></motion.li>
 				<motion.li

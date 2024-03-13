@@ -28,7 +28,7 @@ const NavbarDesktop = () => {
 		>
 			<ul>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }}
-          whileTap={{ scale: 0.9, y: 0 }}><Link to="/"><img src={logo} /></Link></motion.li>
+          whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#hero"><img src={logo} /></HashLink></motion.li>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }}
           whileTap={{ scale: 0.9, y: 0 }}><HashLink to="/#contact"><h3>Kontakt</h3></HashLink></motion.li>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }}

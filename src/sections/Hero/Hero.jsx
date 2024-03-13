@@ -31,7 +31,7 @@ const Hero = () => {
 	}
 
 	return (
-		<article className="hero">
+		<article id="hero" className="hero">
 			<div className="hero__bg">
 				<div className="hero__picture">
 					<img

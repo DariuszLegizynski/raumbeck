@@ -36,6 +36,10 @@
   background-color: hsl(85, 55%, 51%);
 }
 
+.btn--contact {
+  max-width: 80%;
+}
+
 h1, h2, h3, p, span, a {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
@@ -84,6 +88,10 @@ a:hover, a:active {
   color: hsl(220, 17%, 59%);
 }
 
+.white {
+  color: hsl(0, 0%, 98%);
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -124,7 +132,7 @@ textarea:focus-visible {
   h3 {
     font-size: 1.6rem;
   }
-  p {
+  span, p {
     font-size: 1.2rem;
   }
 }

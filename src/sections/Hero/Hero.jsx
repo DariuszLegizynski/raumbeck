@@ -32,7 +32,7 @@ const Hero = () => {
 
 	return (
 		<article className="hero">
-			<div class="hero__bg">
+			<div className="hero__bg">
 				<div className="hero__picture">
 					<img
 						src={hero}

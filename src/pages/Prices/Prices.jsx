@@ -13,24 +13,28 @@ const PriceCard = ({ time, handlePriceChange, price, iconEcercise }) => {
 			className={handleActiveClass}
 			onClick={handlePriceChange}
 		>
-			<div className='prices__card__exercise'>
-				{iconEcercise === 'exercise_short' ? (<IconItem
-					type='exercise_short'
-					width="2rem"
-					height="2rem"
-					fillColor="none"
-					strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
-				/>) : null}
-				{iconEcercise === 'exercise_long' ? (<IconItem
-					type='exercise_long'
-					width="2rem"
-					height="2rem"
-					fillColor="none"
-					strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
-				/>) : null}
+			<div className="prices__card__exercise">
+				{iconEcercise === "exercise_short" ? (
+					<IconItem
+						type="exercise_short"
+						width="2rem"
+						height="2rem"
+						fillColor="none"
+						strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
+					/>
+				) : null}
+				{iconEcercise === "exercise_long" ? (
+					<IconItem
+						type="exercise_long"
+						width="2rem"
+						height="2rem"
+						fillColor="none"
+						strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
+					/>
+				) : null}
 			</div>
 			<section className="prices__card__body">
-				<div className='prices__card__exercise'>
+				<div className="prices__card__exercise">
 					<IconItem
 						type="check"
 						width="2rem"
@@ -38,9 +42,7 @@ const PriceCard = ({ time, handlePriceChange, price, iconEcercise }) => {
 						fillColor="none"
 						strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
 					></IconItem>
-					<h3 style={price ? { color: "hsl(85, 55%, 51%)" } : {}}>
-						{time} Min
-					</h3>
+					<h3 style={price ? { color: "hsl(85, 55%, 51%)" } : {}}>{time} Min</h3>
 				</div>
 				<p>Physiotherapie</p>
 			</section>
@@ -55,7 +57,7 @@ const SummaryCard = ({ time, price, priceReturn }) => {
 	return (
 		<section className="prices__card-summary">
 			<section className="prices__card-summary__body">
-			<p>Preis:</p>
+				<p>Preis:</p>
 				<section>
 					<h2>{price} €</h2>
 					<p>Einmalige Zahlung</p>
@@ -65,42 +67,42 @@ const SummaryCard = ({ time, price, priceReturn }) => {
 						<h3>{time} Min</h3>
 					</ul>
 					<ul>
-            <IconItem
-              type="check_circle"
-              width="1rem"
-              height="1rem"
-              fillColor="none"
-            />
-            <p>Weshalb es sich Lohnt</p>
-          </ul>
+						<IconItem
+							type="check_circle"
+							width="1rem"
+							height="1rem"
+							fillColor="none"
+						/>
+						<p>Weshalb es sich Lohnt</p>
+					</ul>
 					<ul>
-            <IconItem
-              type="check_circle"
-              width="1rem"
-              height="1rem"
-              fillColor="none"
-            />
-            <p>Weshalb es sich Lohnt</p>
-          </ul>
+						<IconItem
+							type="check_circle"
+							width="1rem"
+							height="1rem"
+							fillColor="none"
+						/>
+						<p>Weshalb es sich Lohnt</p>
+					</ul>
 					<ul>
-            <IconItem
-              type="check_circle"
-              width="1rem"
-              height="1rem"
-              fillColor="none"
-            />
-            <p>Weshalb es sich Lohnt</p>
-          </ul>
+						<IconItem
+							type="check_circle"
+							width="1rem"
+							height="1rem"
+							fillColor="none"
+						/>
+						<p>Weshalb es sich Lohnt</p>
+					</ul>
 					<ul>
-            <p>Durchschnittliche Kostenrückerstattung: {priceReturn}&nbsp;€</p>
-          </ul>
+						<p>Durchschnittliche Kostenrückerstattung: {priceReturn}&nbsp;€</p>
+					</ul>
 				</li>
-        <Link
-          to="/#contact"
-          className="btn btn--green"
-        >
-          Kontakt
-        </Link>
+				<Link
+					to="/#contact"
+					className="btn btn--green"
+				>
+					Kontakt
+				</Link>
 			</section>
 		</section>
 	)
@@ -116,39 +118,46 @@ const Prices = () => {
 				<p>Wählen Sie ein Tarif:</p>
 			</section>
 			<section>
-				<div className='prices__cards'>
+				<div className="prices__cards">
 					<div onClick={() => setPrice(false)}>
 						<PriceCard
 							time={30}
 							price={!price}
-							iconEcercise={'exercise_short'}
+							iconEcercise={"exercise_short"}
 						/>
 					</div>
 					<div onClick={() => setPrice(true)}>
 						<PriceCard
 							time={45}
 							price={price}
-							iconEcercise={'exercise_long'}
+							iconEcercise={"exercise_long"}
 						/>
 					</div>
 				</div>
-				{price ? (
+
+				<div className={`summary-card ${price ? "visible" : ""}`}>
 					<SummaryCard
 						time={45}
 						price={80}
 						priceReturn={41}
 					/>
-				) : (
+				</div>
+
+				<div className={`summary-card ${price ? "" : "visible"}`}>
 					<SummaryCard
 						time={30}
 						price={55}
 						priceReturn={27}
 					/>
-				)}
+				</div>
 			</section>
-			<section className='prices__cancel'>
+			<section className="prices__cancel">
 				<h3>Therapieabsage</h3>
-				<p>Sollten Sie einen Termin nicht wahrnehmen können, geben Sie bitte möglichst frühzeitig Bescheid. Somit kann Patienten mit akuten Beschwerden auch kurzfristig eine Therapieeinheit ermöglicht werden. Termine, die später als 24 Stunden vor Therapiebeginn abgesagt werden, müssen in Rechnung gestellt werden.</p>
+				<p>
+					Sollten Sie einen Termin nicht wahrnehmen können, geben Sie bitte möglichst frühzeitig Bescheid. Somit kann Patienten mit akuten Beschwerden auch
+					kurzfristig eine Therapieeinheit ermöglicht werden. Termine, die später als 24 Stunden vor Therapiebeginn abgesagt werden, müssen in Rechnung gestellt
+					werden.
+				</p>
 			</section>
 		</article>
 	)

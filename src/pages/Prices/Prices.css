@@ -181,6 +181,10 @@ textarea:focus-visible {
 .prices__card__body, .prices__card-summary__body {
   margin: 1rem 0;
 }
+.prices__card-summary__body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
 .prices__card-summary {
   margin-top: 2rem;
 }
@@ -211,4 +215,17 @@ textarea:focus-visible {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
+}
+.summary-card {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: height 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s; /* Delay visibility to sync with opacity */
+}
+
+.summary-card.visible {
+  opacity: 1;
+  visibility: visible;
+  height: 440px;
+  transition-delay: 0s, 0s, 0s; /* Apply visibility instantly */
 }/*# sourceMappingURL=Prices.css.map */

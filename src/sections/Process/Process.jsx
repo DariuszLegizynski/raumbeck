@@ -57,8 +57,8 @@ const Process = () => {
 	return (
 		<article className="process" id="services">
 			<section className="process__title">
-				<h1 className="grey">Erstgespräch</h1>
-				<div className="hr-line" style={{ borderBottom: '4px solid white' }} />
+				<h1 className="green">Erstgespräch</h1>
+				<div className="hr-line" style={{ borderBottom: "4px solid white" }} />
 			</section>
 			<img className="process__hero-image" src={meeting} alt="therapist" />
 			<section className="process__body">

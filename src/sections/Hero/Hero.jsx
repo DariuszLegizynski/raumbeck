@@ -34,49 +34,26 @@ const Hero = () => {
 		<article id="hero" className="hero">
 			<div className="hero__bg">
 				<div className="hero__picture">
-					<img
-						src={hero}
-						alt="therapist"
-					/>
+					<img src={hero} alt="therapist" />
 					<div className="hero__content">
 						<motion.div className="hero__text" variants={container} initial="hidden" animate="show">
 							<div className="hero__title">
-								<motion.h1 style={{ y: -yPos * 2200 }} className="green" variants={item}>
-									A
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2400 }} className="green" variants={item}>
-									n
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2600 }} className="green" variants={item}>
-									n
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2800 }} className="green" variants={item}>
-									a
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 3000 }} variants={item}>
-									&nbsp;
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2800 }} className="grey" variants={item}>
-									M
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2600 }} className="grey" variants={item}>
-									e
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2400 }} className="grey" variants={item}>
-									h
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2200 }} className="grey" variants={item}>
-									r
+								<motion.h1 style={{ y: -yPos * 2000 }} className="grey" variants={item}>
+									Anna Mehr
 								</motion.h1>
 							</div>
 							<motion.p className="grey" variants={item} style={{ y: -yPos * 2000 }}>
 								--- Physiotherapeutin
 							</motion.p>
 						</motion.div>
-						<Link to="/#contact" className='hero__contact--desktop btn btn--green'>Kontakt</Link>
+						<Link to="/#contact" className="hero__contact--desktop btn btn--green">
+							Kontakt
+						</Link>
 					</div>
 				</div>
-				<Link to="/#contact" className='hero__contact--mobile btn btn--green'>Kontakt</Link>
+				<Link to="/#contact" className="hero__contact--mobile btn btn--green">
+					Kontakt
+				</Link>
 			</div>
 		</article>
 	)

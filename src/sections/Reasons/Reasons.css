@@ -40,7 +40,12 @@
   max-width: 80%;
 }
 
-h1, h2, h3, p, span, a {
+h1,
+h2,
+h3,
+p,
+span,
+a {
   font-family: "FuturaLT-Light";
   color: hsl(0, 0%, 10%);
 }
@@ -77,7 +82,7 @@ a:hover, a:active {
 .hr-line {
   width: 100%;
   margin: 1rem 0;
-  border-bottom: 4px solid hsl(169, 7%, 48%);
+  border-bottom: 4px solid hsl(0, 0%, 98%);
 }
 
 .green {
@@ -132,7 +137,8 @@ textarea:focus-visible {
   h3 {
     font-size: 1.6rem;
   }
-  span, p {
+  span,
+  p {
     font-size: 1.2rem;
   }
 }
@@ -142,9 +148,6 @@ textarea:focus-visible {
   align-items: center;
   padding: 4rem 1rem 0;
   background-color: hsl(170, 17%, 86%);
-}
-.reasons__title > * {
-  color: hsl(0, 0%, 10%);
 }
 
 @media screen and (min-width: 768px) {

@@ -2,98 +2,104 @@
 @import "./components";
 @import "./variables";
 
-h1, h2, h3, p, span, a {
-  font-family: "FuturaLT-Light";
-  color: $color-black;
+h1,
+h2,
+h3,
+p,
+span,
+a {
+	font-family: "FuturaLT-Light";
+	color: $color-black;
 }
 
 h1 {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem
+	font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.2rem
+	font-size: 1.2rem;
 }
 
 p {
-  font-size: .9rem;
+	font-size: 0.9rem;
 }
 
 span {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 
-  &:hover,
-  &:active {
-    text-decoration: none;
-  }
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
 }
 
 .hr-line {
-  width: 100%;
-  margin: 1rem 0;
-  border-bottom: 4px solid hsl(169, 7%, 48%);
+	width: 100%;
+	margin: 1rem 0;
+	border-bottom: 4px solid $color-white;
 }
 
 .green {
-  color: $color-primary;
+	color: $color-primary;
 }
 
 .grey {
-  color: $color-secondary;
+	color: $color-secondary;
 }
 
 .white {
-  color: $color-white;
+	color: $color-white;
 }
 
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 input,
 textarea {
-  border: none;
-  text-decoration: none;
-  background-color: $color-white;
-  font-family: "FuturaLT-Light";
-  font-size: 1rem;
+	border: none;
+	text-decoration: none;
+	background-color: $color-white;
+	font-family: "FuturaLT-Light";
+	font-size: 1rem;
 
-  &::placeholder {
-    color: $color-grey;
-    opacity: 1;
-  }
+	&::placeholder {
+		color: $color-grey;
+		opacity: 1;
+	}
 
-  &:focus-visible {
-    outline: none;
-  }
+	&:focus-visible {
+		outline: none;
+	}
 }
 
 @media screen and (min-width: 375px) {
-  h3 {
-    font-size: 1.4rem;
-  }
-  p {
-    font-size: 1rem;
-  }
+	h3 {
+		font-size: 1.4rem;
+	}
+	p {
+		font-size: 1rem;
+	}
 }
 
 @media screen and (min-width: 768px) {
-  h3 {
-    font-size: 1.6rem;
-  }
-  span, p {
-    font-size: 1.2rem;
-  }
+	h3 {
+		font-size: 1.6rem;
+	}
+	span,
+	p {
+		font-size: 1.2rem;
+	}
 }

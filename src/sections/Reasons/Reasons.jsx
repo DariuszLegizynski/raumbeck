@@ -5,7 +5,7 @@ const Reasons = () => {
 	const cardList = [
 		{
 			id: 1,
-			image: "walkHuman",
+			image: "urinaryIncontinence",
 			category: "Harninkontinenz",
 			reasons: [
 				"Harn- oder Stuhlverlust",
@@ -17,19 +17,19 @@ const Reasons = () => {
 		},
 		{
 			id: 2,
-			image: "plaster",
+			image: "postOp",
 			category: "Postoperative Versorgung",
 			reasons: ["Gebärmutterentfernung", "Senkungsoperationen", "Prostataentfernung", "Neoblaseanlage", "Darmoperation", "Stoma Rück OP"],
 		},
 		{
 			id: 3,
-			image: "heartFolder",
+			image: "pregnancy",
 			category: "Schwangerschaft und Wochenbett",
 			reasons: ["Schwangerschaftsbeschwerden", "Rückbildung nach der Schwangerschaft"],
 		},
 		{
 			id: 4,
-			image: "crossShield",
+			image: "sexual-health",
 			category: "Sexuelle Gesundheit",
 			reasons: ["Schmerzen beim Geschlechtsverkehr", "Vulvodynie", "Chronische Schmerzen: Geschlechtsorgane"],
 		},

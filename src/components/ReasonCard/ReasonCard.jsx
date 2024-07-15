@@ -1,30 +1,29 @@
-import "./ReasonCard.css";
-import DrawHumanWalkIcon from "../../components/animations/DrawHumanWalk/DrawHumanWalkIcon"
-import DrawPflasterIcon from "../../components/animations/DrawPflaster/DrawPflasterIcon"
-import DrawHeartShieldIcon from '../../components/animations/DrawHeartShield/DrawHeartShieldIcon'
-import DrawHeartFolderIcon from '../../components/animations/DrawHeartFolder/DrawHeartFolderIcon'
+import "./ReasonCard.css"
+import DrawUrinaryIncontinence from "../animations/DrawUrinaryIncontinence/DrawUrinaryIncontinenceIcon.jsx"
+import DrawHeartFolderIcon from "../animations/DrawHeartFolder/DrawHeartFolderIcon"
+import DrawPostOpIcon from "../animations/DrawPostOp/DrawPostOpIcon.jsx"
+import DrawSexualHealthIcon from "../../components/animations/DrawSexualHealth/DrawSexualHealthIcon.jsx"
 
-const ReasonCard = ({title, reasonList, image}) => {
-  const renderedReasons = reasonList.map((reason, id) => {
-    return (
-      <p className="reason-card__reason" key={`${id}${reason}`}>{reason}</p>
-    )
-  })
+const ReasonCard = ({ title, reasonList, image }) => {
+	const renderedReasons = reasonList.map((reason, id) => {
+		return (
+			<p className="reason-card__reason" key={`${id}${reason}`}>
+				{reason}
+			</p>
+		)
+	})
 
 	return (
 		<article className="reason-card">
 			<section className="reason-card__img">
-				{image === 'walkHuman' && <DrawHumanWalkIcon />}
-				{image === 'plaster' && <DrawPflasterIcon />}
-				{image === 'crossShield' && <DrawHeartShieldIcon />}
-				{image === 'heartFolder' && <DrawHeartFolderIcon />}
+				{image === "urinaryIncontinence" && <DrawUrinaryIncontinence />}
+				{image === "postOp" && <DrawPostOpIcon />}
+				{image === "pregnancy" && <DrawHeartFolderIcon />}
+				{image === "sexual-health" && <DrawSexualHealthIcon />}
 			</section>
 			<h3>{title}</h3>
-			<section className="reason-card__reasons">
-				{renderedReasons}
-			</section>
+			<section className="reason-card__reasons">{renderedReasons}</section>
 		</article>
-
 	)
 }
 

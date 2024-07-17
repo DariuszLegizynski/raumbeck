@@ -26,7 +26,7 @@ const DrawPostOpIcon = () => {
 			{ strokeDashoffset: calculatedPostOp1PathLength },
 			{
 				strokeDashoffset: 0,
-				duration: 3,
+				duration: 4,
 				scrollTrigger: {
 					trigger: postOpIcon,
 				},
@@ -42,7 +42,7 @@ const DrawPostOpIcon = () => {
 			{ strokeDashoffset: calculatedPostOp3PathLength },
 			{
 				strokeDashoffset: 0,
-				duration: 3,
+				duration: 4,
 				scrollTrigger: {
 					trigger: postOpIcon,
 				},

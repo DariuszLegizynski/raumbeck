@@ -1,6 +1,6 @@
 import "./ReasonCard.css"
 import DrawUrinaryIncontinence from "../animations/DrawUrinaryIncontinence/DrawUrinaryIncontinenceIcon.jsx"
-import DrawHeartFolderIcon from "../animations/DrawHeartFolder/DrawHeartFolderIcon"
+import DrawPregnancyIcon from "../animations/DrawPregnancy/DrawPregnancyIcon.jsx"
 import DrawPostOpIcon from "../animations/DrawPostOp/DrawPostOpIcon.jsx"
 import DrawSexualHealthIcon from "../../components/animations/DrawSexualHealth/DrawSexualHealthIcon.jsx"
 
@@ -18,7 +18,7 @@ const ReasonCard = ({ title, reasonList, image }) => {
 			<section className="reason-card__img">
 				{image === "urinaryIncontinence" && <DrawUrinaryIncontinence />}
 				{image === "postOp" && <DrawPostOpIcon />}
-				{image === "pregnancy" && <DrawHeartFolderIcon />}
+				{image === "pregnancy" && <DrawPregnancyIcon />}
 				{image === "sexual-health" && <DrawSexualHealthIcon />}
 			</section>
 			<h3>{title}</h3>

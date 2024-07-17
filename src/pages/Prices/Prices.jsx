@@ -3,45 +3,25 @@ import "./Prices.css"
 
 import { useState } from "react"
 import { HashLink as Link } from "react-router-hash-link"
+import { Helmet } from "react-helmet"
 
 const PriceCard = ({ time, handlePriceChange, price, iconEcercise }) => {
 	const baseClassName = "prices__card"
 	const handleActiveClass = `${baseClassName} ${price ? "isActive" : "notActive"}`
 
 	return (
-		<section
-			className={handleActiveClass}
-			onClick={handlePriceChange}
-		>
+		<section className={handleActiveClass} onClick={handlePriceChange}>
 			<div className="prices__card__exercise">
 				{iconEcercise === "exercise_short" ? (
-					<IconItem
-						type="exercise_short"
-						width="2rem"
-						height="2rem"
-						fillColor="none"
-						strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
-					/>
+					<IconItem type="exercise_short" width="2rem" height="2rem" fillColor="none" strokeColor={price ? "hsl(85, 55%, 51%)" : "black"} />
 				) : null}
 				{iconEcercise === "exercise_long" ? (
-					<IconItem
-						type="exercise_long"
-						width="2rem"
-						height="2rem"
-						fillColor="none"
-						strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
-					/>
+					<IconItem type="exercise_long" width="2rem" height="2rem" fillColor="none" strokeColor={price ? "hsl(85, 55%, 51%)" : "black"} />
 				) : null}
 			</div>
 			<section className="prices__card__body">
 				<div className="prices__card__exercise">
-					<IconItem
-						type="check"
-						width="2rem"
-						height="2rem"
-						fillColor="none"
-						strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}
-					></IconItem>
+					<IconItem type="check" width="2rem" height="2rem" fillColor="none" strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}></IconItem>
 					<h3 style={price ? { color: "hsl(85, 55%, 51%)" } : {}}>{time} Min</h3>
 				</div>
 				<p>Physiotherapie</p>
@@ -67,40 +47,22 @@ const SummaryCard = ({ time, price, priceReturn }) => {
 						<h3>{time} Min</h3>
 					</ul>
 					<ul>
-						<IconItem
-							type="check_circle"
-							width="1rem"
-							height="1rem"
-							fillColor="none"
-						/>
+						<IconItem type="check_circle" width="1rem" height="1rem" fillColor="none" />
 						<p>Weshalb es sich Lohnt</p>
 					</ul>
 					<ul>
-						<IconItem
-							type="check_circle"
-							width="1rem"
-							height="1rem"
-							fillColor="none"
-						/>
+						<IconItem type="check_circle" width="1rem" height="1rem" fillColor="none" />
 						<p>Weshalb es sich Lohnt</p>
 					</ul>
 					<ul>
-						<IconItem
-							type="check_circle"
-							width="1rem"
-							height="1rem"
-							fillColor="none"
-						/>
+						<IconItem type="check_circle" width="1rem" height="1rem" fillColor="none" />
 						<p>Weshalb es sich Lohnt</p>
 					</ul>
 					<ul>
 						<p>Durchschnittliche Kostenrückerstattung: {priceReturn}&nbsp;€</p>
 					</ul>
 				</li>
-				<Link
-					to="/#contact"
-					className="btn btn--green"
-				>
+				<Link to="/#contact" className="btn btn--green">
 					Kontakt
 				</Link>
 			</section>
@@ -113,6 +75,13 @@ const Prices = () => {
 
 	return (
 		<article className="prices">
+			<Helmet>
+				<title>Preise - Anna Mehr</title>
+				<meta
+					name="description"
+					content="Entdecken Sie die Preise für Physiotherapie bei Anna Mehr. Ich biete Behandlungen für 30 Minuten ab 55 € und 45 Minuten ab 80 € an. Informieren Sie sich über meine Leistungen und Kontaktmöglichkeiten."
+				/>
+			</Helmet>
 			<section className="prices__title">
 				<h2>Preise</h2>
 				<p>Wählen Sie ein Tarif:</p>
@@ -120,35 +89,19 @@ const Prices = () => {
 			<section>
 				<div className="prices__cards">
 					<div onClick={() => setPrice(false)}>
-						<PriceCard
-							time={30}
-							price={!price}
-							iconEcercise={"exercise_short"}
-						/>
+						<PriceCard time={30} price={!price} iconEcercise={"exercise_short"} />
 					</div>
 					<div onClick={() => setPrice(true)}>
-						<PriceCard
-							time={45}
-							price={price}
-							iconEcercise={"exercise_long"}
-						/>
+						<PriceCard time={45} price={price} iconEcercise={"exercise_long"} />
 					</div>
 				</div>
 
 				<div className={`summary-card ${price ? "visible" : ""}`}>
-					<SummaryCard
-						time={45}
-						price={80}
-						priceReturn={41}
-					/>
+					<SummaryCard time={45} price={80} priceReturn={41} />
 				</div>
 
 				<div className={`summary-card ${price ? "" : "visible"}`}>
-					<SummaryCard
-						time={30}
-						price={55}
-						priceReturn={27}
-					/>
+					<SummaryCard time={30} price={55} priceReturn={27} />
 				</div>
 			</section>
 			<section className="prices__cancel">
@@ -164,4 +117,3 @@ const Prices = () => {
 }
 
 export default Prices
-

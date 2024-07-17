@@ -1,6 +1,4 @@
 import hero from "../../assets/images/AboutMe.jpg"
-import hero2 from "../../assets/images/Homepage2.jpg"
-import therapy from "../../assets/images/Homepage1.jpg"
 import { useState } from "react"
 import { motion, useScroll } from "framer-motion"
 import { HashLink as Link } from "react-router-hash-link"
@@ -36,7 +34,7 @@ const Hero = () => {
 				<div className="hero__picture">
 					<img src={hero} alt="therapist" />
 					<div className="hero__content">
-						<motion.div className="hero__text" variants={container} initial="hidden" animate="show">
+						<motion.title className="hero__text" variants={container} initial="hidden" animate="show">
 							<div className="hero__title">
 								<motion.h1 style={{ y: -yPos * 2200 }} className="green" variants={item}>
 									Anna
@@ -51,7 +49,7 @@ const Hero = () => {
 							<motion.p className="grey" variants={item} style={{ y: -yPos * 2000 }}>
 								--- Physiotherapeutin
 							</motion.p>
-						</motion.div>
+						</motion.title>
 						<Link to="/#contact" className="hero__contact--desktop btn btn--green">
 							Kontakt
 						</Link>

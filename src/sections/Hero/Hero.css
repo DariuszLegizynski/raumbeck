@@ -229,14 +229,13 @@ textarea:focus-visible {
 @media screen and (min-width: 1024px) {
   .hero__bg {
     margin: 4rem 2rem 0 2rem;
-    background-color: hsl(220, 17%, 59%);
   }
   .hero__picture {
     height: 90vh;
     max-width: 72rem;
     align-items: central;
     justify-items: center;
-    background-image: url(../../assets/images/Homepage1.jpg);
+    background-image: url(../../assets/images/AboutMe_wide.jpg);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

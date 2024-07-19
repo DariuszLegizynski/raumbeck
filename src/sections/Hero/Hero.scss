@@ -119,7 +119,6 @@
 	.hero {
 		&__bg {
 			margin: 4rem 2rem 0 2rem;
-			// background-color: $color-secondary;
 		}
 
 		&__picture {
@@ -129,7 +128,7 @@
 			align-items: central;
 			justify-items: center;
 
-			background-image: url(../../assets/images/AboutMe_wide.jpg);
+			background-image: url(../../assets/images/AboutMe_wide.webp);
 			background-size: contain;
 			background-position: center center;
 			background-repeat: no-repeat;

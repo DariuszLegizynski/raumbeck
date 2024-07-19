@@ -54,7 +54,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .hero {
+	.hero {
 		&__picture {
 			width: 80%;
 			margin: 0 auto;
@@ -63,11 +63,11 @@
 		&__text {
 			padding-left: 1.2rem;
 		}
-  }
+	}
 }
 
 @media screen and (min-width: 640px) {
-  .hero {
+	.hero {
 		padding: 0 1rem;
 
 		&__picture {
@@ -76,11 +76,11 @@
 				max-width: 32rem;
 			}
 		}
-  }
+	}
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+	.hero {
 		padding: 0;
 		&__picture {
 			display: grid;
@@ -107,19 +107,19 @@
 			&--desktop {
 				display: flex !important;
 			}
-	
+
 			&--mobile {
 				display: none !important;
 			}
 		}
-  }
+	}
 }
 
 @media screen and (min-width: 1024px) {
-  .hero {
+	.hero {
 		&__bg {
 			margin: 4rem 2rem 0 2rem;
-			background-color: $color-secondary;
+			// background-color: $color-secondary;
 		}
 
 		&__picture {
@@ -128,9 +128,8 @@
 
 			align-items: central;
 			justify-items: center;
-			
-			background-image: 
-			url(../../assets/images/Homepage1.jpg);
+
+			background-image: url(../../assets/images/AboutMe_wide.jpg);
 			background-size: contain;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -148,6 +147,6 @@
 
 		&__content {
 			width: 28rem;
-		}		
-  }
+		}
+	}
 }

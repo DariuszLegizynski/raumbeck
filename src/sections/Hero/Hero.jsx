@@ -1,4 +1,4 @@
-import hero from "../../assets/images/AboutMe.jpg"
+import hero from "../../assets/images/AboutMe_small.jpg"
 import { useState } from "react"
 import { motion, useScroll } from "framer-motion"
 import { HashLink as Link } from "react-router-hash-link"

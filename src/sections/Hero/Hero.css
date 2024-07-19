@@ -235,7 +235,7 @@ textarea:focus-visible {
     max-width: 72rem;
     align-items: central;
     justify-items: center;
-    background-image: url(../../assets/images/AboutMe_wide.jpg);
+    background-image: url(../../assets/images/AboutMe_wide.webp);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

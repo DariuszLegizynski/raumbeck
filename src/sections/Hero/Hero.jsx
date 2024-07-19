@@ -1,4 +1,4 @@
-import hero from "../../assets/images/AboutMe.jpg"
+import hero from "../../assets/images/AboutMe_small.webp"
 import { useState } from "react"
 import { motion, useScroll } from "framer-motion"
 import { HashLink as Link } from "react-router-hash-link"
@@ -32,7 +32,7 @@ const Hero = () => {
 		<article id="hero" className="hero">
 			<div className="hero__bg">
 				<div className="hero__picture">
-					<img src={hero} alt="therapist" />
+					<img src={hero} alt="therapist" width={1000} height={1550} />
 					<div className="hero__content">
 						<motion.title className="hero__text" variants={container} initial="hidden" animate="show">
 							<div className="hero__title">

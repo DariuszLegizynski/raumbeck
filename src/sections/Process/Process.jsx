@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react"
 
 import DrawPathSVG from "../../components/animations/drawPath/DrawPathSVG"
 
-import meeting from "../../assets/images/Homepage3_2.jpg"
+import meeting from "../../assets/images/Homepage3_small.webp"
 
 import welcomeImage from "../../assets/illustrations/001_undraw_welcome_re_h3d9.svg"
 import examImage from "../../assets/illustrations/002_undraw_medicine_b-1-ol.svg"
@@ -47,7 +47,7 @@ const Process = () => {
 		return (
 			<section ref={addToRef} className={`process__item ${childIdentifier}`}>
 				<div>
-					<img className="process__img" src={imgSrc} alt={imgAlt} />
+					<img className="process__img" src={imgSrc} alt={imgAlt} height={96} width={96} />
 				</div>
 				<p>{text}</p>
 			</section>
@@ -60,7 +60,7 @@ const Process = () => {
 				<h1 className="green">Erstgespräch</h1>
 				<div className="hr-line" />
 			</section>
-			<img className="process__hero-image" src={meeting} alt="therapist" />
+			<img className="process__hero-image" src={meeting} alt="meeting with a therapist" width={1200} height={900} />
 			<section className="process__body">
 				<section className="process__container flex-center">
 					<div className="flex-center">
@@ -72,7 +72,7 @@ const Process = () => {
 						addToRef={addToRefs}
 						imgSrc={welcomeImage}
 						childIdentifier={"process__child-1"}
-						imgAlt="a couple in love"
+						imgAlt="women sitting in window"
 						text="Zu Beginn steht ein ausführliches Gespräch mit speziell zugeschnittenen Fragen zur vollen Erfassung Ihrer Beschwerden."
 					/>
 					<ProcessItem

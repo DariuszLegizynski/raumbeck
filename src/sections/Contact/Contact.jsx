@@ -6,7 +6,7 @@ const Contact = () => {
 		<div className="contact__bg">
 			<article className="contact" id="contact">
 				<section className="contact__text">
-					<h1 className="green">Kontakt</h1>
+					<h2 className="green">Kontakt</h2>
 					<div className="hr-line" />
 					<p>Die Praxis liegt zentral im Zentrum von Wiener Neustadt am Ferdinand-Porsche-Ring Nr.&nbsp;7/Top&nbsp;1.</p>
 					<p>Parkmöglichkeiten sind direkt vor dem Gebäude in den umliegenden Kurzparkzonen oder in einem der naheliegenden Parkhäuser vorhanden.</p>

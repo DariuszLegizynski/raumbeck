@@ -6,6 +6,7 @@ import "./Home.css"
 import Contact from "../../sections/Contact/Contact"
 import TherapyMethods from "../../sections/TherapyMethods/TherapyMethods"
 import Reasons from "../../sections/Reasons/Reasons"
+import Prices from "../../sections/Prices/Prices"
 
 import Greeting from "../../sections/Greeting/Greeting"
 
@@ -25,6 +26,7 @@ const Home = () => {
 				<Reasons />
 				<Process />
 				<TherapyMethods />
+				<Prices />
 				<Contact />
 			</article>
 		</>

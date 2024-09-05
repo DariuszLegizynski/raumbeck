@@ -2,8 +2,6 @@ import IconItem from "../../assets/icons/icons"
 import "./Prices.css"
 
 import { useState } from "react"
-import { HashLink as Link } from "react-router-hash-link"
-import { Helmet, HelmetProvider } from "react-helmet-async"
 
 const PriceCard = ({ time, handlePriceChange, price, iconEcercise }) => {
 	const baseClassName = "prices__card"
@@ -39,7 +37,7 @@ const SummaryCard = ({ time, price, priceReturn }) => {
 			<section className="prices__card-summary__body">
 				<p>Preis:</p>
 				<section>
-					<h2>{price} €</h2>
+					<h3>{price} €</h3>
 					<p>Einmalige Zahlung</p>
 				</section>
 				<li className="prices__card-summary__list">
@@ -62,35 +60,24 @@ const SummaryCard = ({ time, price, priceReturn }) => {
 						<p>Durchschnittliche Kostenrückerstattung: {priceReturn}&nbsp;€</p>
 					</ul>
 				</li>
-				<Link to="/#contact" className="btn btn--green">
-					Kontakt
-				</Link>
 			</section>
 		</section>
 	)
 }
 
 const Prices = () => {
-	const [price, setPrice] = useState(false)
+	const [price, setPrice] = useState(true)
 
 	return (
 		<article className="prices">
-			<HelmetProvider>
-				<title>Preise - Anna Mehr</title>
-				<meta
-					name="description"
-					content="Entdecken Sie die Preise für Physiotherapie bei Anna Mehr. Ich biete Behandlungen für 30 Minuten ab 55 € und 45 Minuten ab 80 € an. Informieren Sie sich über meine Leistungen und Kontaktmöglichkeiten."
-				/>
-			</HelmetProvider>
 			<section className="prices__title">
-				<h2>Preise</h2>
-				<p>Wählen Sie ein Tarif:</p>
+				<h2>Preis</h2>
 			</section>
 			<section>
 				<div className="prices__cards">
-					<div onClick={() => setPrice(false)}>
+					{/* <div onClick={() => setPrice(false)}>
 						<PriceCard time={30} price={!price} iconEcercise={"exercise_short"} />
-					</div>
+					</div> */}
 					<div onClick={() => setPrice(true)}>
 						<PriceCard time={45} price={price} iconEcercise={"exercise_long"} />
 					</div>
@@ -100,9 +87,9 @@ const Prices = () => {
 					<SummaryCard time={45} price={80} priceReturn={41} />
 				</div>
 
-				<div className={`summary-card ${price ? "" : "visible"}`}>
+				{/* <div className={`summary-card ${price ? "" : "visible"}`}>
 					<SummaryCard time={30} price={55} priceReturn={27} />
-				</div>
+				</div> */}
 			</section>
 			<section className="prices__cancel">
 				<h3>Therapieabsage</h3>

@@ -71,9 +71,9 @@ const Prices = () => {
 	return (
 		<article className="prices">
 			<section className="prices__title">
-				<h2>Preis</h2>
+				<h2 className="green">Preis</h2>
 			</section>
-			<section>
+			<sectio className="prices__wrapper">
 				<div className="prices__cards">
 					{/* <div onClick={() => setPrice(false)}>
 						<PriceCard time={30} price={!price} iconEcercise={"exercise_short"} />
@@ -90,7 +90,7 @@ const Prices = () => {
 				{/* <div className={`summary-card ${price ? "" : "visible"}`}>
 					<SummaryCard time={30} price={55} priceReturn={27} />
 				</div> */}
-			</section>
+			</sectio>
 			<section className="prices__cancel">
 				<h3>Therapieabsage</h3>
 				<p>

@@ -10,7 +10,7 @@ const Hero = () => {
 
 	const [yPos, setYPos] = useState(0)
 
-	scrollYProgress.onChange(val => setYPos(val))
+	scrollYProgress.on("change", val => setYPos(val))
 
 	const container = {
 		hidden: { opacity: 0 },

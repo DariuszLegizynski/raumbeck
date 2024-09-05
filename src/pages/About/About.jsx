@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link"
 import { Helmet } from "react-helmet"
 
 import IconItem from "../../assets/icons/icons"
-import praxis from "../../assets/images/AboutMe.jpg"
+import praxis from "/images/AboutMe.jpg"
 
 import "./About.css"
 

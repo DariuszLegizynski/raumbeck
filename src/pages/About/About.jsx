@@ -3,7 +3,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { motion } from "framer-motion"
 import { HashLink as Link } from "react-router-hash-link"
-import { Helmet } from "react-helmet"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 import IconItem from "../../assets/icons/icons"
 import praxis from "/images/AboutMe.jpg"
@@ -71,13 +71,13 @@ const About = () => {
 
 	return (
 		<>
-			<Helmet>
+			<HelmetProvider>
 				<title>Über mich - Anna Mehr</title>
 				<meta
 					name="description"
 					content="Erfahren Sie mehr über Anna Mehr, Ihre Expertin für Physiotherapie in Wiener Neustadt. Ich biete individuelle Behandlungsansätze, um Ihre Gesundheit und Beweglichkeit zu verbessern. Entdecken Sie meine Praxis und Erfahrung als Physiotherapeutin und meine ganzheitliche Herangehensweise für Ihr Wohlbefinden."
 				/>
-			</Helmet>
+			</HelmetProvider>
 			<article className="about">
 				<h1>Über mich</h1>
 				<section className="about__hero">

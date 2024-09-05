@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 import Hero from "../../sections/Hero/Hero"
 import Process from "../../sections/Process/Process"
@@ -12,13 +12,13 @@ import Greeting from "../../sections/Greeting/Greeting"
 const Home = () => {
 	return (
 		<>
-			<Helmet>
+			<HelmetProvider>
 				<title>Startseite - Anna Mehr</title>
 				<meta
 					name="description"
 					content="Willkommen bei Anna Mehr, Ihrer vertrauenswürdigen Physiotherapeutin in Wiener Neustadt. Ich biete personalisierte Behandlungspläne zur Genesung von Verletzungen, Schmerzlinderung und Verbesserung der Mobilität. Vereinbaren Sie noch heute einen Termin!"
 				/>
-			</Helmet>
+			</HelmetProvider>
 			<article className="home">
 				<Hero />
 				<Greeting />

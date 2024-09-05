@@ -3,7 +3,7 @@ import "./Prices.css"
 
 import { useState } from "react"
 import { HashLink as Link } from "react-router-hash-link"
-import { Helmet } from "react-helmet"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 const PriceCard = ({ time, handlePriceChange, price, iconEcercise }) => {
 	const baseClassName = "prices__card"
@@ -75,13 +75,13 @@ const Prices = () => {
 
 	return (
 		<article className="prices">
-			<Helmet>
+			<HelmetProvider>
 				<title>Preise - Anna Mehr</title>
 				<meta
 					name="description"
 					content="Entdecken Sie die Preise für Physiotherapie bei Anna Mehr. Ich biete Behandlungen für 30 Minuten ab 55 € und 45 Minuten ab 80 € an. Informieren Sie sich über meine Leistungen und Kontaktmöglichkeiten."
 				/>
-			</Helmet>
+			</HelmetProvider>
 			<section className="prices__title">
 				<h2>Preise</h2>
 				<p>Wählen Sie ein Tarif:</p>

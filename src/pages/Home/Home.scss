@@ -1,5 +1,8 @@
+@import "../../styles/main.scss";
+
 .home {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: $color-white;
 }

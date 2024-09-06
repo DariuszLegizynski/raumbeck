@@ -157,11 +157,8 @@ textarea:focus-visible {
   align-items: center;
 }
 .prices__cards {
-  min-width: 317px;
-  padding: 0 1rem;
-}
-.prices__card {
-  cursor: pointer;
+  width: 100%;
+  max-width: 288px;
 }
 .prices__card__body, .prices__card__footer {
   text-align: center;
@@ -211,7 +208,7 @@ textarea:focus-visible {
        column-gap: 0.4rem;
 }
 .prices__cancel {
-  padding: 2rem 0;
+  padding: 4rem 0;
   max-width: 42rem;
   margin: 0 auto;
 }
@@ -219,6 +216,12 @@ textarea:focus-visible {
   padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 380px) {
+  .prices__cards {
+    width: 100%;
+    max-width: 317px;
+  }
+}
 @media screen and (min-width: 480px) {
   .prices__cards {
     display: grid;
@@ -227,16 +230,9 @@ textarea:focus-visible {
          column-gap: 2rem;
   }
 }
-.summary-card {
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
-  transition: height 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s; /* Delay visibility to sync with opacity */
-}
-
-.summary-card.visible {
-  opacity: 1;
-  visibility: visible;
-  height: 440px;
-  transition-delay: 0s, 0s, 0s; /* Apply visibility instantly */
+@media screen and (min-width: 768px) {
+  .prices__cards {
+    width: 100%;
+    max-width: 375px;
+  }
 }/*# sourceMappingURL=Prices.css.map */

@@ -21,13 +21,11 @@
 	}
 
 	&__cards {
-		min-width: 317px;
-		padding: 0 1rem;
+		width: 100%;
+		max-width: 288px;
 	}
 
 	&__card {
-		cursor: pointer;
-
 		&__body,
 		&__footer {
 			text-align: center;
@@ -92,12 +90,21 @@
 	}
 
 	&__cancel {
-		padding: 2rem 0;
+		padding: 4rem 0;
 		max-width: 42rem;
 		margin: 0 auto;
 
 		& > h3 {
 			padding-bottom: 1rem;
+		}
+	}
+}
+
+@media screen and (min-width: 380px) {
+	.prices {
+		&__cards {
+			width: 100%;
+			max-width: 317px;
 		}
 	}
 }
@@ -112,16 +119,11 @@
 	}
 }
 
-.summary-card {
-	opacity: 0;
-	visibility: hidden;
-	height: 0;
-	transition: height 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s; /* Delay visibility to sync with opacity */
-}
-
-.summary-card.visible {
-	opacity: 1;
-	visibility: visible;
-	height: 440px;
-	transition-delay: 0s, 0s, 0s; /* Apply visibility instantly */
+@media screen and (min-width: 768px) {
+	.prices {
+		&__cards {
+			width: 100%;
+			max-width: 375px;
+		}
+	}
 }

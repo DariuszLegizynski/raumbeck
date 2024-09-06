@@ -142,10 +142,13 @@ textarea:focus-visible {
 .prices {
   margin: 3rem 1rem;
   background-color: hsl(0, 0%, 98%);
+  max-width: 72rem;
 }
 .prices__title {
   margin-top: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  text-align: left;
 }
 .prices__title > h2 {
   text-align: left;
@@ -234,5 +237,11 @@ textarea:focus-visible {
   .prices__cards {
     width: 100%;
     max-width: 375px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .prices {
+    max-width: 72rem;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=Prices.css.map */

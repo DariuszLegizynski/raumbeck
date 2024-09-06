@@ -72,7 +72,9 @@ const Prices = () => {
 		<article className="prices">
 			<section className="prices__title">
 				<h2 className="green">Preis</h2>
+				<div class="hr-line-green"></div>
 			</section>
+
 			<section className="prices__wrapper">
 				<div className="prices__cards">
 					{/* <div onClick={() => setPrice(false)}>

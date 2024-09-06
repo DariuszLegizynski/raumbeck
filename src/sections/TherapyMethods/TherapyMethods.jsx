@@ -68,8 +68,10 @@ const TherapyMethods = () => {
 			<div className="therapy-methods__wrapper">
 				<section className="therapy-methods__title">
 					<h2 className="green">Therapie</h2>
+					<div class="hr-line-green"></div>
 					<span>je nach Beschwerdebild</span>
 				</section>
+
 				<section className="therapy-methods__content">
 					<HandIcon />
 					<ul className="therapy-methods__list" onClick={hideIcon} onMouseDown={hideIcon} onMouseUp={hideIcon} onTouchStart={hideIcon} onTouchEnd={hideIcon}>

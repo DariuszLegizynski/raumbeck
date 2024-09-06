@@ -82,6 +82,12 @@ a:hover, a:active {
   border-bottom: 4px solid hsl(0, 0%, 98%);
 }
 
+.hr-line-green {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(170, 17%, 86%);
+}
+
 .green {
   color: hsl(85, 55%, 51%);
 }
@@ -154,7 +160,7 @@ textarea:focus-visible {
   .reasons__title > h2 {
     display: inline-block;
   }
-  .reasons__title > div {
+  .reasons__title__short {
     display: none;
   }
 }

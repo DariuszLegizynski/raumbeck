@@ -1,0 +1,30 @@
+.privacy {
+	margin-top: 8rem;
+	padding: 0 1rem;
+
+	&__wrapper {
+		& > h1 {
+			font-size: 2rem;
+			margin-bottom: 0.8rem;
+		}
+
+		& > h2 {
+			font-size: 1.6rem;
+			margin: 1.6rem 0 0.8rem 0;
+		}
+
+		& > h3 {
+			margin: 1rem 0 0.4rem 0;
+		}
+		& > ul > li {
+			margin: 0.8rem 0;
+		}
+		& > ul > li > p {
+			margin: 0.8rem 0;
+		}
+	}
+
+	&__back {
+		margin: 4rem 0;
+	}
+}

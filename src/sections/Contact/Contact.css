@@ -40,6 +40,11 @@
   max-width: 80%;
 }
 
+.btn--back {
+  background-color: transparent;
+  color: hsl(169, 7%, 48%);
+}
+
 h1,
 h2,
 h3,
@@ -50,12 +55,9 @@ a {
   color: hsl(0, 0%, 10%);
 }
 
-h1 {
-  font-size: 3rem;
-}
-
+h1,
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -83,6 +85,12 @@ a:hover, a:active {
   width: 100%;
   margin: 1rem 0;
   border-bottom: 4px solid hsl(0, 0%, 98%);
+}
+
+.hr-line-green {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(170, 17%, 86%);
 }
 
 .green {
@@ -183,6 +191,13 @@ textarea:focus-visible {
   margin: 0.4rem 0;
   max-width: 100%;
 }
+.contact__privacy {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 0.8rem;
+}
 
 @media screen and (min-width: 768px) {
   .contact {
@@ -191,6 +206,9 @@ textarea:focus-visible {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     padding: 4rem 1rem 2rem;
+  }
+  .contact__privacy {
+    grid-column-start: span 2;
   }
 }
 @media screen and (min-width: 1024px) {

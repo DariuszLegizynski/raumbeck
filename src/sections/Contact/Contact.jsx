@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import IconItem from "../../assets/icons/icons"
 import "./Contact.css"
 
@@ -54,6 +56,10 @@ const Contact = () => {
 						</div>
 						<button className="btn btn--highlight">Senden</button>
 					</form>
+				</section>
+				<section className="contact__privacy">
+					<Link to="/privacy">Datenschutzerklärung</Link>
+					<Link to="/impressum">Impressum</Link>
 				</section>
 			</article>
 		</div>

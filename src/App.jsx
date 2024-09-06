@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer"
 
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
+import Privacy from "./pages/Privacy/Privacy"
+import Impressum from "./pages/Impressum/Impressum"
 
 const App = () => {
 	return (
@@ -18,6 +20,8 @@ const App = () => {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/about" element={<About />} />
+					<Route exact path="/privacy" element={<Privacy />} />
+					<Route exact path="/impressum" element={<Impressum />} />
 				</Routes>
 			</main>
 			<Footer />

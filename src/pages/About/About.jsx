@@ -213,6 +213,11 @@ const About = () => {
 						Kontakt
 					</Link>
 				</section>
+				<section className="about__contact">
+					<Link to="/#contact" className="btn btn--back">
+						&larr; zurück
+					</Link>
+				</section>
 			</article>
 		</>
 	)

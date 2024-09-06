@@ -1,34 +1,39 @@
 @import "./variables";
 
 .btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 
-  color: $color-white;
-  background-color: $color-grey;
+	color: $color-white;
+	background-color: $color-grey;
 
-  font-size: 1.6rem;
-  padding: 0.9rem;
-  margin: 0.6rem auto;
+	font-size: 1.6rem;
+	padding: 0.9rem;
+	margin: 0.6rem auto;
 
-  font-family: "FuturaLT-Heavy";
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 1px;
+	font-family: "FuturaLT-Heavy";
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
 
-  border: none;
-  border-radius: 0;
+	border: none;
+	border-radius: 0;
 
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .btn--green {
-  background-color: $color-primary;
+	background-color: $color-primary;
 }
 
 .btn--contact {
-  max-width: 80%;
+	max-width: 80%;
+}
+
+.btn--back {
+	background-color: transparent;
+	color: $color-grey;
 }

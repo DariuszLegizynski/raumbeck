@@ -40,6 +40,11 @@
   max-width: 80%;
 }
 
+.btn--back {
+  background-color: transparent;
+  color: hsl(169, 7%, 48%);
+}
+
 h1,
 h2,
 h3,
@@ -50,12 +55,9 @@ a {
   color: hsl(0, 0%, 10%);
 }
 
-h1 {
-  font-size: 3rem;
-}
-
+h1,
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -83,6 +85,12 @@ a:hover, a:active {
   width: 100%;
   margin: 1rem 0;
   border-bottom: 4px solid hsl(0, 0%, 98%);
+}
+
+.hr-line-green {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(170, 17%, 86%);
 }
 
 .green {
@@ -144,6 +152,7 @@ textarea:focus-visible {
 }
 footer {
   display: grid;
+  justify-items: center;
   grid-template-rows: repeat(2, minmax(0, 1fr));
   background-color: hsl(220, 17%, 59%);
   padding: 1rem;

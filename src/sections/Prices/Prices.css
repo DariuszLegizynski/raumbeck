@@ -40,6 +40,11 @@
   max-width: 80%;
 }
 
+.btn--back {
+  background-color: transparent;
+  color: hsl(169, 7%, 48%);
+}
+
 h1,
 h2,
 h3,

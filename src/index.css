@@ -13,7 +13,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-body{
+body {
 	overflow-x: hidden;
 }
 
@@ -28,9 +28,21 @@ img {
 	background: hsl(33, 100%, 79%);
 }
 
-li,
-ul,
-ol {
+ul {
 	text-decoration: none;
 	list-style-type: none;
+}
+
+ul li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+ol {
+	padding-left: 2rem;
+}
+
+ol li {
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
 }

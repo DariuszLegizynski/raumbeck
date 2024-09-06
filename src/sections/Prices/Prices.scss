@@ -74,6 +74,12 @@
 		transition: opacity 0.5s ease-in-out;
 	}
 
+	&__card-summary__icon {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 1rem;
+	}
+
 	&__card-summary {
 		margin-top: 2rem;
 

@@ -68,7 +68,7 @@ const TherapyMethods = () => {
 			<div className="therapy-methods__wrapper">
 				<section className="therapy-methods__title">
 					<h2 className="green">Therapie</h2>
-					<div class="hr-line-green"></div>
+					<div className="hr-line-green"></div>
 					<span>je nach Beschwerdebild</span>
 				</section>
 

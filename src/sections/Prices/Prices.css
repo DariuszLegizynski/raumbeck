@@ -82,6 +82,12 @@ a:hover, a:active {
   border-bottom: 4px solid hsl(0, 0%, 98%);
 }
 
+.hr-line-green {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 4px solid hsl(170, 17%, 86%);
+}
+
 .green {
   color: hsl(85, 55%, 51%);
 }
@@ -194,6 +200,11 @@ textarea:focus-visible {
 .prices__card-summary__body {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+}
+.prices__card-summary__icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
 .prices__card-summary {
   margin-top: 2rem;

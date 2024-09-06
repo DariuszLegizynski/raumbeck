@@ -1,40 +1,13 @@
 import IconItem from "../../assets/icons/icons"
 import "./Prices.css"
 
-import { useState } from "react"
-
-const PriceCard = ({ time, handlePriceChange, price, iconEcercise }) => {
-	const baseClassName = "prices__card"
-	const handleActiveClass = `${baseClassName} ${price ? "isActive" : "notActive"}`
-
-	return (
-		<section className={handleActiveClass} onClick={handlePriceChange}>
-			<div className="prices__card__exercise">
-				{iconEcercise === "exercise_short" ? (
-					<IconItem type="exercise_short" width="2rem" height="2rem" fillColor="none" strokeColor={price ? "hsl(85, 55%, 51%)" : "black"} />
-				) : null}
-				{iconEcercise === "exercise_long" ? (
-					<IconItem type="exercise_long" width="2rem" height="2rem" fillColor="none" strokeColor={price ? "hsl(85, 55%, 51%)" : "black"} />
-				) : null}
-			</div>
-			<section className="prices__card__body">
-				<div className="prices__card__exercise">
-					<IconItem type="check" width="2rem" height="2rem" fillColor="none" strokeColor={price ? "hsl(85, 55%, 51%)" : "black"}></IconItem>
-					<h3 style={price ? { color: "hsl(85, 55%, 51%)" } : {}}>{time} Min</h3>
-				</div>
-				<p>Physiotherapie</p>
-			</section>
-			<section className="prices__card__footer">
-				<span>Eine kurze und nette Beschreibung</span>
-			</section>
-		</section>
-	)
-}
-
 const SummaryCard = ({ time, price, priceReturn }) => {
 	return (
 		<section className="prices__card-summary">
 			<section className="prices__card-summary__body">
+				<div className="prices__card-summary__icon">
+					<IconItem type="exercise_long" width="2rem" height="2rem" fillColor="none" strokeColor="hsl(85, 55%, 51%)" />
+				</div>
 				<p>Preis:</p>
 				<section>
 					<h3>{price} €</h3>
@@ -66,32 +39,17 @@ const SummaryCard = ({ time, price, priceReturn }) => {
 }
 
 const Prices = () => {
-	const [price, setPrice] = useState(true)
-
 	return (
 		<article className="prices">
 			<section className="prices__title">
 				<h2 className="green">Preis</h2>
-				<div class="hr-line-green"></div>
+				<div className="hr-line-green"></div>
 			</section>
 
 			<section className="prices__wrapper">
-				<div className="prices__cards">
-					{/* <div onClick={() => setPrice(false)}>
-						<PriceCard time={30} price={!price} iconEcercise={"exercise_short"} />
-					</div> */}
-					<div onClick={() => setPrice(true)}>
-						<PriceCard time={45} price={price} iconEcercise={"exercise_long"} />
-					</div>
-				</div>
-
-				<div className={`summary-card ${price ? "visible" : ""}`}>
+				<div className={`summary-card visible`}>
 					<SummaryCard time={45} price={80} priceReturn={41} />
 				</div>
-
-				{/* <div className={`summary-card ${price ? "" : "visible"}`}>
-					<SummaryCard time={30} price={55} priceReturn={27} />
-				</div> */}
 			</section>
 			<section className="prices__cancel">
 				<h3>Therapieabsage</h3>

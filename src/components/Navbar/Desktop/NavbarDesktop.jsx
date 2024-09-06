@@ -7,19 +7,23 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
 const NavbarDesktop = () => {
-	const listHeight = useRef()
+	// const navRef = useRef(null)
 
-	const navbarHeight = useRef()
+	// const handleClickOutside = event => {
+	// 	if (navRef.current && !navRef.current.contains(event.target)) {
+	// 		setOpenBurger(false)
+	// 	}
+	// }
 
-	useEffect(() => {
-		if (!listHeight?.current?.clientHeight || !navbarHeight?.current?.clientHeight) return
-
-		setLiHeight(listHeight?.current?.clientHeight)
-		setHeaderHeight(navbarHeight?.current?.clientHeight)
-	}, [listHeight?.current?.clientHeight, navbarHeight?.current?.clientHeight])
+	// useEffect(() => {
+	// 	document.addEventListener("mousedown", handleClickOutside)
+	// 	return () => {
+	// 		document.removeEventListener("mousedown", handleClickOutside)
+	// 	}
+	// }, [])
 
 	return (
-		<nav className="navbar-desktop" initial={{ y: `-110%` }} animate={{ y: 0 }} transition={{ duration: 2 }} ref={navbarHeight}>
+		<nav className="navbar-desktop" initial={{ y: `-110%` }} animate={{ y: 0 }} transition={{ duration: 2 }}>
 			<ul>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }} whileTap={{ scale: 0.9, y: 0 }}>
 					<HashLink to="/#hero">
@@ -28,17 +32,17 @@ const NavbarDesktop = () => {
 				</motion.li>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }} whileTap={{ scale: 0.9, y: 0 }}>
 					<HashLink to="/#contact">
-						<h3>Kontakt</h3>
+						<p>Kontakt</p>
 					</HashLink>
 				</motion.li>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }} whileTap={{ scale: 0.9, y: 0 }}>
 					<HashLink to="/#services">
-						<h3>Leistungsumfang</h3>
+						<p>Leistungsumfang</p>
 					</HashLink>
 				</motion.li>
 				<motion.li whileHover={{ scale: 1.1, y: 3 }} whileTap={{ scale: 0.9, y: 0 }}>
 					<Link to="/about">
-						<h3>Über mich</h3>
+						<p>Über mich</p>
 					</Link>
 				</motion.li>
 			</ul>

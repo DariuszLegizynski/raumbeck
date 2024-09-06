@@ -7,6 +7,26 @@
 
 	padding: 4rem 1rem 0;
 	background-color: $color-tertiary;
+
+	&__title {
+		& > h2 {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 475px) {
+	.reasons {
+		&__title {
+			& > h2 {
+				display: inline-block;
+			}
+
+			& > div {
+				display: none;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {

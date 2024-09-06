@@ -10,25 +10,27 @@ import { motion } from "framer-motion"
 const NavbarMobile = () => {
 	const [openBurger, setOpenBurger] = useState(false)
 
-	const listHeight = useRef()
-	const [liHeight, setLiHeight] = useState(0)
+	const navRef = useRef(null)
 
-	const navbarHeight = useRef()
-	const [headerHeight, setHeaderHeight] = useState(0)
+	const handleClickOutside = event => {
+		if (navRef.current && !navRef.current.contains(event.target)) {
+			setOpenBurger(false)
+		}
+	}
 
 	useEffect(() => {
-		if (!listHeight?.current?.clientHeight || !navbarHeight?.current?.clientHeight) return
-
-		setLiHeight(listHeight?.current?.clientHeight)
-		setHeaderHeight(navbarHeight?.current?.clientHeight)
-	}, [listHeight?.current?.clientHeight, navbarHeight?.current?.clientHeight])
+		document.addEventListener("mousedown", handleClickOutside)
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside)
+		}
+	}, [])
 
 	return (
-		<motion.nav className="navbar-mobile" initial={{ y: `-110%` }} animate={{ y: 0 }} transition={{ duration: 2 }} ref={navbarHeight}>
-			<HashLink to="/#hero">
+		<motion.nav className="navbar-mobile" initial={{ y: `-110%` }} animate={{ y: 0 }} transition={{ duration: 2 }} ref={navRef}>
+			<HashLink to="/#hero" onClick={() => setOpenBurger(false)}>
 				<img src={logo} />
 			</HashLink>
-			<ul ref={listHeight} style={{ top: openBurger ? headerHeight : -liHeight }}>
+			<ul className={`navbar-mobile-list ${openBurger ? "open" : "closed"}`}>
 				<motion.li whileTap={{ scale: 0.9, y: 0 }}>
 					<HashLink to="/#hero" onClick={() => setOpenBurger(!openBurger)}>
 						<h3>Home</h3>

@@ -158,6 +158,7 @@ textarea:focus-visible {
 }
 .prices__cards {
   min-width: 317px;
+  padding: 0 1rem;
 }
 .prices__card {
   cursor: pointer;

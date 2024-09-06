@@ -50,12 +50,9 @@ a {
   color: hsl(0, 0%, 10%);
 }
 
-h1 {
-  font-size: 3rem;
-}
-
+h1,
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -155,6 +152,19 @@ textarea:focus-visible {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   background-color: hsla(0, 0%, 98%, 0.8);
+}
+.navbar-mobile-list {
+  position: absolute;
+  top: -600%;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease;
+}
+.navbar-mobile-list.open {
+  top: 100%; /* Positioned below the navbar when open */
+}
+.navbar-mobile-list.closed {
+  top: -600%; /* Hidden when closed */
 }
 .navbar-mobile > ul {
   position: fixed;

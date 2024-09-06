@@ -1,61 +1,61 @@
 @import "../../../styles/main.scss";
 
 .navbar-desktop {
-  display: none;
-  visibility: hidden;
+	display: none;
+	visibility: hidden;
 }
 
 @media only screen and (min-width: 769px) {
 	.navbar-desktop {
-    position: fixed;
-    visibility: visible;
-    top: 0;
-    left: 0;
-  
-    z-index: 10;
-  
-    display: flex;
-    justify-content: space-between;
-  
-    width: 100vw;
-    height: auto;
-  
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-  
-    & > ul {
-      position: fixed;
-      left: 0;
-  
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-  
-      width: 100%;
-      padding: .8rem 0;
-  
-      transition: top 0.4s ease-out;
+		position: fixed;
+		visibility: visible;
+		top: 0;
+		left: 0;
 
-      background-color: $color-white-opacity-dark;
-  
-      & > li {
-        padding: .2rem 0;
-      }
-    }
-  
-    & img {
-      width: auto;
-      height: 2rem;
-    }
-  }
+		z-index: 10;
+
+		display: flex;
+		justify-content: space-between;
+
+		width: 100vw;
+		height: auto;
+
+		-webkit-backdrop-filter: blur(3px);
+		backdrop-filter: blur(3px);
+
+		& > ul {
+			position: fixed;
+			left: 0;
+
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+
+			width: 100%;
+			padding: 0.8rem 0;
+
+			transition: top 0.4s ease-out;
+
+			background-color: $color-white-opacity-dark;
+
+			& > li {
+				padding: 0.2rem 0;
+			}
+		}
+
+		& img {
+			width: auto;
+			height: 2rem;
+		}
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	.navbar-desktop {
-    & > ul {
-      & > li {
-        font-size: 20px;
-      }
-    }
-  }
+		& > ul {
+			& > li {
+				font-size: 20px;
+			}
+		}
+	}
 }

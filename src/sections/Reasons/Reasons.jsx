@@ -42,6 +42,10 @@ const Reasons = () => {
 	return (
 		<article className="reasons">
 			<section className="reasons__title">
+				<div>
+					<h2 className="green">Behandlungs-</h2>
+					<h2 className="green">bereiche</h2>
+				</div>
 				<h2 className="green">Behandlungsbereiche</h2>
 				<div className="hr-line" />
 				<p>Sie sind bei mir richtig, wenn Sie folgende Beschwerden haben, da ich auf deren Behandlung spezialisiert bin:</p>

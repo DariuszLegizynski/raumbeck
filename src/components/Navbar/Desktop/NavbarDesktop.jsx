@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react"
 import logo from "../../../assets/logo/Logo-remove-bg-small.png"
 
 import "./NavbarDesktop.css"
@@ -7,21 +6,6 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
 const NavbarDesktop = () => {
-	// const navRef = useRef(null)
-
-	// const handleClickOutside = event => {
-	// 	if (navRef.current && !navRef.current.contains(event.target)) {
-	// 		setOpenBurger(false)
-	// 	}
-	// }
-
-	// useEffect(() => {
-	// 	document.addEventListener("mousedown", handleClickOutside)
-	// 	return () => {
-	// 		document.removeEventListener("mousedown", handleClickOutside)
-	// 	}
-	// }, [])
-
 	return (
 		<nav className="navbar-desktop" initial={{ y: `-110%` }} animate={{ y: 0 }} transition={{ duration: 2 }}>
 			<ul>

@@ -34,28 +34,20 @@ const Hero = () => {
 				<div className="hero__picture">
 					<img src={hero} alt="therapist" width={1000} height={1550} />
 					<div className="hero__content">
-						<motion.title className="hero__text" variants={container} initial="hidden" animate="show">
+						<title className="hero__text" variants={container} initial="hidden" animate="show">
 							<div className="hero__title">
-								<motion.h1 style={{ y: -yPos * 2200 }} className="green" variants={item}>
-									Anna
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2200 }} variants={item}>
-									&nbsp;
-								</motion.h1>
-								<motion.h1 style={{ y: -yPos * 2200 }} className="grey" variants={item}>
-									Mehr
-								</motion.h1>
+								<h1 className="grey">Anna</h1>
+								<h1>&nbsp;</h1>
+								<h1 className="grey">Mehr</h1>
 							</div>
-							<motion.p className="grey" variants={item} style={{ y: -yPos * 2000 }}>
-								--- Physiotherapeutin
-							</motion.p>
-						</motion.title>
-						<Link to="/#contact" className="hero__contact--desktop btn btn--green">
+							<p className="grey">--- Dipl. Physiotherapeutin</p>
+						</title>
+						<Link to="/#contact" className="hero__contact--desktop btn btn--grey">
 							Kontakt
 						</Link>
 					</div>
 				</div>
-				<Link to="/#contact" className="hero__contact--mobile btn btn--green">
+				<Link to="/#contact" className="hero__contact--mobile btn btn--grey">
 					Kontakt
 				</Link>
 			</div>

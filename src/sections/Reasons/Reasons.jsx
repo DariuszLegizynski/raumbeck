@@ -6,13 +6,14 @@ const Reasons = () => {
 		{
 			id: 1,
 			image: "urinaryIncontinence",
-			category: "Harninkontinenz",
+			category: "Blasen-/ Darmgesundheit",
 			reasons: [
 				"Harn- oder Stuhlverlust",
+				"Hämorrhoiden",
 				"Blasen-, Gebärmutter-, Darmsenkung",
-				"Häufiges Harnlassen, ",
-				"Schwierigkeiten: Harnlassen,",
-				"Stuhlgang, Harnverlust",
+				"Häufiges Harnlassen",
+				"Schwierigkeiten: Harnlassen",
+				"Stuhlgang",
 			],
 		},
 		{
@@ -24,14 +25,14 @@ const Reasons = () => {
 		{
 			id: 3,
 			image: "pregnancy",
-			category: "Schwangerschaft und Wochenbett",
-			reasons: ["Schwangerschaftsbeschwerden", "Rückbildung nach der Schwangerschaft"],
+			category: "Schwangerschaft und Rückbildung",
+			reasons: ["Schwangerschaftsbeschwerden", "Geburtsverletzung", "Kaiserschnitt-/ Dammnarbe", "Rückbildung nach der Schwangerschaft"],
 		},
 		{
 			id: 4,
 			image: "sexual-health",
 			category: "Sexuelle Gesundheit",
-			reasons: ["Schmerzen beim Geschlechtsverkehr", "Vulvodynie", "Chronische Schmerzen: Geschlechtsorgane"],
+			reasons: ["Schmerzen beim Geschlechtsverkehr", "Rektusdiastase", "Vulvodynie", "Chronische Schmerzen: Geschlechtsorgane"],
 		},
 	]
 

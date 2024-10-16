@@ -1,0 +1,35 @@
+@import "../../styles/main.scss";
+
+.cookie-banner {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: $color-secondary;
+	padding: 1rem;
+	z-index: 50;
+
+	&__wrapper {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+	&__p {
+		color: $color-white;
+		padding-bottom: 2rem;
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	&__btn {
+		background-color: $color-white;
+		padding: 0.625rem 0.75rem;
+		border-radius: 0.75rem;
+		color: $color-secondary;
+		max-width: 11rem;
+
+		&--wrapper {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

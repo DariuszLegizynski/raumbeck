@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import NavbarMobile from "./components/Navbar/Mobile/NavbarMobile"
 import NavbarDesktop from "./components/Navbar/Desktop/NavbarDesktop"
 import Footer from "./components/Footer/Footer"
+import ConsentBanner from "./components/ConsentBanner/ConsentBanner"
 
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
@@ -25,6 +26,7 @@ const App = () => {
 				</Routes>
 			</main>
 			<Footer />
+			<ConsentBanner />
 		</>
 	)
 }

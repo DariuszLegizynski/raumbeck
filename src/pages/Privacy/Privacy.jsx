@@ -7,7 +7,6 @@ const Privacy = () => {
 		<article className="privacy">
 			<section className="privacy__wrapper">
 				<h1 className="privacy__title">Datenschutzerklärung</h1>
-
 				<h2>1. Datenschutz auf einen Blick</h2>
 				<h3>Allgemeine Hinweise</h3>
 				<p>

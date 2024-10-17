@@ -154,7 +154,7 @@ textarea:focus-visible {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: hsl(220, 17%, 59%);
+  background-color: hsl(169, 7%, 48%);
   padding: 1rem;
   z-index: 50;
 }
